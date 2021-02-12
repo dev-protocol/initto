@@ -1,0 +1,35 @@
+.intro {
+  background: var(--color-selection-bg);
+  color: var(--color-selection-text);
+
+  &__summary {
+    --flow-space: #{get-size(500)};
+    font-size: get-size(500);
+
+    a {
+      color: currentColor;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__heading {
+    max-width: 40ex;
+    color: var(--color-selection-text);
+
+    &--compact {
+      max-width: 20ex;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+
+    &__social {
+      margin-left: .5em;
+    }
+  }
+}

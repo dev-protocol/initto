@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "text": "Discord",
+      "url": "https://discord.gg/VwJp4KM",
+      "external": true
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/devprtcl",
+      "external": true
+    },
+    {
+      "text": "Docs",
+      "url": "https://docs.devprotocol.xyz/",
+      "external": true
+    },
+    {
+      "text": "GitHub",
+      "url": "https://github.com/dev-protocol",
+      "external": true
+    },
+    {
+      "text": "Telegram",
+      "url": "https://t.me/devprtcl",
+      "external": true
+    },
+    {
+      "text": "Medium",
+      "url": "https://medium.com/devprtcl",
+      "external": true
+    }
+  ]
+}

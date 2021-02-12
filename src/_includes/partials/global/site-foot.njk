@@ -1,0 +1,23 @@
+<footer role="contentinfo" class="[ site-foot ] [ font-base text-base weight-bold ] [ pad-top-maxover pad-bottom-maxover ]">
+  <div class="wrapper">
+    <div class="[ site-foot__inner-top ] [ md:box-flex space-before align-start ]">
+      <lang-switch></lang-switch>
+    </div>
+    <div class="[ site-foot__inner ] [ md:box-flex space-between align-start ]">
+      <div class="[ site-foot__inner__item ]">
+        <a href="https://devprotocol.xyz">
+          <img class="brand" src="https://devprotocol.xyz/assets/img/devlogo.svg" alt="Logo" />
+        </a>
+      </div>
+      <div class="[ site-foot__inner__item ]">
+        {% if navigation.items %}
+          {% for item in footer_navigation.items %}
+            <div class="[ site-foot__inner__link-item ]">
+              <a target="_blank" class="" href="{{ item.url }}">{{ item.text }}</a>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</footer>

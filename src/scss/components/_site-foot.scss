@@ -1,0 +1,36 @@
+.site-foot {
+  // Reverse whatever the theme colors are
+  background: var(--color-selection-bg);
+  color: var(--color-selection-text);
+  border-top: 1px solid var(--color-stroke);
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__credit {
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-between;
+      width: 50%;
+    }
+
+    &__link-item {
+      flex: 1 1 auto;
+      flex-wrap: wrap;
+      padding: 0 get-size(500) get-size(800);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "DEV PROTOCOL TECH BLOG",
+  "shortDesc": "",
+  "logo": "/images/devprotocol-logo.png",
+  "url": "https://dev.devprotocol.xyz",
+  "authorHandle": "@devprtcl",
+  "authorName": "devprotocol team",
+  "enableThirdPartyComments": false,
+  "maxPostsPerPage": 6,
+  "faviconPath": "https://devprotocol.xyz/favicon.png",
+  "locales": [
+    "en",
+    "ja"
+  ],
+  "defaultLocale": "en"
+}

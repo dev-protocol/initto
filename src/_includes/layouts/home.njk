@@ -1,0 +1,28 @@
+{% extends 'layouts/base.njk' %}
+
+{# Intro content #}
+{% set introHeading = title %}
+{% set introSummary %}
+  {{ content | safe }}
+{% endset %}
+
+{# Post list content #}
+{% set postListHeading = postsHeading %}
+{% set postListItemsKey = 'postFeed_ja' if locale == 'ja' else 'postFeed' %}
+{% set postListItems = collections[postListItemsKey] %}
+
+{# Archive link #}
+{% set allPostItemsKey = 'posts_ja' if locale == 'ja' else 'posts' %}
+{% set allPostItems = collection[allPostItemsKey] %}
+{% if postListItems.length < allPostItems.length %}
+  {% set paginationNextText = archiveButtonText %}
+  {% set paginationNextUrl = '/archive' %}
+{% endif %}
+
+{% block content %}
+  <main id="main-content" tabindex="-1">
+    {% include "partials/components/intro.njk" %}
+    {% include "partials/components/post-list.njk" %}
+    {% include "partials/components/pagination.njk" %}
+  </main>
+{% endblock %}
