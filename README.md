@@ -5,17 +5,17 @@ blog kit with [11ty(Eleventy)](https://11ty.io) based on [hylia-forestry](https:
 ### installation
 
 ```bash
-$ yarn install
+$ npm ci
 ```
 
 ### serve on local
 
 ```bash
-$ yarn start
+$ npm start
 ```
 
 ### Build a production version of the site
 
 ```bash
-yarn production
+$ npm production
 ```
