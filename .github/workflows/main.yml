@@ -33,3 +33,4 @@ jobs:
         with:
           publish_dir: ./dist
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          cname: dev.devprotocol.xyz
