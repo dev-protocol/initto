@@ -37,6 +37,11 @@ e.g.: `sample.md`
 Create a new md file in `src/ja/post`
 e.g.: `sample.md`
 
+### Add article file
+
+You can also add a file by referring to the arrow in the image below and write an article there
+![readme01](https://user-images.githubusercontent.com/4590559/107755069-ad352d80-6d65-11eb-9ea6-add6e39c5b42.png)
+
 ### Contents
 The contents of the article file are as follows
 
