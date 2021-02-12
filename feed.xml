@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DEV PROTOCOL TECH BLOG</title>
+	<subtitle></subtitle>
+	<link href="https://dev.devprotocol.xyz/feed.xml" rel="self"/>
+	<link href="https://dev.devprotocol.xyz/"/>
+	
+	<updated>2020-06-08T00:00:00+00:00</updated>
+	
+	<id>https://dev.devprotocol.xyz</id>
+	<author>
+  <name>devprotocol team</name>
+  <email></email>
+	</author>
+	
+  
+  <entry>
+    <title>A simple post</title>
+    <link href="https://dev.devprotocol.xyz/posts/a-simple-post/"/>
+    <updated>2020-06-08T00:00:00+00:00</updated>
+    <id>https://dev.devprotocol.xyz/posts/a-simple-post/</id>
+    <content type="html"><![CDATA[
+      <p>A simple post to demonstrate how a normal blog post looks on Hylia. Content is
+all set in the “Body” field as markdown and Eleventy transforms it into a proper
+HTML post. You can also edit the markdown file directly if you prefer not to use
+the CMS.</p>
+<p>How about a <code>&lt;blockquote&gt;</code>?</p>
+<blockquote>
+<p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
+</blockquote>
+<p>A list of stuff:</p>
+<ul>
+<li>Sed posuere consectetur est at lobortis</li>
+<li>Aenean lacinia bibendum nulla sed consectetur</li>
+<li>Sed posuere consectetur est at lobortis</li>
+</ul>
+<p>How about an ordered list of stuff:</p>
+<ol>
+<li>Sed posuere consectetur est at lobortis</li>
+<li>Aenean lacinia bibendum nulla sed consectetur</li>
+<li>Sed posuere consectetur est at lobortis</li>
+</ol>
+<p>Hopefully, this has demonstrated how simple it is to make a nice looking blog with Hylia.</p>
+
+    ]]></content>
+  </entry>
+	
+</feed>
