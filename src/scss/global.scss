@@ -71,3 +71,31 @@ img {
 @import 'components/skip-link';
 @import 'components/syntax-highlighting';
 @import 'components/video-player';
+
+@media screen and (max-width: map-get($metrics, 'md-breakpoint')){
+  .site-head__site-name {
+    display: block;
+  }
+
+  .site-foot__inner {
+    flex-direction: column;
+
+    .site-foot__inner__item {
+      display: initial;
+
+      a {
+        display: block;
+      }
+
+      .site-foot__inner__link-item {
+        padding: 0;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
