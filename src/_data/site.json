@@ -1,7 +1,8 @@
 {
   "name": "DEV PROTOCOL TECH BLOG",
   "shortDesc": "",
-  "logo": "/images/devprotocol-logo.png",
+  "logoHeader": "/images/dev-protocol-logo-head03.svg",
+  "logoFooter": "/images/dev-protocol-logo-footer01.svg",
   "url": "https://dev.devprotocol.xyz",
   "authorHandle": "@devprtcl",
   "authorName": "devprotocol team",
