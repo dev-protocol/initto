@@ -73,6 +73,26 @@ img {
 @import 'components/video-player';
 
 @media screen and (max-width: map-get($metrics, 'md-breakpoint')){
+  .post-list__items {
+    grid-template-columns: 100%;
+  }
+
+  .tags {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .nav__list {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      .tag__item {
+        margin: 0;
+      }
+    }
+  }
+
   .site-head__site-name {
     display: block;
   }
