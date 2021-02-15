@@ -43,14 +43,14 @@ h3 {
 
 @include media-query('md') {
   h1 {
-    font-size: get-size(900);
-  }
-
-  h2 {
     font-size: get-size(800);
   }
 
-  h3 {
+  h2 {
     font-size: get-size(700);
+  }
+
+  h3 {
+    font-size: get-size(600);
   }
 }

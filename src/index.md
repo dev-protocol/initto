@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome!
+title: INITTO｜Start from here
 postsHeading: Latest posts
 archiveButtonText: See all posts
 metaDesc: 'Dev Protocol Tech Blog'

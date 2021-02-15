@@ -72,6 +72,10 @@ img {
 @import 'components/syntax-highlighting';
 @import 'components/video-player';
 
+.intro__heading--initto {
+  max-width: none;
+}
+
 @media screen and (max-width: map-get($metrics, 'md-breakpoint')){
   .post-list__items {
     grid-template-columns: 100%;

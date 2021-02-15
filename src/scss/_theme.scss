@@ -19,6 +19,7 @@
   --color-theme-primary-glare: #{get-color('light')};
   --color-theme-highlight: #{get-color('highlight')};
   --color-theme-highlight-block: #{get-color('highlight')};
+  --color-link: #2577b0;
 }
 
 @include dark-mode() {

@@ -1,6 +1,6 @@
 ---
 layout: home
-title: はじめに
+title: INITTO｜ここからはじまる
 postsHeading: 最新記事
 archiveButtonText: See all posts
 metaDesc: 'Dev Protocol Tech Blog'
