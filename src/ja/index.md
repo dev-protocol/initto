@@ -3,7 +3,7 @@ layout: home
 title: INITTO｜ここからはじまる
 postsHeading: 最新記事
 archiveButtonText: See all posts
-metaDesc: 'Dev Protocol Tech Blog'
+metaDesc: 'Dev Protocolの公式情報配信サイト｜INITTO'
 socialImage: ''
 ---
 
