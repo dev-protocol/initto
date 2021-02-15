@@ -15,7 +15,12 @@ const parseTransform = require('./src/transforms/parse-transform.js');
 // Import data files
 const site = require('./src/_data/site.json');
 
+// Import markdown-lib
+const markdownLib = require('./src/utils/markdown-lib');
+
 module.exports = function(config) {
+  config.setLibrary("md", markdownLib)
+
   // Filters
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('dateFilterJa', dateFilterJa);

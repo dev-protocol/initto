@@ -16,13 +16,14 @@
     "semver": "^6.3.0",
     "slugify": "^1.4.0",
     "stalfos": "github:hankchizljaw/stalfos#c8971d22726326cfc04089b2da4d51eeb1ebb0eb"
- },
+  },
   "devDependencies": {
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
-    "bl": "^3.0.0",
+    "bl": "^3.0.1",
     "chokidar-cli": "^2.1.0",
     "cross-env": "^5.2.1",
     "make-dir-cli": "^2.0.0",
+    "markdown-it-link-attributes": "^3.0.0",
     "prettier": "^1.19.1",
     "rollup": "^1.32.1",
     "rollup-plugin-commonjs": "^10.1.0",
