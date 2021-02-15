@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>DEV PROTOCOL TECH BLOG</title>
+  <title>DEV PROTOCOL INITTO</title>
 	<subtitle></subtitle>
 	<link href="https://dev.devprotocol.xyz/feed.xml" rel="self"/>
 	<link href="https://dev.devprotocol.xyz/"/>
@@ -20,15 +20,15 @@
     <updated>2021-02-15T00:00:00+00:00</updated>
     <id>https://dev.devprotocol.xyz/posts/20210215/</id>
     <content type="html"><![CDATA[
-      <p>We would like to inform you about the Dev Protocol documentation currently available.</p>
+      <p>We would like to inform you of the currently available Dev Protocol documentation.</p>
 <h2>Development documentation</h2>
-<p>This is a document that summarizes the features of the Dev Protocol</p>
+<p>Here’s a summary of Dev Protocol’s features.</p>
 <p><a href="https://github.com/dev-protocol/protocol/blob/main/README.md" target="_blank" rel="noopener">dev-protocol/protocol</a></p>
-<p>Once set up, you will be able to use the functions provided by the Dev Protocol. Please use it when you want to use the Dev Protocol contract in DApp development.<br>
-In addition, the above is a README, so please refer to the following for details.</p>
+<p>Once set up, you will be able to use the functions provided by the Dev Protocol. Please use it when you want to use the Dev Protocol contract in Dapp development.<br>
+The document above is a README, so please refer to the following link for more details.</p>
 <p><a href="https://docs.devprotocol.xyz/dev-protocol/" target="_blank" rel="noopener">Development documentation</a></p>
 <blockquote>
-<p>p.s. There is an old part in the content of the document, so if you do not understand, please ask from <a href="https://discord.gg/VwJp4KM" target="_blank" rel="noopener">Discord</a></p>
+<p>p.s. There is an old part in the content of the document, so if you do not understand, please ask at our <a href="https://discord.gg/VwJp4KM" target="_blank" rel="noopener">Discord</a></p>
 </blockquote>
 <h2>dev-kit Document</h2>
 <p><code>dev-kit</code> is a library for using the functions of Dev Protocol from JavaScript (TypeScript).</p>
@@ -39,7 +39,7 @@ In addition, the above is a README, so please refer to the following for details
 <p><a href="https://github.com/dev-protocol/event-viewer/wiki/Dev-Protocol-Data-Viewer" target="_blank" rel="noopener">https://github.com/dev-protocol/event-viewer/wiki/Dev-Protocol-Data-Viewer</a></p>
 <h3>Query Builder</h3>
 <p><a href="https://explorer.graphql.devprotocol.xyz/" target="_blank" rel="noopener">https://explorer.graphql.devprotocol.xyz/</a></p>
-<p>The information in the document is updated from time to time, but there are some points that are difficult to understand. If you have any questions, please use <a href="https://discord.gg/VwJp4KM" target="_blank" rel="noopener">Discord</a>.</p>
+<p>The information in the document is updated from time to time. If you have any questions, or feel a difficulty in understanding the text, please share let us know at our <a href="https://discord.gg/VwJp4KM" target="_blank" rel="noopener">Discord</a>.</p>
 
     ]]></content>
   </entry>
