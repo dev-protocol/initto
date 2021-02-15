@@ -7,4 +7,4 @@ metaDesc: 'Dev Protocol Tech Blog'
 socialImage: ''
 ---
 
-Dev Protocol Tech Blog is that shares insights into the technology that our Dev Protocol Team is working on.
+This is the official blog written by members of the Dev Protocol. We handle a wide range of information from various technical information to how to use various DevProtocol libraries.

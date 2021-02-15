@@ -9,8 +9,10 @@
               <h3 class="font-base leading-tight text-600 weight-mid">
                 <a href="{{ item.url | url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
               </h3>
-              <p class="text-500 gap-top-300 weight-mid">
-                <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
+
+              <p class="text-100 gap-top-300 weight-light">
+                {% set displayDate = item.date | dateFilterJa if locale == 'ja' else item.date | dateFilter %}
+                <time datetime="{{ item.date | w3DateFilter }}">{{ displayDate }}</time>
               </p>
             </li>
           {% endif %}
