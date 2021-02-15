@@ -5,7 +5,7 @@
 	<link href="https://dev.devprotocol.xyz/feed.xml" rel="self"/>
 	<link href="https://dev.devprotocol.xyz/"/>
 	
-	<updated>2020-06-08T00:00:00+00:00</updated>
+	<updated>2021-02-15T00:00:00+00:00</updated>
 	
 	<id>https://dev.devprotocol.xyz</id>
 	<author>
@@ -15,32 +15,31 @@
 	
   
   <entry>
-    <title>A simple post</title>
-    <link href="https://dev.devprotocol.xyz/posts/a-simple-post/"/>
-    <updated>2020-06-08T00:00:00+00:00</updated>
-    <id>https://dev.devprotocol.xyz/posts/a-simple-post/</id>
+    <title>Dev Protocol documentation information</title>
+    <link href="https://dev.devprotocol.xyz/posts/20210215/"/>
+    <updated>2021-02-15T00:00:00+00:00</updated>
+    <id>https://dev.devprotocol.xyz/posts/20210215/</id>
     <content type="html"><![CDATA[
-      <p>A simple post to demonstrate how a normal blog post looks on Hylia. Content is<br>
-all set in the “Body” field as markdown and Eleventy transforms it into a proper<br>
-HTML post. You can also edit the markdown file directly if you prefer not to use<br>
-the CMS.</p>
-<p>How about a <code>&lt;blockquote&gt;</code>?</p>
+      <p>We would like to inform you about the Dev Protocol documentation currently available.</p>
+<h2>Development documentation</h2>
+<p>This is a document that summarizes the features of the Dev Protocol</p>
+<p><a href="https://github.com/dev-protocol/protocol/blob/main/README.md" target="_blank" rel="noopener">dev-protocol/protocol</a></p>
+<p>Once set up, you will be able to use the functions provided by the Dev Protocol. Please use it when you want to use the Dev Protocol contract in DApp development.<br>
+In addition, the above is a README, so please refer to the following for details.</p>
+<p><a href="https://docs.devprotocol.xyz/dev-protocol/" target="_blank" rel="noopener">Development documentation</a></p>
 <blockquote>
-<p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
+<p>p.s. There is an old part in the content of the document, so if you do not understand, please ask from <a href="https://discord.gg/VwJp4KM" target="_blank" rel="noopener">Discord</a></p>
 </blockquote>
-<p>A list of stuff:</p>
-<ul>
-<li>Sed posuere consectetur est at lobortis</li>
-<li>Aenean lacinia bibendum nulla sed consectetur</li>
-<li>Sed posuere consectetur est at lobortis</li>
-</ul>
-<p>How about an ordered list of stuff:</p>
-<ol>
-<li>Sed posuere consectetur est at lobortis</li>
-<li>Aenean lacinia bibendum nulla sed consectetur</li>
-<li>Sed posuere consectetur est at lobortis</li>
-</ol>
-<p>Hopefully, this has demonstrated how simple it is to make a nice looking blog with Hylia.</p>
+<h2>dev-kit Document</h2>
+<p><code>dev-kit</code> is a library for using the functions of Dev Protocol from JavaScript (TypeScript).</p>
+<p><a href="https://www.npmjs.com/package/@devprotocol/dev-kit" target="_blank" rel="noopener">dev-kit</a></p>
+<p>Please use it when you want to use the Dev Protocol contract from the front end of the application.</p>
+<h2>Dev Protocol Data Viewer</h2>
+<p><code>Data Viewer</code> can acquire various data of Dev Protocol using GraphQL.</p>
+<p><a href="https://github.com/dev-protocol/event-viewer/wiki/Dev-Protocol-Data-Viewer" target="_blank" rel="noopener">https://github.com/dev-protocol/event-viewer/wiki/Dev-Protocol-Data-Viewer</a></p>
+<h3>Query Builder</h3>
+<p><a href="https://explorer.graphql.devprotocol.xyz/" target="_blank" rel="noopener">https://explorer.graphql.devprotocol.xyz/</a></p>
+<p>The information in the document is updated from time to time, but there are some points that are difficult to understand. If you have any questions, please use <a href="https://discord.gg/VwJp4KM" target="_blank" rel="noopener">Discord</a>.</p>
 
     ]]></content>
   </entry>
