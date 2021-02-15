@@ -5,7 +5,7 @@
     </div>
     <div class="[ site-foot__inner ] [ md:box-flex space-between align-start ]">
       <div class="[ site-foot__inner__item ]">
-        <a href="/">
+        <a href="https://devprotocol.xyz/" target='_blank'>
           <img class="brand" src="{{ site.logoFooter | url }}" alt="Dev Protocol" />
         </a>
       </div>
@@ -13,7 +13,7 @@
         {% if navigation.items %}
           {% for item in footer_navigation.items %}
             <div class="[ site-foot__inner__link-item ]">
-              <a target="_blank" class="" href="{{ item.url }}">{{ item.text }}</a>
+              <a target="_blank" class="" href="{{ item.url }}" target='_blank'>{{ item.text }}</a>
             </div>
           {% endfor %}
         {% endif %}
