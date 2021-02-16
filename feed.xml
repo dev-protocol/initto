@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>DEV PROTOCOL INITTO</title>
 	<subtitle></subtitle>
-	<link href="https://dev.devprotocol.xyz/feed.xml" rel="self"/>
-	<link href="https://dev.devprotocol.xyz/"/>
+	<link href="https://initto.devprotocol.xyz/feed.xml" rel="self"/>
+	<link href="https://initto.devprotocol.xyz/"/>
 	
 	<updated>2021-02-15T00:00:00+00:00</updated>
 	
-	<id>https://dev.devprotocol.xyz</id>
+	<id>https://initto.devprotocol.xyz</id>
 	<author>
   <name>devprotocol team</name>
   <email></email>
@@ -16,9 +16,9 @@
   
   <entry>
     <title>Dev Protocol documentation information</title>
-    <link href="https://dev.devprotocol.xyz/posts/20210215/"/>
+    <link href="https://initto.devprotocol.xyz/posts/20210215/"/>
     <updated>2021-02-15T00:00:00+00:00</updated>
-    <id>https://dev.devprotocol.xyz/posts/20210215/</id>
+    <id>https://initto.devprotocol.xyz/posts/20210215/</id>
     <content type="html"><![CDATA[
       <p>We would like to inform you of the currently available Dev Protocol documentation.</p>
 <h2>Development documentation</h2>
