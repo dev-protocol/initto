@@ -15,6 +15,23 @@
   src: url('/fonts/Whyte/Whyte-Regular.otf') format('opentype');
 }
 
+/* Whyte Linktrap */
+@font-face {
+  font-family: 'Whytelnktrap';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/WhyteInktrap/WhyteInktrap-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Whytelnktrap';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/WhyteInktrap/WhyteInktrap-Regular.otf') format('opentype');
+}
+
 body {
   // Strip the unit off the size ratio to generate a line height
   $line-height: get-size(600);

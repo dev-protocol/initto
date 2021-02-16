@@ -5,7 +5,6 @@
       {% set topWithLocale = '/ja' if locale == 'ja' else '/' %}
       <a href="{{ topWithLocale | url }}" class="[ site-head__site-name ] [ leading-tight md:box-flex align-center ]">
         <span class="visually-hidden">{{ site.name }} - Home</span>
-        <span aria-hidden="true"><img src="{{ site.logoHeader | url }}" height="50px" width="50px" /></span>
         <span class="[ site-head__site-name ] [ text-600 ]" aria-hidden="true">{{ site.name }}</span>
       </a>
       {% set ariaLabel = 'navigation' %}

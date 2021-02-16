@@ -1,6 +1,6 @@
 ---
 layout: home
-title: INITTO｜Start from here
+title: Start from here
 postsHeading: Latest posts
 archiveButtonText: See all posts
 metaDesc: 'Dev Protocol INITTO'
