@@ -49,6 +49,7 @@ The contents of the article file are as follows
 ---
 title: <title>
 date: <publish date>
+socialImage: 'https://initto.devprotocol.xyz/images/ogp.png'
 tags:
 - <tags...>
 - <tags...>
@@ -59,5 +60,7 @@ tags:
 
 The text enclosed in `---` is the meta information of the article.
 Please write the title, date, tag, etc. of the article.
+If you set the date value to the future, it will not be displayed until the set date comes (it will not be displayed in the list).
+If you want to change OGP, change the value of socialImage.
 Please write the body of the article from below the meta information.
 Write the article in markdown format
