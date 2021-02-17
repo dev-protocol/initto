@@ -35,11 +35,11 @@ The document above is a README, so please refer to the following link for more d
 <p><a href="https://www.npmjs.com/package/@devprotocol/dev-kit" target="_blank" rel="noopener">dev-kit</a></p>
 <p>Please use it when you want to use the Dev Protocol contract from the front end of the application.</p>
 <h2>Dev Protocol Data Viewer</h2>
-<p><code>Data Viewer</code> can acquire various data of Dev Protocol using GraphQL.</p>
+<p>With <code>Data Viewer</code>, You can acquire various data of Dev Protocol by using GraphQL.</p>
 <p><a href="https://github.com/dev-protocol/event-viewer/wiki/Dev-Protocol-Data-Viewer" target="_blank" rel="noopener">https://github.com/dev-protocol/event-viewer/wiki/Dev-Protocol-Data-Viewer</a></p>
 <h3>Query Builder</h3>
 <p><a href="https://explorer.graphql.devprotocol.xyz/" target="_blank" rel="noopener">https://explorer.graphql.devprotocol.xyz/</a></p>
-<p>The information in the document is updated from time to time. If you have any questions, or feel a difficulty in understanding the text, please share let us know at our <a href="https://discord.gg/VwJp4KM" target="_blank" rel="noopener">Discord</a>.</p>
+<p>The information in the document is updated from time to time. If you have any questions, or feel a difficulty in understanding the text, please let us know at our <a href="https://discord.gg/VwJp4KM" target="_blank" rel="noopener">Discord</a>.</p>
 
     ]]></content>
   </entry>
