@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
   <link rel="icon" href="{{ site.faviconPath }}" type="image/png" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   {% include "partials/global/meta-info.njk" %}
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,5 +32,21 @@
   {% block foot %}
   {% endblock %}
   <script type="module" src="{{ '/js/components/lang-switch.js' | url }}" async defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#ffffff"
+        },
+        "button": {
+          "background": "#000000",
+          "text": "#ffffff"
+        }
+      },
+      "showLink": false,
+      "position": "bottom-right"
+    });
+  </script>
 </body>
 </html>
