@@ -50,6 +50,7 @@ The contents of the article file are as follows
 title: <title>
 date: <publish date>
 socialImage: 'https://initto.devprotocol.xyz/images/ogp.png'
+level: BEGINNER | EXPERIENCED | 初級 | 中級以上
 tags:
 - <tags...>
 - <tags...>

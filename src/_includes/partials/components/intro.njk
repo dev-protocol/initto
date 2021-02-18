@@ -4,5 +4,10 @@
     {% if introSummary %}
       <div class="[ intro__summary ] [ sf-flow ] [ leading-mid measure-short ]">{{ introSummary | safe }}</div>
     {% endif %}
+    {% if introLevel %}
+      <div class='intro__level'>{{ introLevel }}</div>
+    {% endif %}
   </div>
+
+
 </header>

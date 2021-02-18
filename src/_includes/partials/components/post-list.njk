@@ -6,6 +6,7 @@
         {% for item in postListItems %}
           {% if item.date.getTime() <= global.now %}
             <li class="[ post-list__item ] [ pad-xy-300 ]">
+
               <h3 class="font-base leading-tight text-600 weight-mid">
                 <a href="{{ item.url | url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
               </h3>
@@ -14,6 +15,10 @@
                 {% set displayDate = item.date | dateFilterJa if locale == 'ja' else item.date | dateFilter %}
                 <time datetime="{{ item.date | w3DateFilter }}">{{ displayDate }}</time>
               </p>
+
+              {% if item.data.level %}
+                <div class='level'>{{ item.data.level }}</div>
+              {% endif %}
             </li>
           {% endif %}
         {% endfor %}
