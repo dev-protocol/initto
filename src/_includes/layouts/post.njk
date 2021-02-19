@@ -4,6 +4,7 @@
 {% set tweetText = title + ' - ' + site.name + '%0D%0A' %}
 {% set introHeading = title %}
 {% set introLevel = level %}
+{% set introWatchTime = helpers.getReadingTime(content) %}
 {% set introSummary %}
 <div class="[ intro__meta ] [ text-500 leading-tight ]">
   {% if date %}
@@ -43,6 +44,7 @@
 {% endset %}
 
 {% block content %}
+
   <main id="main-content" tabindex="-1">
     <article class="[ post ] [ h-entry ]">
       {% include "partials/components/intro.njk" %}

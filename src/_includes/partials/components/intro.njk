@@ -4,6 +4,13 @@
     {% if introSummary %}
       <div class="[ intro__summary ] [ sf-flow ] [ leading-mid measure-short ]">{{ introSummary | safe }}</div>
     {% endif %}
+    {% if introWatchTime %}
+      {% if locale == 'ja' %}
+        <div class="[ pad-right-100 ]">所要時間, {{ introWatchTime }}分</div>
+      {% else %}
+        <div class="[ pad-right-100 ]">Watch, {{ introWatchTime }} min</div>
+      {% endif %}
+    {% endif %}
     {% if introLevel %}
       <div class='intro__level'>{{ introLevel }}</div>
     {% endif %}
