@@ -11,6 +11,13 @@
                 <a href="{{ item.url | url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
               </h3>
 
+              {% set introWatchTime = helpers.getReadingTime(item.data.content | safe) %}
+              {% if locale == 'ja' %}
+                <div class="watch">所要時間, {{ introWatchTime }}分</div>
+              {% else %}
+                <div class="watch">Watch, {{ introWatchTime }} min</div>
+              {% endif %}
+
               <p class="text-100 gap-top-300 weight-light">
                 {% set displayDate = item.date | dateFilterJa if locale == 'ja' else item.date | dateFilter %}
                 <time datetime="{{ item.date | w3DateFilter }}">{{ displayDate }}</time>
