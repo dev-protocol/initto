@@ -2,7 +2,6 @@
 title: 私たちはなぜ寄付サービスではなく、Dev Protocolを作るのか
 date: 2021-02-22
 socialImage: 'https://initto.devprotocol.xyz/images/ogp.png'
-level: 初級
 tags:
   - fundamentals
 ---
