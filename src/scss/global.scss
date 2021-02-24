@@ -82,6 +82,10 @@ img {
   font-family: Whytelnktrap;
 }
 
+.post__body pre>code {
+  font-size: get-size(300);
+}
+
 @media screen and (max-width: map-get($metrics, 'md-breakpoint')){
   .post-list__items {
     grid-template-columns: 100%;
