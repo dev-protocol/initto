@@ -3,7 +3,7 @@
   color: var(--color-selection-text);
 
   &__summary {
-    --flow-space: #{get-size(500)};
+    --flow-space: #{get-size(300)};
     font-size: get-size(500);
 
     a {
