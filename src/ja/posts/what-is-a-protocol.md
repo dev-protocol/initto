@@ -1,5 +1,6 @@
 ---
 title: プロトコルとは何ですか?
+author: Aggre
 date: 2021-02-25
 socialImage: 'https://initto.devprotocol.xyz/images/posts/what-is-a-protocol/what-is-a-protocol--ja.png'
 level: 初級
