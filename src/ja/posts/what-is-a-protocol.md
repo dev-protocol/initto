@@ -89,9 +89,3 @@ Dev Protocol は今、日本の会社 FRAME00 によってメンテナンスさ�
 [Dev Protocol のドキュメント](https://docs.devprotocol.xyz/dev-protocol/)があなたの参考になると嬉しいです。
 
 この記事で物足りないと思われた皆さん、次回は分散型プロトコルとは何かについてエントリを用意しようと思います。
-
-この記事を読んで、Dev Protocol チームに興味を持っていただいた方は、ぜひ [Discord](https://discord.gg/VwJp4KM) に参加してください。また、プロトコルにコミットしなくても、変更提案だけを投げかけることが出来るので、[GitHub](https://github.com/dev-protocol/DIPs) でコメントをお待ちしています。
-
-そして、INITTO を運営する DevRel チームのタスクも [GitHub](https://github.com/dev-protocol/community) で公開しています。翻訳やドキュメント執筆、ブログ記事の寄稿、コミュニティの企画運営などにご協力いただける方は、アンバサダーとして掲載させて頂く予定です。
-
-ご協力いただける方は、ぜひ Twitter([@devprtcl_jp](https://twitter.com/devprtcl_jp))に気軽に DM ください。多くの方からのフィードバックを歓迎しています。
