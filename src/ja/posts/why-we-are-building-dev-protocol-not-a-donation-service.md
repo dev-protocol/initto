@@ -1,7 +1,7 @@
 ---
 title: 私たちはなぜ寄付サービスではなく、Dev Protocolを作るのか
 date: 2021-02-22
-socialImage: 'https://initto.devprotocol.xyz/images/ogp.png'
+socialImage: 'https://initto.devprotocol.xyz/images/posts/why-we-are-building-dev-protocol-not-a-donation-service/ogp.png'
 tags:
   - fundamentals
 ---
