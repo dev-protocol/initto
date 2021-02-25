@@ -45,7 +45,6 @@
 {% endset %}
 
 {% block content %}
-
   <main id="main-content" tabindex="-1">
     <article class="[ post ] [ h-entry ]">
       {% include "partials/components/intro.njk" %}
@@ -58,6 +57,19 @@
           {% include "partials/global/third-party-comments.njk" %}
         </aside>
       {% endif %}
+
+      {% if locale == 'ja' %}
+      <div class="inner-wrapper pad-top-500 pad-bottom-500 notification">
+        <p>
+          この記事を読んで、Dev Protocol チームに興味を持っていただいた方は、ぜひ<a href="https://discord.gg/VwJp4KM" target="_blank" rel="noopener">Discord</a>に参加してください。また、Dev Protocol 自体も OSS であり、誰でも変更提案することが出来るので、<a href="https://github.com/dev-protocol/DIPs" target="_blank" rel="noopener">GitHub</a>でコメントをお待ちしています。<br>
+          <br>
+          そして、INITTO を運営する DevRel チームのタスクも<a href="https://github.com/dev-protocol/community" target="_blank" rel="noopener">GitHub</a>で公開しています。翻訳やドキュメント執筆、ブログ記事の寄稿、コミュニティの企画運営などにご協力いただける方は、アンバサダーとして掲載させて頂く予定です。<br>
+          <br>
+          ご協力いただける方は、ぜひ Twitter(<a href="https://twitter.com/devprtcl_jp" target="_blank" rel="noopener">@devprtcl_jp</a>)に気軽に DM ください。多くの方からのフィードバックを歓迎しています。
+        </p>
+      </div>
+      {% endif %}
+
       {% if tags %}
         <footer class="[ post__footer ] [ pad-top-500 pad-bottom-500 ]">
           <div class="inner-wrapper">

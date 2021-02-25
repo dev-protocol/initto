@@ -90,6 +90,11 @@ img {
   font-size: get-size(300);
 }
 
+.notification {
+  background-color: #fdf7ea;
+  line-height: 180%;
+}
+
 @media screen and (max-width: map-get($metrics, 'md-breakpoint')){
   .post-list__items {
     grid-template-columns: 100%;

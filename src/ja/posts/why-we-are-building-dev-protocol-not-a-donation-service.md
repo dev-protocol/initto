@@ -119,9 +119,3 @@ Dev がなぜ現金より暗号資産を選んだのか https://medium.com/devpr
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">クリエイターのオープンな創作物を収益化するDev Protocolは1月31日で１周年を迎えました！🎉<br>現在のプロジェクト数は1580、クリエイターの収益化金額は1億600万円(本日現在)を超えています。日本から、世界中のクリエイターのサステナビリティを応援していきます！ <a href="https://t.co/dzOupDOZvi">pic.twitter.com/dzOupDOZvi</a></p>&mdash; Dev Protocol JP (@devprtcl_jp) <a href="https://twitter.com/devprtcl_jp/status/1357616808774148098?ref_src=twsrc%5Etfw">February 5, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Dev Protocol は、メインネットローンチから 1 年が経ち、海外を中心にエコシステムは大きく成長を続けています。この INITTO ブログは始まったばかりですが、これから日本のクリエイターの方たちにも広く使っていただけるように発信していきます。
-
-この記事を読んで、Dev Protocol チームに興味を持っていただいた方は、ぜひ[Discord](https://discord.gg/VwJp4KM)に参加してください。また、Dev Protocol 自体も OSS であり、誰でも変更提案することが出来るので、[GitHub](https://github.com/dev-protocol/DIPs)でコメントをお待ちしています。
-
-そして、INITTO を運営する DevRel チームのタスクも[GitHub](https://github.com/dev-protocol/community)で公開しています。翻訳やドキュメント執筆、ブログ記事の寄稿、コミュニティの企画運営などにご協力いただける方は、アンバサダーとして掲載させて頂く予定です。
-
-ご協力いただける方は、ぜひ Twitter([@devprtcl_jp](https://twitter.com/devprtcl_jp))に気軽に DM ください。多くの方からのフィードバックを歓迎しています。
