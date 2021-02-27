@@ -1,8 +1,8 @@
 ---
 title: What is Protocol?
 author: Aggre
-date: 2021-02-25
-socialImage: 'https://initto.devprotocol.xyz/images/posts/what-is-a-protocol.png'
+date: 2021-02-27
+socialImage: 'https://initto.devprotocol.xyz/images/posts/what-is-a-protocol/what-is-a-protocol.png'
 level: BEGINNER
 tags:
   - fundamentals
