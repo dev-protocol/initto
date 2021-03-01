@@ -92,6 +92,6 @@ If you want to accomplish something on the internet, Dev Protocol can be one of 
 
 You can also create monetizing service on the web for users such as Authors and Patrons. There is no need to pay commission for the protocol, and no restriction like API limit. You can work as a Maintainer to develop a protocol itself. There aren’t so many codes required.
 
-It would be our greatest pleasure if[documents of Dev Protocol](https://docs.devprotocol.xyz/dev-protocol/)could be informative for you.
+It would be our greatest pleasure if[documents on Dev Protocol](https://docs.devprotocol.xyz/dev-protocol/)could be informative for you.
 
 For those who want to know more about Dev Protocol, I’m preparing an article about decentralized protocols for my next entry.
