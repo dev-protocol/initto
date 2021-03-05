@@ -1,8 +1,7 @@
 ---
 title: 私たちはなぜ寄付サービスではなく、Dev Protocolを作るのか
 date: 2021-02-22
-socialImage: 'https://initto.devprotocol.xyz/images/ogp.png'
-level: 初級
+socialImage: 'https://initto.devprotocol.xyz/images/posts/why-we-are-building-dev-protocol-not-a-donation-service/ogp.png'
 tags:
   - fundamentals
 ---
@@ -43,9 +42,9 @@ Dev Protocol を使った公式アプリケーション(Dapp) Stakes.social
 
 # 無料のアセットに対価を払う手段がなかった
 
-それは、これらのサービスでは、サポーターはサービス上で提供される「コンテンツ」や「グッズ」を通じてお金を払っている（または広告売上の収益還元）のであり、クリエイターの日々の活動そのものが収益化されているのではありません。（それが最大の価値提供でありながら）
+それは、これらのサービスでは、サポーターはサービス上で提供される「コンテンツ」や「グッズ」を通じてお金を払ったり、広告価値に貢献しているのであり、クリエイターの日々の活動そのものが収益化されているのではありません。（活動こそが、クリエイター最大の価値提供でありながら）
 
-また、OSS などの無料で公開されているアセットは、お金を支払わなくても使うことが出来るため、さまざまな収益化手段が存在しながらも、83%以上のプロジェクトが 1 年以内に終了してしまう ([参照](https://speakerdeck.com/aggre/the-money-for-the-openable-and-shareable-era))という持続可能性が危機的に低い状況に陥っています。
+また、OSSなどのインターネット上に無料で公開されているアセットは、お金を支払わなくても誰でも使うことが出来るため、さまざまな収益化手段が存在しながらも、83%以上のプロジェクトが 1 年以内に終了してしまう ([参照](https://speakerdeck.com/aggre/the-money-for-the-openable-and-shareable-era))という持続可能性が危機的に低い状況に陥っています。
 
 # オープンなアセットはなぜ無料なのか？
 
@@ -53,7 +52,7 @@ OSS やオープンアクセス、クリエイティブコモンズなどのア�
 
 **『それらのアセットは、商品としての経済的価値がないから無料で使えるのでしょうか？』**
 
-アセットをクローズドにすることで、収益化はより簡単になります。それでも、なぜクリエイターはアセットをオープンにするのでしょうか？
+アセットをクローズドにすることで、収益化はより簡単になります。「これを使いたければお金を払ってください」とユーザーに要求すればよいのです。極めてシンプルな取引ですが、それでも、なぜクリエイターはアセットをオープンにするのでしょうか？
 その答えは、OSS の世界で起きていることを見れば明らかです。
 オープンなコラボレーションを許可することで、世界中のユーザーが参加できるようになり、オープンなイノベーションが生まれるのです。
 
@@ -120,9 +119,3 @@ Dev がなぜ現金より暗号資産を選んだのか https://medium.com/devpr
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">クリエイターのオープンな創作物を収益化するDev Protocolは1月31日で１周年を迎えました！🎉<br>現在のプロジェクト数は1580、クリエイターの収益化金額は1億600万円(本日現在)を超えています。日本から、世界中のクリエイターのサステナビリティを応援していきます！ <a href="https://t.co/dzOupDOZvi">pic.twitter.com/dzOupDOZvi</a></p>&mdash; Dev Protocol JP (@devprtcl_jp) <a href="https://twitter.com/devprtcl_jp/status/1357616808774148098?ref_src=twsrc%5Etfw">February 5, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Dev Protocol は、メインネットローンチから 1 年が経ち、海外を中心にエコシステムは大きく成長を続けています。この INITTO ブログは始まったばかりですが、これから日本のクリエイターの方たちにも広く使っていただけるように発信していきます。
-
-この記事を読んで、Dev Protocol チームに興味を持っていただいた方は、ぜひ[Discord](https://discord.gg/VwJp4KM)に参加してください。また、Dev Protocol 自体も OSS であり、誰でも変更提案することが出来るので、[GitHub](https://github.com/dev-protocol/DIPs)でコメントをお待ちしています。
-
-そして、INITTO を運営する DevRel チームのタスクも[GitHub](https://github.com/dev-protocol/community)で公開しています。翻訳やドキュメント執筆、ブログ記事の寄稿、コミュニティの企画運営などにご協力いただける方は、アンバサダーとして掲載させて頂く予定です。
-
-ご協力いただける方は、ぜひ Twitter([@devprtcl_jp](https://twitter.com/devprtcl_jp))に気軽に DM ください。多くの方からのフィードバックを歓迎しています。

@@ -24,6 +24,7 @@ Dev Protocol Treasuryは、採択プロジェクトのPropertyトークンの7.5
 # Incubator Round One 採択プロジェクト
 
 Incubator Round Oneの採択プロジェクトはこちらです。
+
 Signal, Python, WikiMedia Foundation, Prysm, Jekyll, Ether.js, 11ty, Rust, Rotki, WalletConnect, SigmaPrime’s Lighthouse, WomenWhoCode, ESLint, Snowpack, Vite, Web3j, BrightID, Deno, Umbra, and Prettier. 
 
 これらのプロジェクトは、オープンソースのエコシステムに計り知れない価値を提供してきました。Dev Protocol コミュニティは、皆さんのプロジェクトをサポート出来ることを楽しみにしています。
@@ -34,7 +35,6 @@ Signal, Python, WikiMedia Foundation, Prysm, Jekyll, Ether.js, 11ty, Rust, Rotki
 # Incubator Committee 
 
 ![](/images/posts/what-is-incubator/incubator-committee.png)
-
 
 Bilgin Ibryam, Product Manager at Red Hat
 Sindre Sorhus, BDFL of Chalk

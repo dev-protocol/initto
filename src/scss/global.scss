@@ -74,12 +74,25 @@ img {
 @import "components/label";
 @import "components/watch";
 
+::selection {
+  background-color: rgba(200,200,200,.8);
+}
+
 .intro__heading--initto {
   max-width: none;
 }
 
 .site-head__site-name {
   font-family: Whytelnktrap;
+}
+
+.post__body pre>code {
+  font-size: get-size(300);
+}
+
+.notification {
+  background-color: #fdf7ea;
+  line-height: 180%;
 }
 
 @media screen and (max-width: map-get($metrics, 'md-breakpoint')){
