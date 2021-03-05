@@ -1,7 +1,7 @@
 ---
 title: Incubatorとは
 date: 2021-03-05
-socialImage: 'https://initto.devprotocol.xyz/images/what-is-incubator/what-is-incubator-jp.png'
+socialImage: 'https://initto.devprotocol.xyz/images/posts/what-is-incubator/what-is-incubator-jp.png'
 level: 
 tags:
 - アップデート
