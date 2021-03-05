@@ -7,6 +7,9 @@ tags:
 - アップデート
 - 用語集
 ---
+
+![](/images/posts/what-is-incubator/incubator-logo.png)
+
 Dev Protocol Incubatorが正式にリリースしました。https://stakes.social/incubator
 
 インキュベーターは、OSSのエコシステムを持続可能にするというDev Protocolのミッションを大きく前進させるプログラムです。インキュベーターは、重要とされていながらも資金不足のOSSプロジェクトをDev Protocol Treasuryから支援するものです。Dev Protocol Treasuryはコミュニティが管理する、エコシステムのために使われる基金です。詳しくは[Dev Protocol Treasuryとは](https://initto.devprotocol.xyz/ja/posts/what-is-treasury/)をご覧ください。
@@ -21,7 +24,8 @@ Dev Protocol Treasuryは、採択プロジェクトのPropertyトークンの7.5
 # Incubator Round One 採択プロジェクト
 
 Incubator Round Oneの採択プロジェクトはこちらです。
-Rust, ESLint, 11ty, Signal, Snowpack, Ethers.js, vite, Web3j, MediaWiki, Umbra, prettier, lighthouse, Jekyll, BrightID, rotki, Prysm, WomenWhoCode, WalletConnect, Deno, Python
+
+Signal, Python, WikiMedia Foundation, Prysm, Jekyll, Ether.js, 11ty, Rust, Rotki, WalletConnect, SigmaPrime’s Lighthouse, WomenWhoCode, ESLint, Snowpack, Vite, Web3j, BrightID, Deno, Umbra, and Prettier. 
 
 これらのプロジェクトは、オープンソースのエコシステムに計り知れない価値を提供してきました。Dev Protocol コミュニティは、皆さんのプロジェクトをサポート出来ることを楽しみにしています。
 
@@ -29,6 +33,8 @@ Rust, ESLint, 11ty, Signal, Snowpack, Ethers.js, vite, Web3j, MediaWiki, Umbra, 
 
 
 # Incubator Committee 
+
+![](/images/posts/what-is-incubator/incubator-committee.png)
 
 Bilgin Ibryam, Product Manager at Red Hat
 Sindre Sorhus, BDFL of Chalk
