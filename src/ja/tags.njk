@@ -12,19 +12,19 @@ pagination:
     - tagList
     - postFeed
   addAllPagesToCollections: true
-permalink: /tags/{{ tag }}/
+permalink: /ja/tags/{{ tag }}/
 ---
 
 {% extends 'layouts/base.njk' %}
 
 {# Intro content #}
-{% set introHeading %}Posts filed under “{{ tag }}”{% endset %}
+{% set introHeading %}“{{ tag }}”タグの記事一覧{% endset %}
 {% set introHeadingLevel = '2' %}
 
 {# Post list content #}
 {% set postListHeadingLevel = '2' %}
-{% set postListHeading = 'Posts' %}
-{% set postListItems = collections[tag] | enItemFilter %}
+{% set postListHeading = '記事一覧' %}
+{% set postListItems = collections[tag] | jaItemFilter %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">

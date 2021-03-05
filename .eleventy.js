@@ -7,6 +7,8 @@ const dateFilter = require('./src/filters/date-filter.js');
 const dateFilterJa = require('./src/filters/date-filter-ja.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
+const enItemFilter = require('./src/filters/lang-en-item-filter.js');
+const jaItemFilter = require('./src/filters/lang-ja-item-filter.js');
 
 // Import transforms
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
@@ -26,6 +28,8 @@ module.exports = function(config) {
   config.addFilter('dateFilterJa', dateFilterJa);
   config.addFilter('markdownFilter', markdownFilter);
   config.addFilter('w3DateFilter', w3DateFilter);
+  config.addFilter('enItemFilter', enItemFilter);
+  config.addFilter('jaItemFilter', jaItemFilter);
 
   // Layout aliases
   config.addLayoutAlias('home', 'layouts/home.njk');
