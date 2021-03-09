@@ -173,7 +173,7 @@ Dapp will list the creators of OSS projects that are tokenized by the Dev Protoc
 </ul>
 <h2>Prepare the development environment</h2>
 <p>First, let's prepare a development environment. I have prepared the sample code for this tutorial on Github, so please use it.</p>
-<pre class="language-text"><code class="language-text"><span class="highlight-line">git clone https://github.com/kazu80/tokener-find.git -b sample-code-v1.4.0</span></code></pre>
+<pre class="language-text"><code class="language-text"><span class="highlight-line">git clone https://github.com/kazu80/tokener-find.git -b sample-code-v1.5.2</span></code></pre>
 <p>Run npm after clone</p>
 <pre class="language-text"><code class="language-text"><span class="highlight-line">cd tokener-find</span><br><span class="highlight-line">npm install</span></code></pre>
 <p>After that, execute the following command to start the site locally</p>
@@ -230,7 +230,7 @@ You can check the source code of the completed version from the following<br>
 <a href="https://github.com/kazu80/tokener-find/tree/master/src" target="_blank" rel="noopener">https://github.com/kazu80/tokener-find/tree/master/src</a></p>
 <h2>Summary</h2>
 <p>This time, using the two libraries provided in the Dev Protocol, we acquired creator information and detailed information.<br>
-Next time, we will create a detailed page for creators.</p>
+<a href="https://initto.devprotocol.xyz/posts/20210305/" target="_blank" rel="noopener">Next time</a>, we will create a detailed page for creators.</p>
 
     ]]></content>
   </entry>
