@@ -1,5 +1,6 @@
 ---
 title: Incubatorとは
+author: Mayumi
 date: 2021-03-05
 socialImage: 'https://initto.devprotocol.xyz/images/posts/what-is-incubator/what-is-incubator-jp.png'
 level: 

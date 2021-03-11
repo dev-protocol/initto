@@ -1,6 +1,6 @@
 ---
 title: What is Dev Protocol Treasury?
-author: 
+author: Mayumi
 date: 2021-03-03
 socialImage: 'https://initto.devprotocol.xyz/images/posts/what-is-treasury/what-is-treasury.png'
 level: Intermediate
