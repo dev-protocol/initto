@@ -2,11 +2,7 @@
 title: Dev Protocol rather than donation service
 author: Mayumi
 date: 2021-03-11
-<<<<<<< HEAD
 socialImage: 'https://initto.devprotocol.xyz/images/posts/why-we-are-building-dev-protocol-not-a-donation-service/ogp-en.png'
-=======
-socialImage: 'https://initto.devprotocol.xyz/images/posts/why-we-are-building-dev-protocol-not-a-donation-service/ogp.png'
->>>>>>> d71936ac9e007f73eb340d79b3d07d8e91b00009
 tags:
   - fundamentals
 ---
