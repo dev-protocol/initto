@@ -8,7 +8,7 @@ tags:
   - fundamentals
 ---
 
-This article is a revised version of Dev Protocol’s Medium article, [“The Tokenization of Open Source”](https://medium.com/devprtcl/the-tokenization-of-open-source-10ee0ea90607), for Japanese readers. (This is the English version of it.) 
+This article is a revised version of Dev Protocol’s Medium article, [“The Tokenization of Open Source”](https://medium.com/devprtcl/the-tokenization-of-open-source-10ee0ea90607), for Japanese readers. (And this is the English version of it.) 
 
 The idea that Opensource Software cannot be a business model is an ancient myth.
 According to a survey made by [OSS Capital](https://oss.capital), a VC specializing in COSS (commercial OSS), the market size has already expanded to around 10 trillion yen in the COSS world.
