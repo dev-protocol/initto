@@ -2,7 +2,7 @@
 title: Tokenization changes OSS development
 author: Mayumi
 date: 2021-03-17
-socialImage: 'https://initto.devprotocol.xyz/images/posts/20210317/ogp.png'
+socialImage: 'https://initto.devprotocol.xyz/images/posts/20210317/ogp.jpg'
 level: 初級
 tags:
   - fundamentals

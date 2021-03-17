@@ -2,7 +2,7 @@
 title: 「トークン化」が変えるOSS開発の未来
 author: Mayumi
 date: 2021-03-17
-socialImage: 'https://initto.devprotocol.xyz/images/posts/20210317/ogp-JP.png'
+socialImage: 'https://initto.devprotocol.xyz/images/posts/20210317/ogp-JP.jpg'
 level: 初級
 tags:
   - fundamentals
