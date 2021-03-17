@@ -13,10 +13,10 @@
 
 {# Archive link #}
 {% set allPostItemsKey = 'posts_ja' if locale == 'ja' else 'posts' %}
-{% set allPostItems = collection[allPostItemsKey] %}
+{% set allPostItems = collections[allPostItemsKey] %}
 {% if postListItems.length < allPostItems.length %}
   {% set paginationNextText = archiveButtonText %}
-  {% set paginationNextUrl = '/archive' %}
+  {% set paginationNextUrl = '/ja/archive' if locale == 'ja' else '/archive' %}
 {% endif %}
 
 {% block content %}

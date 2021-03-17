@@ -7,7 +7,7 @@
   "authorHandle": "@devprtcl",
   "authorName": "devprotocol team",
   "enableThirdPartyComments": false,
-  "maxPostsPerPage": 6,
+  "maxPostsPerPage": 10,
   "faviconPath": "https://devprotocol.xyz/favicon.png",
   "locales": [
     "en",
