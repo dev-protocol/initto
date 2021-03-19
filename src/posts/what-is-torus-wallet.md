@@ -9,22 +9,24 @@ tags:
 - Wallet
 ---
 
-# Introducing the TORUS Wallet
+# Introducing Torus Wallet
 ![TORUS Wallet](/images/posts/what-is-torus-wallet/pic01.png)
 
-## What's Wallet
+## What is a Crypto Wallet?
 
-A wallet is a cryptocurrency wallet that stores cryptocurrencies. The wallet has a mechanism to protect the stored cryptocurrency by a cryptosystem that uses a private key and a public key.
+A cryptocurrency wallet can store a user’s entire cryptocurrency portfolio. Wallets leverage private and public keys to protect the stored cryptocurrency. Popular cryptocurrency wallets are Metamask, Ledger, and Torus wallet which all support ERC token standards.
 
-## What's Torus Wallet
+## What is Torus Wallet?
 
-Torus Wallet is an Ethereum wallet that uses web technology.
-Many wallets have many steps to get a wallet (installation, managing the private key of an address, opening an exchange account, etc.), which is hard work for the user.
-Since Torus Wallet uses SNS login, there are few steps, so it is easy to register.
+Torus Wallet is an Ethereum based wallet that uses web technology.
+Many wallets have extensive steps that can propose a barrier to entry for new users. Managing a private key and fiat to crypto onramps can become overwhelming for new users. However, since Torus Wallet leverages common SNS logins there are relatively fewer steps thereby making it easier to get started with your Web3 experience.
 
-## Features of Torus Wallet
+## Torus Wallet’s Supported Logins
 
-The feature is that you can use the wallet with your browser just by having an SNS account. You can send money to the username of SNS.Torus Wallet supports the following 12 types of SNS. Of course, you can also register with your email address.
+Torus Wallet users can now get an Ethereum based wallet by logging in with one of the SNS logins supported by Torus. Users can easily send crypto payments to any user by having their username on one of these platforms. For example, you can now send Ethereum payments to your friend by inputting their Twitter handle.
+
+## Supported Torus Logins:
+
 - Google
 - Facebook
 - AppleID
@@ -38,24 +40,25 @@ The feature is that you can use the wallet with your browser just by having an S
 - WeChat
 - Kakao
 
-## What you can do with Torus Wallet
+## What you can do with Torus Wallet?
 
-TORUS Wallet can
+Torus Wallet can
 - Store ERC-20 tokens
 - Deposit and withdraw ERC-20 tokens
 - Buy ERC-20 tokens（ETH、DAI、USDC、USDT）
-- Store NFT
+- Store NFTs
 
-## How to register Torus Wallet
+## How to get a Torus Wallet?
 
-Registering TORUS Wallet is very easy
-1. Go to [https://app.tor.us/](https://app.tor.us/) 
-2. Click the icon of your account
-3. Login with the selected SNS
-That's it
+Getting a Torus Wallet is very easy
+1. Go to [https://app.tor.us/](https://app.tor.us/)
+2. Click “Try it now”
+3. Login with your preferred SNS login
+
+It’s that simple.
 
 ![How to](/images/posts/what-is-torus-wallet/pic02_en.png)
 
 ## Summary
 
-The feature of Torus Wallet is that it supports many SNS accounts and is very easy to install. Another major feature is that you can send money to other person's username. It is recommended for those who want to use the wallet easily, so please try it!
+Torus Wallet is a valuable solution as it solves some of blockchain’s main UI/UX barriers by allowing users to get a blockchain wallet by logging in with platforms we all use.  Additionally, Torus users can send money to friends by just having their email, Github username, Twitter handle, and more. We recommend Torus for novice blockchain users who want to easily manage their wallets.
