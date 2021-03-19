@@ -2,7 +2,7 @@
 title: Introducing the TORUS Wallet
 author: Kawakami
 date: 2021-03-19
-socialImage: 'https://initto.devprotocol.xyz/images/posts/what-is-torus-wallet/ogp.png'
+socialImage: 'https://initto.devprotocol.xyz/images/posts/what-is-torus-wallet/ogp_en.png'
 level: 初級
 tags:
 - Introduction
