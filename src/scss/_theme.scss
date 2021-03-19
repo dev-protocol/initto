@@ -8,14 +8,14 @@
   --color-mode: 'light';
   --color-bg: #{get-color('light')};
   --color-bg-glare: #{get-color('light')};
-  --color-text: #{get-color('dark')};
+  --color-text: #{get-color('text')};
   --color-text-glare: #{get-color('dark')};
   --color-selection-text: #{get-color('light')};
   --color-selection-bg: #{get-color('dark')};
   --color-stroke: #{get-color('mid')};
   --color-action-bg: #{get-color('primary')};
   --color-action-text: #{get-color('light')};
-  --color-theme-primary: #{get-color('primary')};
+  --color-theme-primary: #{get-color('text')};
   --color-theme-primary-glare: #{get-color('light')};
   --color-theme-highlight: #{get-color('highlight')};
   --color-theme-highlight-block: #{get-color('highlight')};
