@@ -15,6 +15,60 @@
 	
   
   <entry>
+    <title>Introducing the TORUS Wallet</title>
+    <link href="https://initto.devprotocol.xyz/posts/what-is-torus-wallet/"/>
+    <updated>2021-03-19T00:00:00+00:00</updated>
+    <id>https://initto.devprotocol.xyz/posts/what-is-torus-wallet/</id>
+    <content type="html"><![CDATA[
+      <h1>Introducing the TORUS Wallet</h1>
+<p><img src="/images/posts/what-is-torus-wallet/pic01.png" alt="TORUS Wallet"></p>
+<h2>What's Wallet</h2>
+<p>A wallet is a cryptocurrency wallet that stores cryptocurrencies. The wallet has a mechanism to protect the stored cryptocurrency by a cryptosystem that uses a private key and a public key.</p>
+<h2>What's Torus Wallet</h2>
+<p>Torus Wallet is an Ethereum wallet that uses web technology.<br>
+Many wallets have many steps to get a wallet (installation, managing the private key of an address, opening an exchange account, etc.), which is hard work for the user.<br>
+Since Torus Wallet uses SNS login, there are few steps, so it is easy to register.</p>
+<h2>Features of Torus Wallet</h2>
+<p>The feature is that you can use the wallet with your browser just by having an SNS account. You can send money to the username of SNS.Torus Wallet supports the following 12 types of SNS. Of course, you can also register with your email address.</p>
+<ul>
+<li>Google</li>
+<li>Facebook</li>
+<li>AppleID</li>
+<li>Twitter</li>
+<li>Line</li>
+<li>Github</li>
+<li>LinkedIn</li>
+<li>Reddit</li>
+<li>Twitch</li>
+<li>Discord</li>
+<li>WeChat</li>
+<li>Kakao</li>
+</ul>
+<h2>What you can do with Torus Wallet</h2>
+<p>Trust Wallet can</p>
+<ul>
+<li>Store ERC-20 tokens</li>
+<li>Deposit and withdraw ERC-20 tokens</li>
+<li>Buy ERC-20 tokens（ETH、DAI、USDC、USDT）</li>
+<li>Store NFT</li>
+</ul>
+<h2>How to register Torus Wallet</h2>
+<p>Registering Trust Wallet is very easy</p>
+<ol>
+<li>Go to <a href="https://app.tor.us/" target="_blank" rel="noopener">https://app.tor.us/</a></li>
+<li>Click the icon of your account</li>
+<li>Login with the selected SNS<br>
+That's it</li>
+</ol>
+<p><img src="/images/posts/what-is-torus-wallet/pic02_en.png" alt="How to"></p>
+<h2>Summary</h2>
+<p>The feature of Torus Wallet is that it supports many SNS accounts and is very easy to install. Another major feature is that you can send money to other person's username. It is recommended for those who want to use the wallet easily, so please try it!</p>
+
+    ]]></content>
+  </entry>
+	
+  
+  <entry>
     <title>Tokenization changes OSS development</title>
     <link href="https://initto.devprotocol.xyz/posts/tokenization-changes-oss-development/"/>
     <updated>2021-03-17T00:00:00+00:00</updated>
