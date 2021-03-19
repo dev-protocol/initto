@@ -20,16 +20,16 @@
     <updated>2021-03-19T00:00:00+00:00</updated>
     <id>https://initto.devprotocol.xyz/posts/what-is-torus-wallet/</id>
     <content type="html"><![CDATA[
-      <h1>Introducing the TORUS Wallet</h1>
+      <h1>Introducing Torus Wallet</h1>
 <p><img src="/images/posts/what-is-torus-wallet/pic01.png" alt="TORUS Wallet"></p>
-<h2>What's Wallet</h2>
-<p>A wallet is a cryptocurrency wallet that stores cryptocurrencies. The wallet has a mechanism to protect the stored cryptocurrency by a cryptosystem that uses a private key and a public key.</p>
-<h2>What's Torus Wallet</h2>
-<p>Torus Wallet is an Ethereum wallet that uses web technology.<br>
-Many wallets have many steps to get a wallet (installation, managing the private key of an address, opening an exchange account, etc.), which is hard work for the user.<br>
-Since Torus Wallet uses SNS login, there are few steps, so it is easy to register.</p>
-<h2>Features of Torus Wallet</h2>
-<p>The feature is that you can use the wallet with your browser just by having an SNS account. You can send money to the username of SNS.Torus Wallet supports the following 12 types of SNS. Of course, you can also register with your email address.</p>
+<h2>What is a Crypto Wallet?</h2>
+<p>A cryptocurrency wallet can store a user’s entire cryptocurrency portfolio. Wallets leverage private and public keys to protect the stored cryptocurrency. Popular cryptocurrency wallets are Metamask, Ledger, and Torus wallet which all support ERC token standards.</p>
+<h2>What is Torus Wallet?</h2>
+<p>Torus Wallet is an Ethereum based wallet that uses web technology.<br>
+Many wallets have extensive steps that can propose a barrier to entry for new users. Managing a private key and fiat to crypto onramps can become overwhelming for new users. However, since Torus Wallet leverages common SNS logins there are relatively fewer steps thereby making it easier to get started with your Web3 experience.</p>
+<h2>Torus Wallet’s Supported Logins</h2>
+<p>Torus Wallet users can now get an Ethereum based wallet by logging in with one of the SNS logins supported by Torus. Users can easily send crypto payments to any user by having their username on one of these platforms. For example, you can now send Ethereum payments to your friend by inputting their Twitter handle.</p>
+<h2>Supported Torus Logins:</h2>
 <ul>
 <li>Google</li>
 <li>Facebook</li>
@@ -44,25 +44,25 @@ Since Torus Wallet uses SNS login, there are few steps, so it is easy to registe
 <li>WeChat</li>
 <li>Kakao</li>
 </ul>
-<h2>What you can do with Torus Wallet</h2>
-<p>TORUS Wallet can</p>
+<h2>What you can do with Torus Wallet?</h2>
+<p>Torus Wallet can</p>
 <ul>
 <li>Store ERC-20 tokens</li>
 <li>Deposit and withdraw ERC-20 tokens</li>
 <li>Buy ERC-20 tokens（ETH、DAI、USDC、USDT）</li>
-<li>Store NFT</li>
+<li>Store NFTs</li>
 </ul>
-<h2>How to register Torus Wallet</h2>
-<p>Registering TORUS Wallet is very easy</p>
+<h2>How to get a Torus Wallet?</h2>
+<p>Getting a Torus Wallet is very easy</p>
 <ol>
 <li>Go to <a href="https://app.tor.us/" target="_blank" rel="noopener">https://app.tor.us/</a></li>
-<li>Click the icon of your account</li>
-<li>Login with the selected SNS<br>
-That's it</li>
+<li>Click “Try it now”</li>
+<li>Login with your preferred SNS login</li>
 </ol>
+<p>It’s that simple.</p>
 <p><img src="/images/posts/what-is-torus-wallet/pic02_en.png" alt="How to"></p>
 <h2>Summary</h2>
-<p>The feature of Torus Wallet is that it supports many SNS accounts and is very easy to install. Another major feature is that you can send money to other person's username. It is recommended for those who want to use the wallet easily, so please try it!</p>
+<p>Torus Wallet is a valuable solution as it solves some of blockchain’s main UI/UX barriers by allowing users to get a blockchain wallet by logging in with platforms we all use.  Additionally, Torus users can send money to friends by just having their email, Github username, Twitter handle, and more. We recommend Torus for novice blockchain users who want to easily manage their wallets.</p>
 
     ]]></content>
   </entry>
