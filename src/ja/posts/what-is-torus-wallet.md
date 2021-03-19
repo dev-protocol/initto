@@ -40,7 +40,7 @@ SNSのアウントを持っているだけで、ブラウザでウォレット�
 
 ## Torus Walletで出来ること
 
-Trust Walletでは以下のことができます
+TORUS Walletでは以下のことができます
 - ERC-20トークンの保管
 - ERC-20トークンの入出金
 - ERC-20トークンの購入（ETH、DAI、USDC、USDT）
@@ -48,7 +48,7 @@ Trust Walletでは以下のことができます
 
 ## Torus Walletの登録方法
 
-Trust Walletの登録はとても簡単です
+TORUS Walletの登録はとても簡単です
 1. [https://app.tor.us/](https://app.tor.us/) にアクセス
 2. お持ちのアカウントのアイコンをクリック
 3. 選択したアイコンのSNSでログインする

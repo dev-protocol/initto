@@ -40,7 +40,7 @@ The feature is that you can use the wallet with your browser just by having an S
 
 ## What you can do with Torus Wallet
 
-Trust Wallet can
+TORUS Wallet can
 - Store ERC-20 tokens
 - Deposit and withdraw ERC-20 tokens
 - Buy ERC-20 tokens（ETH、DAI、USDC、USDT）
@@ -48,7 +48,7 @@ Trust Wallet can
 
 ## How to register Torus Wallet
 
-Registering Trust Wallet is very easy
+Registering TORUS Wallet is very easy
 1. Go to [https://app.tor.us/](https://app.tor.us/) 
 2. Click the icon of your account
 3. Login with the selected SNS
