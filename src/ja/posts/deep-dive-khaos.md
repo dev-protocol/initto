@@ -80,7 +80,8 @@ src ディレクトリにはあなたが定義する必要のあるインター�
 
 Khaos Starter Kit では、ESLint プラグイン [eslint-plugin-functional](https://www.npmjs.com/package/eslint-plugin-functional) をセキュリティのために推奨しています。あなたはそれを自由に変更できますが、なるべく変更せずに使うことをお勧めします。
 
-**abi.ts**
+### abi.ts
+
 あなたのスマートコントラクトの ABI を [Human-Readable ABI Format](https://docs.ethers.io/v5/api/utils/abi/formats/#abi-formats--human-readable-abi) で記述した `array` を定義し、`abi` と命名してエクスポートします。
 
 例えば `Query` というイベント、`callback` というコールバック関数を持つスマートコントラクトであれば以下のように書きます。Khaos が使用するのはイベントとコールバック関数だけなので、そのスマートコントラクトに他のインターフェイスがあってもすべてをここに定義する必要はありません。
@@ -94,7 +95,8 @@ export const abi: Abi = [
 ]
 ```
 
-**addresses.ts**
+### addresses.ts
+
 オラクルリクエストを emit するスマートコントラクトのアドレスを `Promise<string | undefined>` で返す関数を定義し、`addresses` でエクスポートします。この関数の返却値はコールバック関数のアドレスとしても使用されます。
 
 関数は引数として以下のようなオブジェクトを受け取ります。
@@ -116,7 +118,8 @@ export const addresses: FunctionAddresses = async ({network}) =>
     : '0x609Fe85Dbb9487d55B5eF50451e20ba2Edc8F4B7'
 ```
 
-**authorize.ts**
+### authorize.ts
+
 Khaos の Sign API がコールされたときに、正規の署名リクエストかどうかを判定して `Promise<boolean | undefined>` で返す関数を定義し、`authorize` でエクスポートします。
 
 authorize の結果が `true` の場合にのみ Public Signature が生成され、Khaos サーバーに暗号化された秘匿情報が保存されます。
@@ -162,7 +165,8 @@ export const authorize: FunctionAuthorizer = async ({
 }
 ```
 
-**event.ts**
+### event.ts
+
 スマートコントラクトが emit するイベント名を `Promice<string | undefined>` で返す関数を定義し、`event` でエクスポートします。
 
 関数は引数として以下のようなオブジェクトを受け取ります。
@@ -182,7 +186,8 @@ import {always} from 'ramda'
 export const event: FunctionEvent = always(Promise.resolve('Query'))
 ```
 
-**oraclize.ts**
+### oraclize.ts
+
 スマートコントラクトからのオラクルリクエストによってコールされる関数を定義します。この関数はとても重要なパートを担っています。この関数の返却値は後述の `pack` 関数によって整形された後にスマートコントラクトへのコールバックを介してブロックチェーンに渡されます。 oraclize 関数がコールされるのは、Khaos によってイベントが検出され、Public Signature をキーとして秘匿情報が取得されたあとです。
 
 関数は引数として以下のようなオブジェクトを受け取ります。`signatureOptions` は、Public Signature を復号化したデータです。また、`signatureOptions` は authorize 関数の結果が `true` を返した際に生成された Public Signature がイベントペイロードに含まれる場合にのみ定義されます。つまり、未認証の Public Signature が含まれている場合は `undefined` を返します。 `query.publicSignature` にはイベントペイロードに含まれる Public Signature、`query.transanctionhash` にはイベントを emit したトランザクションハッシュ、`query.allData` にはすべてのイベントペイロードが含まれています。
@@ -236,8 +241,9 @@ export const oraclize: FunctionOraclizer = async ({signatureOptions, query}) => 
 }
 ```
 
-**pack.ts**
-スマートコントラクトのコールバック関数名と引数により解決する Promise を返す関数を定義し、`pack` でエクスポートします。
+### pack.ts
+
+スマートコントラクトのコールバック関数名/引数により解決する Promise を返す関数を定義し、`pack` でエクスポートします。
 
 関数は引数として以下のようなオブジェクトを受け取ります。`results` は oraclize が返す Promise が解決したときの値と同じデータです。
 
