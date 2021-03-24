@@ -18,7 +18,7 @@ Khaos brings information, which doesn’t exist on blockchain, into blockchain f
 
 # Necessity of Oracle
 
-We see various types of oracles as well as Khaos on Ethereum. Ethereum is a huge state holding a chain of state transitions based on defined protocols by smart contracts. That means if certain data doesn’t have any input transactions, it can’t exist on Ethereum. If you want to gain data source to be input from HTTP, you have to input HTTP response manually or let reliable bots automatically input it. Oracles are used for the latter case. Let’s say you’ve made a "blockchain game in which winners are those who could accurately predict tomorrow's temperature in Tokyo." In this case, you need "temperature data in Tokyo." Which do you think is more reliable: A) Alice, a temperature-freak girl,  who inputs the data manually, or B) A smart contract that is programmed to let a bot input data obtained from the database of the Japan Meteorological Agency? Oracles are a must-have technology if you want to choose B. 
+We see various types of oracles as well as Khaos on Ethereum. Ethereum is a huge state holding a chain of state transitions based on defined protocols by smart contracts. That means if certain data doesn’t have any input transactions, it can’t exist on Ethereum. If you want to gain data source to be input from HTTP, you have to input HTTP response manually or let reliable bots automatically input it. Oracles are used for the latter case. Let’s say you’ve made a "blockchain game in which winners are those who could accurately predict tomorrow's temperature in Tokyo." In this case, you need "temperature data in Tokyo." Which do you think is more reliable: A) Alice, a temperature-freak girl, who inputs the data manually, or B) A smart contract that is programmed to let a bot input data obtained from the database of the Japan Meteorological Agency? Oracles are a must-have technology if you want to choose B.
 
 # Necessity of Khaos
 
@@ -26,7 +26,7 @@ For a general implementation of oracles, you start by emitting events from smart
 
 Khaos is an oracle that enables you to conceal payloads for oracle requests. If you need to obtain the information to oraclize based on a secret token, you need to detoxify such a token by turning its format into a public one.
 
-With Khaos, you can oraclize your requests depending on your secret token on the public blockchain while concealing your secret token. 
+With Khaos, you can oraclize your requests depending on your secret token on the public blockchain while concealing your secret token.
 
 # Use Khaos
 
@@ -188,7 +188,7 @@ export const event: FunctionEvent = always(Promise.resolve('Query'))
 
 You can define and export `oraclize` as the function called by oracle request from smart contracts, on this file. This function plays a vital role. After the return value of this function is formatted by `pack` function as stated below, it is transferred to blockchain through callbacks for smart contracts. The time when oraclize function is called is after events are detected and secret information is obtained through Public Signature as a key.
 
-The function receives the following object as the argument, as stated below. `signatureOptions` is decrypted data of Public Signature. Only in the case where generated Public Signature is included in event payloads when the result of the `authorize` function returns `true`, `signatureOptions` is defined. In other words, if unauthorized Public Signature is included, `undefined` is given back. `query.publicSignature` includes event payloads with Public Signature. `query.transactionhash` includes transaction-hash that emitted the event. `query.allData` includes all event payloads. 
+The function receives the following object as the argument, as stated below. `signatureOptions` is decrypted data of Public Signature. Only in the case where generated Public Signature is included in event payloads when the result of the `authorize` function returns `true`, `signatureOptions` is defined. In other words, if unauthorized Public Signature is included, `undefined` is given back. `query.publicSignature` includes event payloads with Public Signature. `query.transactionhash` includes transaction-hash that emitted the event. `query.allData` includes all event payloads.
 
 ```ts
 type Options = {
@@ -272,7 +272,7 @@ export const pack: FunctionPack = async ({results}) => {
 
 Khaos Starter Kit writing tests by ava as default. You can freely change your testing framework depending on your projects.
 
-Use of Khaos is not essential for the test, however, we strongly suggest that you should prepare as much accurate test case as possible for guaranteeing the specifications and maintainability. 
+Use of Khaos is not essential for the test, however, we strongly suggest that you should prepare as much accurate test case as possible for guaranteeing the specifications and maintainability.
 
 ## Deploy
 
