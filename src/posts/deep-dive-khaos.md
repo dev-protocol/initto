@@ -38,7 +38,7 @@ _Currently, smart contracts, which can be used for Khaos, are limited to smart c
 
 Learning about Khaos' oracle flow is a great start for developing Khaos. It comprises several components such as Khaos Core, Khaos Functions, Khaos Registry, etc. The most important thing for developers is the following flow:
 
-1. Call Sign API (ReSTful API) of Khaos, and obtain Public Signature after converting data subject to concealment into public.
+1. Call Sign API (RESTful API) of Khaos, and obtain Public Signature after converting data subject to concealment into public.
 2. Emit events from smart contracts. At this point, by including Public Signature in event payloads, you can deal with your concealed information for the oracle functions that you defined.
 3. Khaos calls callback functions that you defined and closes its flow.
 
