@@ -98,7 +98,7 @@ export const abi: Abi = [
 
 You can define and export `addresses` as the addresses of your smart contracts where emit oracle requests as the function that returns `Promise<string | undefined>`. The return value of this function is also used for addresses of callback functions.
 
-The function receives the following object as the arguments.
+The function receives the following object as the argument.
 
 ```ts
 type Options = {
@@ -123,7 +123,7 @@ You can define and export `authorize` as your authentication method to be called
 
 Only in the case where the result of authorize is `true`, Public Signature is generated and secret information encrypted in Khaos server is saved.
 
-Functions receive the following objects as arguments. `message` is a string subject to verify. Twitter ID and GitHub repository names are examples that correspond to it. `secret` is information for secret. Since `request` is HttpRequest Type of @azure/functions, various contexts can be used when Sign API is called.
+Functions receive the following object as the argument. `message` is a string subject to verify. Twitter ID and GitHub repository names are examples that correspond to it. `secret` is information for secret. Since `request` is HttpRequest Type of @azure/functions, various contexts can be used when Sign API is called.
 
 ```ts
 type Options = {
@@ -188,7 +188,7 @@ export const event: FunctionEvent = always(Promise.resolve('Query'))
 
 You can define and export `oraclize` as the function called by oracle request from smart contracts, on this file. This function plays a vital role. After the return value of this function is formatted by `pack` function as stated below, it is transferred to blockchain through callbacks for smart contracts. The time when oraclize function is called is after events are detected and secret information is obtained through Public Signature as a key.
 
-The function receives the object as the argument, as stated below. `signatureOptions` is decrypted data of Public Signature. Only in the case where generated Public Signature is included in event payloads when the result of the `authorize` function returns `true`, `signatureOptions` is defined. In other words, if unauthorized Public Signature is included, `undefined` is given back. `query.publicSignature` includes event payloads with Public Signature. `query.transactionhash` includes transaction-hash that emitted the event. `query.allData` includes all event payloads. 
+The function receives the following object as the argument, as stated below. `signatureOptions` is decrypted data of Public Signature. Only in the case where generated Public Signature is included in event payloads when the result of the `authorize` function returns `true`, `signatureOptions` is defined. In other words, if unauthorized Public Signature is included, `undefined` is given back. `query.publicSignature` includes event payloads with Public Signature. `query.transactionhash` includes transaction-hash that emitted the event. `query.allData` includes all event payloads. 
 
 ```ts
 type Options = {
