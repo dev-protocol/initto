@@ -29,7 +29,7 @@ We’ve actually had various ways of monetization for creators’ open assets.
 For example, we have
 
 - ad revenue from streaming (YouTube)
-- Sales of contents at blog platform and social tipping (note, Buy Me a Coffee)
+- Sales of contents at blog platform and social tipping (Buy Me a Coffee, Coil)
 - Service for production and sales of merchandise (Redbubble)
 - Crowd funding (Kickstarter, GoFundMe)
 - Donation service (Patreon, GitHub Sponsors)
@@ -106,3 +106,9 @@ This structure is made for creators to focus on “creating” without worrying 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dev Protocol’s 2021 is aimed at making <a href="https://t.co/q1a8aKLQB5">https://t.co/q1a8aKLQB5</a> the got-to solution for Open Source funding. We’re excited to share some of our milestones for 2021! 🎉 <br><br>-DeFi Integrations<br>-More UI/UX Updates<br>-Growth Hacking Strategies<br>-Launch Governance<br>-Staking Perks<br>-L2 Scaling <a href="https://t.co/dkanvfsNyl">pic.twitter.com/dkanvfsNyl</a></p>&mdash; Dev Protocol (@devprtcl) <a href="https://twitter.com/devprtcl/status/1350126479141728259?ref_src=twsrc%5Etfw">January 15, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 A year has passed since the main net launch of Dev Protocol. Its ecosystem keeps largely growing with much supporters. Through our blog, INITTO, which has just started recently, we’ll share our information to spread the usage of Dev Protocol for creators. 🐇
+
+Thank you for reading our blog post! 
+If you are interested in activities of Dev Protocol Team, please join our [Discord]((https://discord.gg/VwJp4KM)). We’re also looking forward to your comments on [GitHub](https://github.com/dev-protocol/DIPs), because Dev Protocol itself is an OSS of which anybody can propose changes.
+
+DevRel Team, which runs INITTO, shares information on its team tasks at GitHub. If you want to work with us for translation, writing documents and blog articles, community projects, we’ll post your activities as ambassadors.
+Please feel free to send a DM to us on Twitter([@devprtcl](https://twitter.com/devprtcl)) if you’re interested in joining our team. We welcome feedbacks from you.
