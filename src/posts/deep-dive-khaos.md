@@ -3,7 +3,7 @@ title: Deep Dive Khaos
 author: Aggre
 date: 2021-03-20
 socialImage: '/images/posts/deep-dive-khaos/ogp.png'
-level: INTERMEDIATE
+level: EXPERIENCED
 tags:
   - Khaos
 ---
