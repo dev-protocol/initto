@@ -14,7 +14,7 @@ Hi, I'm aggre.
 
 In this article, you'll get an idea about Khaos, which is developed as a side project for Dev Protocol.
 
-Khaos brings information, which doesn’t exist on blockchain, into blockchain from the outside of blockchain, and has a function of an "oracle". It is sometimes called Khaos Oracle.
+Khaos brings information, which doesn't exist on blockchain, into blockchain from the outside of blockchain, and has a function of an "oracle". It is sometimes called Khaos Oracle.
 
 # Necessity of Oracle
 
@@ -50,7 +50,7 @@ One of the most significant keywords to handle Khaos is Public Signature.
 
 Public Signature is a string encrypted by Json Web Tokens. Information used for encryption is open, so all of us can generate and decrypt it. In other words, secret information is not included in Public Signature at all, and it can be open to public. With Khaos, you can save your secret information with Public Signature as a key, and make use of it only inside Khaos instance.
 
-Public Signature is the same as decrypted "sender’s Ethereum account address" from "the following JSON string."
+Public Signature is the same as encrypted "the following JSON string" by "sender's Ethereum account address."
 
 ```json
 {
@@ -106,7 +106,7 @@ type Options = {
 }
 ```
 
-You can switch the addresses by the mainnet of Ethereum, or by Ropsten test net.
+You can switch the addresses by the mainnet of Ethereum, or by Ropsten testnet.
 
 ```ts
 import {FunctionAddresses} from '@devprotocol/khaos-core'
@@ -119,7 +119,7 @@ export const addresses: FunctionAddresses = async ({network}) =>
 
 ### authorize.ts
 
-You can define and export `authorize` as your authentication method to be called when Sign API of Khaos is called on this file. The function should returns `Promise<boolean | undefined>`.
+You can define and export `authorize` as your authentication method to be called when Sign API of Khaos is called, on this file. The function should returns `Promise<boolean | undefined>`.
 
 Only in the case where the result of authorize is `true`, Public Signature is generated and secret information encrypted in Khaos server is saved.
 
@@ -133,7 +133,7 @@ type Options = {
 }
 ```
 
-Because bent is installed as HTTP library for Khaos Starter Kit, you can judge whether the `message` is authorized or not by calling an external API. In addition, ramda is also installed as a functional programing library, so you can use it case by case.
+Because bent is installed as HTTP library for Khaos Starter Kit, you can validate whether the `message` is justifiable or not by calling an external API. In addition, ramda is also installed as a functional programing library, so you can use it case by case.
 
 ```ts
 import bent from 'bent'
@@ -165,7 +165,7 @@ export const authorize: FunctionAuthorizer = async ({
 
 ### event.ts
 
-You can define and export `event` as the function, which returns the event name of your smart contract. The function returns `Promise<string | undefined>`.
+You can define and export `event` as the function, which returns the event name of your smart contract on this file. The function returns `Promise<string | undefined>`.
 
 The function receives the following object as the argument.
 
