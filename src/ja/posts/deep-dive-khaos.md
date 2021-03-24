@@ -24,7 +24,7 @@ Khaos に限らず、Ethereum には様々なオラクルプロトコルが存�
 
 オラクルの一般的な実装では、スマートコントラクトからイベントを emit して、そのイベントをオラクルプロトコルを構成するサーバーが検知し、最後にコールバック関数を呼び出す、という手法が採られます。emit するイベントのペイロードのなかにスマートコントラクトが要求している情報（例えば、"東京" の "気温" など）を付加することで、オラクルプロトコルはスマートコントラクトが何を欲しているのかを知ります。
 
-Khaos はオラクルリクエストのためのペイロードを秘匿化することのできるオラクルです。オラクルしたい情報が何らかのシークレットトークンに基づいて取得する必要がある場合、パブリックなペイロードにシークレットトークンをそのまま含めることはできないので、シークレットトークンなどを公開可能な形式に換え無害化する必要があります。
+Khaos はオラクルリクエストのためのペイロードを秘匿化することのできるオラクルです。オラクルしたい情報が何らかのシークレットトークンに基づいて取得する必要がある場合、パブリックなペイロードにシークレットトークンをそのまま含めることはできないので、シークレットトークンなどを公開可能な形式に換え安全にする必要があります。
 
 Khaos を使うと、あなたのシークレットトークンを秘匿化したままで、パブリックブロックチェーン上でオラクルすることができます。
 
@@ -68,7 +68,7 @@ Public Signature は以下のような JSON 文字列を送信者の Ethereum �
 
 ユーザーが定義すべきインターフェイスのテンプレートを提供しています。
 
-このリポジトリをフォークしたらクローンして、あなたのローカル環境で開発を始めましょう。Khaos Starter Kit は yarn でパッケージマネジメントしているので、事前に yarn をインストールしておく必要もあります。
+このリポジトリをフォークしたらクローンして、あなたのローカル環境で開発を始めましょう。Khaos Starter Kit は yarn でパッケージマネジメントしているので、事前に [yarn をインストールしておく](https://classic.yarnpkg.com/en/docs/install/)必要もあります。
 
 ```bash
 $ git clone git@github.com:YOUR/khaos-starter-kit.git
@@ -135,7 +135,7 @@ type Options = {
 }
 ```
 
-Khaos Starter Kit には HTTP ライブラリとして bent がインストールされているので、外部の API をコールして、`message` が正規のものかどうか判断することができます。また、関数型ライブラリとして ramda もインストールされているのでケースバイケースで利用してください。
+Khaos Starter Kit には HTTP ライブラリとして bent がインストールされているので、外部の API をコールして、`message` が正規のものかどうか判断することができます。また、関数型プログラミングライブラリとして ramda もインストールされているのでケースバイケースで利用してください。
 
 ```ts
 import bent from 'bent'
@@ -190,7 +190,7 @@ export const event: FunctionEvent = always(Promise.resolve('Query'))
 
 スマートコントラクトからのオラクルリクエストによってコールされる関数を定義します。この関数はとても重要なパートを担っています。この関数の返却値は後述の `pack` 関数によって整形された後にスマートコントラクトへのコールバックを介してブロックチェーンに渡されます。 oraclize 関数がコールされるのは、Khaos によってイベントが検出され、Public Signature をキーとして秘匿情報が取得されたあとです。
 
-関数は引数として以下のようなオブジェクトを受け取ります。`signatureOptions` は、Public Signature を復号化したデータです。また、`signatureOptions` は authorize 関数の結果が `true` を返した際に生成された Public Signature がイベントペイロードに含まれる場合にのみ定義されます。つまり、未認証の Public Signature が含まれている場合は `undefined` を返します。 `query.publicSignature` にはイベントペイロードに含まれる Public Signature、`query.transanctionhash` にはイベントを emit したトランザクションハッシュ、`query.allData` にはすべてのイベントペイロードが含まれています。
+関数は引数として以下のようなオブジェクトを受け取ります。`signatureOptions` は、Public Signature を復号化したデータです。また、`signatureOptions` は `authorize` 関数の結果が `true` を返した際に生成された Public Signature がイベントペイロードに含まれる場合にのみ定義されます。つまり、未認証の Public Signature が含まれている場合は `undefined` を返します。 `query.publicSignature` にはイベントペイロードに含まれる Public Signature、`query.transanctionhash` にはイベントを emit したトランザクションハッシュ、`query.allData` にはすべてのイベントペイロードが含まれています。
 
 ```ts
 type Options = {
@@ -316,7 +316,7 @@ IPFS にデプロイされた関数のアドレスマップを管理していま
 
 フォークリポジトリに変更を push したら、ソースリポジトリに対して Pull Request を作成してください。
 
-現在は Khaos の利用用途を Dev Protocol 関連コントラクトに限定しているため、IPFS にデプロイされた関数の addresses が Dev Protocol 上のコントラクトであることを検証します。
+現在は Khaos の利用用途を Dev Protocol 関連コントラクトに限定しているため、IPFS にデプロイされた関数の `addresses` が Dev Protocol 上のコントラクトであることを検証します。
 
 _将来的には、Khaos Registry はスマートコントラクトとして再構成、分散化される予定です。_
 
