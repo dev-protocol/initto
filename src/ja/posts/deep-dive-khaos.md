@@ -2,7 +2,7 @@
 title: Deep Dive Khaos
 author: Aggre
 date: 2021-03-20
-socialImage: '/images/posts/deep-dive-khaos/ogp.png'
+socialImage: 'https://initto.devprotocol.xyz/images/posts/deep-dive-khaos/ogp.png'
 level: 中級以上
 tags:
   - Khaos
