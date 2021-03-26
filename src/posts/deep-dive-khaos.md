@@ -100,7 +100,7 @@ You can define and export `addresses` as the addresses of your smart contracts w
 
 The function receives the following object as the argument.
 
-```typescript`
+```typescript
 type Options = {
   readonly network: 'mainnet' | 'ropsten'
 }

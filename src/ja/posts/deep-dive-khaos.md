@@ -86,7 +86,7 @@ Khaos Starter Kit では、ESLint プラグイン [eslint-plugin-functional](htt
 
 例えば `Query` というイベント、`callback` というコールバック関数を持つスマートコントラクトであれば以下のように書きます。Khaos が使用するのはイベントとコールバック関数だけなので、そのスマートコントラクトに他のインターフェイスがあってもすべてをここに定義する必要はありません。
 
-```typescript`
+```typescript
 import {Abi} from '@devprotocol/khaos-core'
 
 export const abi: Abi = [
