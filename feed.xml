@@ -112,21 +112,9 @@ The file name of it is <code>index.mjs</code> since we’ve used javascript modu
 <h3>addresses.ts</h3>
 <p>You can define and export <code>addresses</code> as the addresses of your smart contracts where emit oracle requests as the function that returns <code>Promise&lt;string | undefined&gt;</code>. The return value of this function is also used for addresses of callback functions.</p>
 <p>The function receives the following object as the argument.</p>
-<p>```typescript`<br>
-type Options = {<br>
-readonly network: 'mainnet' | 'ropsten'<br>
-}</p>
-<pre><code>
-You can switch the addresses by the mainnet of Ethereum, or by Ropsten testnet.
-
-```typescript
-import {FunctionAddresses} from '@devprotocol/khaos-core'
-
-export const addresses: FunctionAddresses = async ({network}) =&gt;
-  network === 'mainnet'
-    ? '0x1510EA12a30E5c40b406660871b335feA32f29A'
-    : '0x609Fe85Dbb9487d55B5eF50451e20ba2Edc8F4B7'
-</code></pre>
+<pre class="language-typescript"><code class="language-typescript"><span class="highlight-line"><span class="token keyword">type</span> Options <span class="token operator">=</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token keyword">readonly</span> network<span class="token punctuation">:</span> <span class="token string">'mainnet'</span> <span class="token operator">|</span> <span class="token string">'ropsten'</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>You can switch the addresses by the mainnet of Ethereum, or by Ropsten testnet.</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="highlight-line"><span class="token keyword">import</span> <span class="token punctuation">{</span>FunctionAddresses<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@devprotocol/khaos-core'</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token keyword">export</span> <span class="token keyword">const</span> addresses<span class="token punctuation">:</span> <span class="token function-variable function">FunctionAddresses</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>network<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span></span><br><span class="highlight-line">  network <span class="token operator">===</span> <span class="token string">'mainnet'</span></span><br><span class="highlight-line">    <span class="token operator">?</span> <span class="token string">'0x1510EA12a30E5c40b406660871b335feA32f29A'</span></span><br><span class="highlight-line">    <span class="token punctuation">:</span> <span class="token string">'0x609Fe85Dbb9487d55B5eF50451e20ba2Edc8F4B7'</span></span></code></pre>
 <h3>authorize.ts</h3>
 <p>You can define and export <code>authorize</code> as your authentication method to be called when Sign API of Khaos is called, on this file. The function should returns <code>Promise&lt;boolean | undefined&gt;</code>.</p>
 <p>Only in the case where the result of authorize is <code>true</code>, Public Signature is generated and secret information encrypted in Khaos server is saved.</p>
