@@ -101,7 +101,7 @@ Obtained data is a JSON format as stated below.
 
 You can use quite a convenient library to tweet from Node.
 
-```shell
+```text
 $ npm install twitter
 ```
 
@@ -281,7 +281,7 @@ main().then(() => {
 
 The program can be executed with this:
 
-```shell
+```text
 $ node index.mjs
 ```
 
@@ -293,7 +293,7 @@ This is actually tweeted from BOT
 
 You can complete the whole process after you’ve uploaded the above program to execution environment like servers and set up crontab.
 
-```shell
+```text
 */15 * * * * /home/foo/.nvm/versions/node/v14.15.4/bin/node /home/foo/index.mjs
 ```
 
