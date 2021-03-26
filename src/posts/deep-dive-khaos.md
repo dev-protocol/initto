@@ -69,7 +69,7 @@ We provide templates for users' interfaces to define.
 
 After you fork and clone this repository, you can start development at your local environment. The package management of Khaos Starter Kit is done by yarn, so you have to [install yarn](https://classic.yarnpkg.com/en/docs/install/) in advance.
 
-```bash
+```text
 $ git clone git@github.com:YOUR/khaos-starter-kit.git
 $ cd khaos-starter-kit
 $ yarn
@@ -85,7 +85,7 @@ You can define and export `abi` as the ABI of your smart contract as array writt
 
 In the case of an event like `Query` and of smart contracts possessing callback functions that `callback`, you can write as stated below. Only event and callback functions are used for Khaos. Therefore there is no need to define everything if although other interfaces are present in the smart contract.
 
-```ts
+```typescript
 import {Abi} from '@devprotocol/khaos-core'
 
 export const abi: Abi = [
@@ -100,7 +100,7 @@ You can define and export `addresses` as the addresses of your smart contracts w
 
 The function receives the following object as the argument.
 
-```ts
+```typescript`
 type Options = {
   readonly network: 'mainnet' | 'ropsten'
 }
@@ -108,7 +108,7 @@ type Options = {
 
 You can switch the addresses by the mainnet of Ethereum, or by Ropsten testnet.
 
-```ts
+```typescript
 import {FunctionAddresses} from '@devprotocol/khaos-core'
 
 export const addresses: FunctionAddresses = async ({network}) =>
@@ -125,7 +125,7 @@ Only in the case where the result of authorize is `true`, Public Signature is ge
 
 Functions receive the following object as the argument. `message` is a string subject to verify. Twitter ID and GitHub repository names are examples that correspond to it. `secret` is information for secret. Since `request` is HttpRequest Type of @azure/functions, various contexts can be used when Sign API is called.
 
-```ts
+```typescript
 type Options = {
   readonly message: string
   readonly secret: string
@@ -135,7 +135,7 @@ type Options = {
 
 Because bent is installed as HTTP library for Khaos Starter Kit, you can validate whether the `message` is justifiable or not by calling an external API. In addition, ramda is also installed as a functional programing library, so you can use it case by case.
 
-```ts
+```typescript
 import bent from 'bent'
 import {always} from 'ramda'
 import {FunctionAuthorizer} from '@devprotocol/khaos-core'
@@ -169,7 +169,7 @@ You can define and export `event` as the function, which returns the event name 
 
 The function receives the following object as the argument.
 
-```ts
+```typescript
 type Options = {
   readonly network: 'mainnet' | 'ropsten'
 }
@@ -177,7 +177,7 @@ type Options = {
 
 You can switch event names by the mainnet of Ethereum or by Ropsten testnet, though we think you would continue to use the same event names in many cases.
 
-```ts
+```typescript
 import {FunctionEvent} from '@devprotocol/khaos-core'
 import {always} from 'ramda'
 
@@ -190,7 +190,7 @@ You can define and export `oraclize` as the function called by oracle request fr
 
 The function receives the following object as the argument, as stated below. `signatureOptions` is decrypted data of Public Signature. Only in the case where generated Public Signature is included in event payloads when the result of the `authorize` function returns `true`, `signatureOptions` is defined. In other words, if unauthorized Public Signature is included, `undefined` is given back. `query.publicSignature` includes event payloads with Public Signature. `query.transactionhash` includes transaction-hash that emitted the event. `query.allData` includes all event payloads.
 
-```ts
+```typescript
 type Options = {
   readonly signatureOptions?: {
     readonly message: string
@@ -208,7 +208,7 @@ type Options = {
 
 The return value of the function is Promise that is solved by the following object.
 
-```ts
+```typescript
 type Options = {
   message: string
   status: number
@@ -218,7 +218,7 @@ type Options = {
 
 The function verifies that the signer of Public Signature and the oracle request sender is the same account in the next example.
 
-```ts
+```typescript
 import {FunctionOraclizer} from '@devprotocol/khaos-core'
 
 export const oraclize: FunctionOraclizer = async ({signatureOptions, query}) => {
@@ -245,7 +245,7 @@ You can define and export `pack` as the function that returns the callback funct
 
 The function receives the following object as the argument, as stated below. `results` have the same data as the value gained when Promise, which is returned by oraclize, resolves.
 
-```ts
+```typescript
 type Options = {
   readonly results: {
     readonly message: string
@@ -257,7 +257,7 @@ type Options = {
 
 In the next example, function named `callback` are designated to callback by arguments of `[results.message, results.status, results.statusMessage]`.
 
-```ts
+```typescript
 import {FunctionPack} from '@devprotocol/khaos-core'
 
 export const pack: FunctionPack = async ({results}) => {
@@ -282,7 +282,7 @@ In Khaos, you need to bundle the functions defined by you into one file of `inde
 
 This is the only command that you should execute.
 
-```bash
+```text
 yarn deploy
 ```
 
@@ -290,7 +290,7 @@ For some source codes, you need to update Rollup's setting and install additiona
 
 When you deploy, you can get the following standard output, so you should take a memo of the value of `IPFS_HASH_FOR_DIRECTORY`.
 
-```bash
+```text
 > {"Name":"index.js","Hash":"IPFS_HASH_FOR_FILE","Size":"554"}
 > {"Name":"","Hash":"IPFS_HASH_FOR_DIRECTORY","Size":"609"}
 ```
@@ -330,7 +330,7 @@ Khaos Kit provides API to interact with Khaos from JavaScript(TypeScript).
 
 This function takes two arguments. The first argument is Khaos authorization ID, which is the same string designated at `id` property in Khaos Registry. The second one takes `'mainet'` or `'ropsten'` as a network name.
 
-```ts
+```typescript
 // createPublicSignature.ts
 import {sign} from '@devprotocol/khaos-kit'
 
@@ -344,7 +344,7 @@ To write a signature with the user's Ethereum wallet, you have to use API for We
 - Web3: [web3.eth.personal — web3.js 1.0.0 documentation (web3js.readthedocs.io)](https://web3js.readthedocs.io/en/v1.2.0/web3-eth-personal.html#sign)
 - Ethers: [Signers (ethers.io)](https://docs.ethers.io/v5/api/signer/#Signer-signMessage)
 
-```ts
+```typescript
 import {KhaosSignOptions} from '@devprotocol/khaos-kit'
 import {createPublicSignature} from './createPublicSignature'
 
@@ -365,7 +365,7 @@ const getPublicSignature = async ({message, signature, secret}: KhaosSignOptions
 
 This function takes two arguments. The first argument is Khaos authorization ID, which is the same string designated at `id` property in Khaos Registry. The second one takes `'mainet'` or `'ropsten'` as a network name.
 
-```ts
+```typescript
 // emulator.ts
 import {emulate} from '@devprotocol/khaos-kit'
 
@@ -376,7 +376,7 @@ export const emulator = emulate('foo-bar', 'mainnet')
 
 This function's return value is based on additional data called `expectedTransaction` and the return value of `pack`, which you created with Khaos Starter Kit.
 
-```ts
+```typescript
 import {KhaosEmulateOptions} from '@devprotocol/khaos-kit'
 import {emulator} from './emulator'
 

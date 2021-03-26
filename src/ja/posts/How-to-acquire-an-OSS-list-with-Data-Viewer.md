@@ -102,7 +102,7 @@ const listsOSS = json.data.property_meta;
 
 NodeからTweetするのに大変便利なライブラリがあるのでそれを利用します
 
-```shell
+```text
 $ npm install twitter
 ```
 
@@ -282,7 +282,7 @@ main().then(() => {
 
 プログラムは下記のように実行できます
 
-```shell
+```text
 $ node index.mjs
 ```
 
@@ -294,7 +294,7 @@ $ node index.mjs
 
 上記のプログラムをサーバなど実行環境にアップロードして、crontabを設定すると完成になります。
 
-```shell
+```text
 */15 * * * * /home/foo/.nvm/versions/node/v14.15.4/bin/node /home/foo/index.mjs
 ```
 

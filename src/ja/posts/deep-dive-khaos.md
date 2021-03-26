@@ -70,7 +70,7 @@ Public Signature は以下のような JSON 文字列を送信者の Ethereum �
 
 このリポジトリをフォークしたらクローンして、あなたのローカル環境で開発を始めましょう。Khaos Starter Kit は yarn でパッケージマネジメントしているので、事前に [yarn をインストールしておく](https://classic.yarnpkg.com/en/docs/install/)必要もあります。
 
-```bash
+```text
 $ git clone git@github.com:YOUR/khaos-starter-kit.git
 $ cd khaos-starter-kit
 $ yarn
@@ -86,7 +86,7 @@ Khaos Starter Kit では、ESLint プラグイン [eslint-plugin-functional](htt
 
 例えば `Query` というイベント、`callback` というコールバック関数を持つスマートコントラクトであれば以下のように書きます。Khaos が使用するのはイベントとコールバック関数だけなので、そのスマートコントラクトに他のインターフェイスがあってもすべてをここに定義する必要はありません。
 
-```ts
+```typescript`
 import {Abi} from '@devprotocol/khaos-core'
 
 export const abi: Abi = [
@@ -101,7 +101,7 @@ export const abi: Abi = [
 
 関数は引数として以下のようなオブジェクトを受け取ります。
 
-```ts
+```typescript
 type Options = {
   readonly network: 'mainnet' | 'ropsten'
 }
@@ -109,7 +109,7 @@ type Options = {
 
 Ethereum のメインネットまたは Ropsten テストネットによってアドレスを切り分けることができます。
 
-```ts
+```typescript
 import {FunctionAddresses} from '@devprotocol/khaos-core'
 
 export const addresses: FunctionAddresses = async ({network}) =>
@@ -127,7 +127,7 @@ authorize の結果が `true` の場合にのみ Public Signature が生成さ�
 関数は引数として以下のようなオブジェクトを受け取ります。`message` は verify の対象となる文字列で、Twitter ID や GitHub リポジトリ名などが該当します。`secret` には秘匿情報となる文字列です。
 `request` は @azure/functions の `HttpRequest` 型なので、Sign API がコールされたときの様々なコンテキストを利用できます。
 
-```ts
+```typescript
 type Options = {
   readonly message: string
   readonly secret: string
@@ -137,7 +137,7 @@ type Options = {
 
 Khaos Starter Kit には HTTP ライブラリとして bent がインストールされているので、外部の API をコールして、`message` が正規のものかどうか判断することができます。また、関数型プログラミングライブラリとして ramda もインストールされているのでケースバイケースで利用してください。
 
-```ts
+```typescript
 import bent from 'bent'
 import {always} from 'ramda'
 import {FunctionAuthorizer} from '@devprotocol/khaos-core'
@@ -171,7 +171,7 @@ export const authorize: FunctionAuthorizer = async ({
 
 関数は引数として以下のようなオブジェクトを受け取ります。
 
-```ts
+```typescript
 type Options = {
   readonly network: 'mainnet' | 'ropsten'
 }
@@ -179,7 +179,7 @@ type Options = {
 
 Ethereum のメインネットまたは Ropsten テストネットによってイベント名を切り分けることができますが、多くの場合は同じイベント名を使用するはずです。
 
-```ts
+```typescript
 import {FunctionEvent} from '@devprotocol/khaos-core'
 import {always} from 'ramda'
 
@@ -192,7 +192,7 @@ export const event: FunctionEvent = always(Promise.resolve('Query'))
 
 関数は引数として以下のようなオブジェクトを受け取ります。`signatureOptions` は、Public Signature を復号化したデータです。また、`signatureOptions` は `authorize` 関数の結果が `true` を返した際に生成された Public Signature がイベントペイロードに含まれる場合にのみ定義されます。つまり、未認証の Public Signature が含まれている場合は `undefined` を返します。 `query.publicSignature` にはイベントペイロードに含まれる Public Signature、`query.transanctionhash` にはイベントを emit したトランザクションハッシュ、`query.allData` にはすべてのイベントペイロードが含まれています。
 
-```ts
+```typescript
 type Options = {
   readonly signatureOptions?: {
     readonly message: string
@@ -210,7 +210,7 @@ type Options = {
 
 関数の返却値は以下のようなオブジェクトで解決される Promise です。
 
-```ts
+```typescript
 type Options = {
   message: string
   status: number
@@ -220,7 +220,7 @@ type Options = {
 
 次の例では、Public Signature の署名者とオラクルリクエスト送信者が同一アカウントであることを確認しています。
 
-```ts
+```typescript
 import {FunctionOraclizer} from '@devprotocol/khaos-core'
 
 export const oraclize: FunctionOraclizer = async ({signatureOptions, query}) => {
@@ -247,7 +247,7 @@ export const oraclize: FunctionOraclizer = async ({signatureOptions, query}) => 
 
 関数は引数として以下のようなオブジェクトを受け取ります。`results` は oraclize が返す Promise が解決したときの値と同じデータです。
 
-```ts
+```typescript
 type Options = {
   readonly results: {
     readonly message: string
@@ -259,7 +259,7 @@ type Options = {
 
 次の例では、 `callback` と名付けられた関数に `[results.message, results.status, results.statusMessage]` という引数でコールバックするように指定しています。
 
-```ts
+```typescript
 import {FunctionPack} from '@devprotocol/khaos-core'
 
 export const pack: FunctionPack = async ({results}) => {
@@ -284,7 +284,7 @@ Khaos ではユーザー定義の関数は `index.js` の 1 ファイルにバ�
 
 あなたが実行すべきコマンドはただこれだけです。
 
-```bash
+```text
 yarn deploy
 ```
 
@@ -292,7 +292,7 @@ yarn deploy
 
 デプロイすると以下のような標準出力があるので、`IPFS_HASH_FOR_DIRECTORY` の値をメモしておいてください。
 
-```bash
+```text
 > {"Name":"index.js","Hash":"IPFS_HASH_FOR_FILE","Size":"554"}
 > {"Name":"","Hash":"IPFS_HASH_FOR_DIRECTORY","Size":"609"}
 ```
@@ -332,7 +332,7 @@ Khaos Kit は、JavaScript(TypeScript) から Khaos とインタラクション�
 
 この関数は 2 つの引数を取ります。最初の引数は Khaos の認証 ID で、Khaos Registry の `id` プロパティで指定したものと同じ文字列です。2 つ目の引数はネットワーク名として `'mainnet'` または `'ropsten'` を取ります。
 
-```ts
+```typescript
 // createPublicSignature.ts
 import {sign} from '@devprotocol/khaos-kit'
 
@@ -346,7 +346,7 @@ Ethereum ウォレットで署名するには、Web3 や Ethers の API を利�
 - Web3: [web3.eth.personal — web3.js 1.0.0 documentation (web3js.readthedocs.io)](https://web3js.readthedocs.io/en/v1.2.0/web3-eth-personal.html#sign)
 - Ethers: [Signers (ethers.io)](https://docs.ethers.io/v5/api/signer/#Signer-signMessage)
 
-```ts
+```typescript
 import {KhaosSignOptions} from '@devprotocol/khaos-kit'
 import {createPublicSignature} from './createPublicSignature'
 
@@ -367,7 +367,7 @@ const getPublicSignature = async ({message, signature, secret}: KhaosSignOptions
 
 この関数は 2 つの引数を取ります。最初の引数は Khaos の認証 ID で、Khaos Registry の `id` プロパティで指定したものと同じ文字列です。2 つ目の引数はネットワーク名として `'mainnet'` または `'ropsten'` を取ります。
 
-```ts
+```typescript
 // emulator.ts
 import {emulate} from '@devprotocol/khaos-kit'
 
@@ -378,7 +378,7 @@ export const emulator = emulate('foo-bar', 'mainnet')
 
 この関数の戻り値は、Khaos Starter Kit で作成した `pack` の戻り値に `expectedTransaction` を追加したデータです。
 
-```ts
+```typescript
 import {KhaosEmulateOptions} from '@devprotocol/khaos-kit'
 import {emulator} from './emulator'
 
