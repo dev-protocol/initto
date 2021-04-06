@@ -2,7 +2,7 @@
 title: Stakes.socialのクリエイタートークン発行体験レポート by AITG侍
 author: AITG侍
 date: 2021-04-06
-socialImage: '/images/posts/20210406/ogp-jn.png'
+socialImage: 'https://initto.devprotocol.xyz/images/posts/20210406/ogp-jn.png'
 level: 初級
 tags:
   - Tutorial
