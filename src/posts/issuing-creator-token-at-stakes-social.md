@@ -33,8 +33,6 @@ xR Tech Nagoya, a group that I currently join, is doing its best to produce publ
 
 ![画像2　Hubs](/images/posts/20210406/Photo2.png)
 
-xR Tech Nagoya, a group that I currently join, is doing its best to produce public space where people can deal with VRSNS “Hubs” that work on browser developed by Mozilla. 
-
 Hubs is a VRSNS in which you can use it for free without registering an account and can easily talk with anybody through voice chats as well as texts in a VR space. Users themselves become creators there, and can also show the space and each material that they’ve made to users around the world. Its service has a lot of flexibility.
 
 In addition to Hubs’ flexible trait, commercial use of it is allowed as well. Since its open version that started in April 2020, there have been increasing number of cases where users utilize Hubs for business. However, when they create their spaces by contract work, they cannot open the most of their sources publicly. For general users who just want to use Hubs as a communication tool, and for conscientious creators who want to have a look at the contents of spaces, there is a lack of public spaces which are openly released on platform now.
