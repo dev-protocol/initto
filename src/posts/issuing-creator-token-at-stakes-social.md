@@ -2,7 +2,7 @@
 title: Issuing creator token at Stakes.social by AITG Samurai
 author: AITG Samurai
 date: 2021-04-06
-socialImage: '/images/posts/20210406/ogp.png'
+socialImage: 'https://initto.devprotocol.xyz/images/posts/20210406/ogp.png'
 level: BEGINNER
 tags:
   - Tutorial
