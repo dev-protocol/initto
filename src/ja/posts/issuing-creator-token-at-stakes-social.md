@@ -58,7 +58,7 @@ GitHub: https://github.com/xR-Tech-Nagoya/Hubs-Public-Scene
 3月18日には、Dev ProtocolのAMAが開催されました。国内外から20人以上が訪れ、公式による情報展開やコミュニティメンバー間の交流も深める機会作りにDevVを利用頂きました。
 
 ## 03: 上場から2ヵ月経過　成果は？
-報酬については、新しくDev ProtocolやStakes.Socialに興味を持っている方にとって一番気になる所だと思います。我々xR Tech Nagoyaは2020年4月1日現在、HPSへ総額**12,369.98DEV**のステーキング支援を頂いております。これは日本円換算で時価総額**約1,850万円**に相当（1DEV=1500円で計算）します。すごい！ありがたい！
+報酬については、新しくDev ProtocolやStakes.Socialに興味を持っている方にとって一番気になる所だと思います。我々xR Tech Nagoyaは2021年4月1日現在、HPSへ総額**12,369.98DEV**のステーキング支援を頂いております。これは日本円換算で時価総額**約1,850万円**に相当（1DEV=1500円で計算）します。すごい！ありがたい！
 
 この内、クリエイターであるxR Tech Nagoyaは変動するAPY分のクリエイター報酬を常にちょこちょこと頂きます。例えば当プロジェクトの場合、 **APYが20％～50％** とすると、**最低370万、最高925万円**が年次報酬になります。もちろん、APYや価格そのものがDEVの需給に応じて変動する事、ステーキング支援をする個人がステーキングの取りやめをする事もあるので、1年後に当事業が現在想定する額を得られているかは分かりません。
 
@@ -93,7 +93,7 @@ Stakes.Socialにプロジェクトを上場する1人としては、パトロン
 
 ＜問合せ先＞
 [Anti Internet Tough Guy侍](https://twitter.com/AITGSamurai)
-[Muromachi（幣組織代表）](https://twitter.com/i_osd1_Bonsai)
+[Muromachi（xR Tech Nagoya代表）](https://twitter.com/i_osd1_Bonsai)
 
 ＜上場プロジェクト＞
 [xR-Tech-Nagoya/Hubs-Public-Scene](https://stakes.social/0xEb51F55A80E62D6dE7598d0963614A0c85692584)
