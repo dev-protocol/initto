@@ -15,6 +15,247 @@
 	
   
   <entry>
+    <title>How to use dev-kit-js#1</title>
+    <link href="https://initto.devprotocol.xyz/posts/How-to-use-dev-kit-js-01/"/>
+    <updated>2021-04-09T00:00:00+00:00</updated>
+    <id>https://initto.devprotocol.xyz/posts/How-to-use-dev-kit-js-01/</id>
+    <content type="html"><![CDATA[
+      <h1>How to use dev-kit-js #1</h1>
+<h2>Introduction</h2>
+<p>We’ll write a series of articles on the way to use <code>dev-kit-js</code>, a library equipped in Dev Protocol. This time, we’re going to touch on how to use it in relation with Dev token.</p>
+<h2>What’s dev-kit-js?</h2>
+<p><a href="https://www.npmjs.com/package/@devprotocol/dev-kit" target="_blank" rel="noopener">dev-kit</a> is a library to utilize functions of Dev Protocol from JavaScript (TypeScript).</p>
+<h2>Installing</h2>
+<pre class="language-text"><code class="language-text"><span class="highlight-line">npm i -D @devprotocol/dev-kit</span></code></pre>
+<h2>How to use</h2>
+<p>Create a client of <code>dev-kit-js</code><br>
+In order to make use of <code>dev-kit-js</code> , you need to implement contractFactory and create a client. You also need Provider for contractFactory. Provider can be obtained from web3js.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">import</span> Web3 <span class="token keyword">from</span> <span class="token string">"web3/dist/web3.min"</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token keyword">const</span> provider  <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Web3</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>ethereum<span class="token punctuation">)</span></span><br><span class="highlight-line"><span class="token keyword">const</span> clientDev <span class="token operator">=</span> <span class="token function">contractFactory</span><span class="token punctuation">(</span>provider<span class="token punctuation">.</span>currentProvider<span class="token punctuation">)</span></span></code></pre>
+<blockquote>
+<p>Tips<br>
+If you use web3 at <code>pure js</code>, you have to import it from <code>dist/web3.min.js</code>.</p>
+</blockquote>
+<p>After you’ve created a client, you can use it as stated below.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> balanceOfDEV <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>addressDEV<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">balanceOf</span><span class="token punctuation">(</span>addressWallet<span class="token punctuation">)</span></span></code></pre>
+<h2>Equipped functions</h2>
+<p>The following 12 types are categorized as equipped functions.</p>
+<ul>
+<li>allocator</li>
+<li>dev</li>
+<li>lockup</li>
+<li>market</li>
+<li>metrics</li>
+<li>policy</li>
+<li>policyFactory</li>
+<li>policyGroup</li>
+<li>property</li>
+<li>propertyFactory</li>
+<li>registry</li>
+<li>withdraw</li>
+</ul>
+<h2>How to use Dev token related functions</h2>
+<h3>Before you start</h3>
+<p>There are several functions related to DEV token in <code>dev</code> as equipped functions.</p>
+<p>You need to pass Address of DEV token as an argument to use <code>dev</code> at first.</p>
+<p>You can obtain Address of DEV token as stated below.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">import</span> <span class="token punctuation">{</span>addresses<span class="token punctuation">,</span> contractFactory<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@devprotocol/dev-kit"</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token keyword">const</span> registryContract <span class="token operator">=</span> clientDev<span class="token punctuation">.</span><span class="token function">registry</span><span class="token punctuation">(</span>addresses<span class="token punctuation">.</span>eth<span class="token punctuation">.</span>main<span class="token punctuation">.</span>registry<span class="token punctuation">)</span></span><br><span class="highlight-line"><span class="token keyword">const</span> addressDEV       <span class="token operator">=</span> <span class="token keyword">await</span> registryContract<span class="token punctuation">.</span><span class="token function">token</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span></code></pre>
+<p>If you need Address of Ropsten environment, check the following example.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> registryContract <span class="token operator">=</span> clientDev<span class="token punctuation">.</span><span class="token function">registry</span><span class="token punctuation">(</span>addresses<span class="token punctuation">.</span>eth<span class="token punctuation">.</span>ropsten<span class="token punctuation">.</span>registry<span class="token punctuation">)</span></span><br><span class="highlight-line"><span class="token keyword">const</span> addressDEV       <span class="token operator">=</span> <span class="token keyword">await</span> registryContract<span class="token punctuation">.</span><span class="token function">token</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span></code></pre>
+<h3>name</h3>
+<p><em>You can obtain the name of DEV token.</em></p>
+<ul>
+<li>Argument
+<ul>
+<li>N/A</li>
+</ul>
+</li>
+<li>Return value
+<ul>
+<li>Token name<string></li>
+</ul>
+</li>
+<li>How to use</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>addressDev<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// Dev</span></span></code></pre>
+<h3>symbol</h3>
+<p><em>You can obtain Symbol of DEV token.</em></p>
+<ul>
+<li>Argument
+<ul>
+<li>N/A</li>
+</ul>
+</li>
+<li>Return value
+<ul>
+<li>Token Symbol<string></li>
+</ul>
+</li>
+<li>How to use</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> symbol <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>addressDev<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">symbol</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// DEV</span></span></code></pre>
+<h3>decimals</h3>
+<p><em>You can return the digit numbers after the decimal point that Dev token uses.</em></p>
+<ul>
+<li>Argument
+<ul>
+<li>N/A</li>
+</ul>
+</li>
+<li>Return value
+<ul>
+<li>Digit numbers after the decimal point that the token uses<string></li>
+</ul>
+</li>
+<li>How to use</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> decimals <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>addressDev<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">decimals</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 18</span></span></code></pre>
+<h3>totalSupply</h3>
+<p><em>You can return the number of issued DEV token.</em></p>
+<ul>
+<li>Argument
+<ul>
+<li>N/A</li>
+</ul>
+</li>
+<li>Return value
+<ul>
+<li>The number of issued DEV token<string></li>
+</ul>
+</li>
+<li>How to use</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> totalSupply <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>addressDev<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">totalSupply</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span></code></pre>
+<h3>balanceOf</h3>
+<p><em>You can obtain the balance of DEV token for designated address</em></p>
+<ul>
+<li>Argument
+<ul>
+<li>Wallet address</li>
+</ul>
+</li>
+<li>Return value
+<ul>
+<li>DEV token balance<string></li>
+</ul>
+</li>
+<li>How to use</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> balanceOfDEV <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>addressDev<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">balanceOf</span><span class="token punctuation">(</span>walletAddress<span class="token punctuation">)</span></span></code></pre>
+<blockquote>
+<p>Tips<br>
+For DEV token gained through such functions as balanceOf (ERC20), 18 digits are defined as after the decimal point. Therefore, the value of DEV token is the value that is carried down by 18 digits from the value obtained. Dealing with the number having 18 digits on JavaScript leads to an overflow, so you have to use it with a library.</p>
+</blockquote>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">import</span> <span class="token punctuation">{</span>BigNumber<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@ethersproject/bignumber"</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token keyword">const</span> decimalNumber <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> decimals<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 1000000000000000000</span></span><br><span class="highlight-line"><span class="token keyword">const</span> dev <span class="token operator">=</span> BigNumber<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>balanceOf<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">div</span><span class="token punctuation">(</span>decimalNumber<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span></code></pre>
+<h3>transfer</h3>
+<p><em>You can transfer Dev token to A.</em></p>
+<ul>
+<li>Argument
+<ul>
+<li>Wallet address you’ll transfer to</li>
+<li>The number of DEV token to transfer</li>
+</ul>
+</li>
+<li>Return value
+<ul>
+<li>Success or failure<boolean></li>
+</ul>
+</li>
+<li>How to use</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> decimalNumber <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> decimals<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><br><span class="highlight-line"><span class="token keyword">const</span> transferDev   <span class="token operator">=</span> BigNumber<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>転送する<span class="token constant">DEV</span>トークン数<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mul</span><span class="token punctuation">(</span>decimalNumber<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><br><span class="highlight-line"><span class="token keyword">const</span> transfer      <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>address<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">transfer</span><span class="token punctuation">(</span>転送先のアドレス<span class="token punctuation">,</span> transferDev<span class="token punctuation">)</span></span></code></pre>
+<h3>approve</h3>
+<p><em>You can approve the transfer of DEV token from a designated address.</em></p>
+<ul>
+<li>Argument
+<ul>
+<li>Wallet address to approve transfer</li>
+<li>The number of DEV token to transfer</li>
+</ul>
+</li>
+<li>Return value
+<ul>
+<li>Success or failure<boolean></li>
+</ul>
+</li>
+<li>How to use</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> decimalNumber <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> decimals<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><br><span class="highlight-line"><span class="token keyword">const</span> approveDev    <span class="token operator">=</span> BigNumber<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>TheNumberOfDEVTokenToTransfer<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mul</span><span class="token punctuation">(</span>decimalNumber<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><br><span class="highlight-line"><span class="token keyword">const</span> approve       <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>addressDev<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">approve</span><span class="token punctuation">(</span>AddressToApproveTransfer<span class="token punctuation">,</span> approveDev<span class="token punctuation">)</span></span></code></pre>
+<h3>allowance</h3>
+<p><em>You can return the approved amount of DEV token that can be withdrawn.</em></p>
+<ul>
+<li>Argument
+<ul>
+<li>Wallet address that you approved transfer</li>
+<li>Wallet address that is approved for transfer</li>
+</ul>
+</li>
+<li>Return value
+<ul>
+<li>Transferable Dev token<string></li>
+</ul>
+</li>
+<li>How to use</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> allowance <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>addressDev<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">allowance</span><span class="token punctuation">(</span>転送を許可したウォレットアドレス<span class="token punctuation">,</span> 転送を許可されたウォレットアドレス<span class="token punctuation">)</span></span></code></pre>
+<h3>transferFrom</h3>
+<p><em>You can withdraw approved DEV token.</em></p>
+<ul>
+<li>Argument
+<ul>
+<li>Wallet address that you approved transfer</li>
+<li>Wallet address that is approved for transfer</li>
+<li>The amount to transfer</li>
+</ul>
+</li>
+<li>Return value
+<ul>
+<li>Success or failure<boolean></li>
+</ul>
+</li>
+<li>How to use</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> decimalNumber <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> decimals<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><br><span class="highlight-line"><span class="token keyword">const</span> transferDev   <span class="token operator">=</span> BigNumber<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>TheAmountToTransfer<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mul</span><span class="token punctuation">(</span>decimalNumber<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><br><span class="highlight-line"><span class="token keyword">const</span> transferFrom  <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>address<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">transferFrom</span><span class="token punctuation">(</span>WalletAddressThatYouApprovedTransfer<span class="token punctuation">,</span> WalletAddressThatIsApprovedForTransfer<span class="token punctuation">,</span> transferDev<span class="token punctuation">)</span></span></code></pre>
+<h3>deposit</h3>
+<p><em>You can stake Dev token for property.</em></p>
+<ul>
+<li>Argument
+<ul>
+<li>Address of property to stake</li>
+<li>The number of Dev to stake</li>
+</ul>
+</li>
+<li>Return value
+<ul>
+<li>Success or failure<boolean></li>
+</ul>
+</li>
+<li>How to use</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> decimalNumber <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> decimals<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><br><span class="highlight-line"><span class="token keyword">const</span> stakingDev    <span class="token operator">=</span> BigNumber<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>TheNumberOfDevToStake<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mul</span><span class="token punctuation">(</span>decimalNumber<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><br><span class="highlight-line"><span class="token keyword">const</span> staking       <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>address<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">deposit</span><span class="token punctuation">(</span>AddressOfPropertyToStake<span class="token punctuation">,</span> stakingDev<span class="token punctuation">)</span></span></code></pre>
+<h3>contract</h3>
+<p><em>You can return the instance of Contact in web3js.</em></p>
+<ul>
+<li>Argument
+<ul>
+<li>N/A</li>
+</ul>
+</li>
+<li>Return value
+<ul>
+<li>Contract in web3js</li>
+</ul>
+</li>
+<li>How to use</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="highlight-line"><span class="token keyword">const</span> contract <span class="token operator">=</span> <span class="token keyword">await</span> clientDev<span class="token punctuation">.</span><span class="token function">dev</span><span class="token punctuation">(</span>address<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">contract</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token comment">// You can use Contract in web3js. </span></span><br><span class="highlight-line"><span class="token comment">// https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html</span></span><br><span class="highlight-line">contract<span class="token punctuation">.</span><span class="token function">defaultBlock</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span></code></pre>
+<h2>Conclusion</h2>
+<p>For <code>dev</code> functions of <code>dev-kit-js</code>, functions defined at ERC20 are equipped. deposit function is equipped for <code>dev-kit-js</code> as well. If you make use of deposit functions, you can start staking Dev by using a program, and you’ll be able to create a Dapp like Stakes.Social. We also have <code>Lockup.withdraw</code>, a function to terminate staking, and <code>withdraw.withdraw</code>, a function to withdraw creator reward. We’ll introduce them to you in our next article.</p>
+
+    ]]></content>
+  </entry>
+	
+  
+  <entry>
     <title>Issuing creator token at Stakes.social by AITG Samurai</title>
     <link href="https://initto.devprotocol.xyz/posts/issuing-creator-token-at-stakes-social/"/>
     <updated>2021-04-06T00:00:00+00:00</updated>
