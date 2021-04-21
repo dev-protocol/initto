@@ -15,6 +15,49 @@
 	
   
   <entry>
+    <title>INITTO FM#1</title>
+    <link href="https://initto.devprotocol.xyz/posts/initto_fm_01/"/>
+    <updated>2021-04-21T00:00:00+00:00</updated>
+    <id>https://initto.devprotocol.xyz/posts/initto_fm_01/</id>
+    <content type="html"><![CDATA[
+      <h1>INITTO FM #1</h1>
+<p>INITTO FM has started since April 15.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BgPjQGlSLZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>What’s INITTO FM?</h2>
+<p>In INITTO FM, we invite OSS developers joining Stakes.social as guest speakers, introduce them, and talk about OSS with them. The moderator for this program is Kawakami.</p>
+<h2>Guest speaker</h2>
+<p>We welcomed hhatto as our very first guest.<br>
+hhatto is developing autopep8, which is a well-known code format tool for Phython.</p>
+<p>Twitter：<a href="https://twitter.com/hhatto" target="_blank" rel="noopener">https://twitter.com/hhatto</a><br>
+autopep8：<a href="https://github.com/hhatto/autopep8" target="_blank" rel="noopener">https://github.com/hhatto/autopep8</a></p>
+<p>🕊 For the support of autopep8, please check the following website.<br>
+<a href="https://stakes.social/0x6FC83305afb1083CE1Db511d252B47A38CFCE1f7" target="_blank" rel="noopener">https://stakes.social/0x6FC83305afb10...</a></p>
+<h2>Highlights</h2>
+<h3><a href="https://youtu.be/BgPjQGlSLZs?t=254" target="_blank" rel="noopener">recent interesting events</a> 4:14</h3>
+<ul>
+<li><strong><a href="https://deno.land/" target="_blank" rel="noopener">Deno</a></strong>
+<ul>
+<li><a href="https://deno.com/blog/the-deno-company" target="_blank" rel="noopener">Deno Company</a></li>
+<li><a href="https://deno.com/blog/v1.9" target="_blank" rel="noopener">Deno 1.9 Release</a></li>
+</ul>
+</li>
+</ul>
+<h3><a href="https://youtu.be/BgPjQGlSLZs?t=859" target="_blank" rel="noopener">How did hhatto know Dev Protocol?</a> 14:19</h3>
+<p>I heard about Dev Protocol around three years ago when it has just started tokenizing projects of npm.</p>
+<h3><a href="https://youtu.be/BgPjQGlSLZs?t=1005" target="_blank" rel="noopener">OSS registered at Stakes.Social</a> 16:45</h3>
+<p>I register an OSS called autopep8 at Stakes.Social. This OSS is a code format tool for Phytho, and I’ve been developing it for 10 years. Now I’m doing my best to develop its Version 2.0. It would be a major update, and I’m sure you’ll like it. You can check the situation of 2.0 in this <a href="https://www.hexacosa.net/blog/detail/194/" target="_blank" rel="noopener">blog post</a>.</p>
+<h3><a href="https://youtu.be/BgPjQGlSLZs?t=1612" target="_blank" rel="noopener">What hhatto is expecting for Dev Protocol</a> 26:52</h3>
+<p>I think only a few people know of Dev Protocol. It is a fantastic framework, so I hope more creators can get an idea of it. I’m looking forward to seeing the increasing number of registered projects as well as the expansion of support for Dev Protocol.</p>
+<h3><a href="https://youtu.be/BgPjQGlSLZs?t=1660" target="_blank" rel="noopener">Messages for supporters</a> 27:40</h3>
+<p>I really appreciate for your continuous support. Your support onwards will be an enormous help and I want to express my deepest gratitude for it. Meanwhile, I’d like you, my supporters, to oversee my activities. If there is a case where you think they aren’t worthy enough to provide any value, please feel free to change your staking to the other project. I think that’s more sensible and practical.</p>
+<h2>To be continued</h2>
+<p>We’ll go on with the broadcast with guest speakers of OSS developers. There is more to come for INITTO FM.</p>
+
+    ]]></content>
+  </entry>
+	
+  
+  <entry>
     <title>How to use dev-kit-js#1</title>
     <link href="https://initto.devprotocol.xyz/posts/How-to-use-dev-kit-js-01/"/>
     <updated>2021-04-09T00:00:00+00:00</updated>
