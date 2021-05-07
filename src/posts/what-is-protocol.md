@@ -16,7 +16,7 @@ Dev Protocol is a tool built on Ethereum. It is a system which replaces the trad
 
 
 A great start to get the idea of Dev Protocol is to look for similarities in the internet's ecosystem:
-In the modern world of the internet, we see many types of web service using various digital payment for monetization. Most of the service is paid with credit cards, for example, “Alice pays X dollars for Bob”.
+In the modern world of the internet, we see many types of web service using various digital payments for monetization. Most of the service is paid with credit cards, for example, “Alice pays X dollars for Bob”.
 
 A protocol called ISO8583 is used for credit card payment. Since it is a payment via the internet, protocols such as TCP, IP, SSL and TSL are used as well. The money transfer from Alice to Bob is one type of protocol. There are a lot of protocols, but the meaning of each protocol is not so necessary! The fact that the web as we know it is composed of a group of protocols is an important point.
 
@@ -28,7 +28,7 @@ I think you get the idea on the difference between “web service” and “prot
 
 Dev Protocol enables people to monetize open assets such as OSS, Open Access, etc. It is a kind of function that replaces arrangements like “Alice pays X dollars for Bob” mentioned in the previous chapter.
 
-The difference between open assets and mugs sold at an online shop is that people cannot receive payment as a compensation for the service of open assets. Creators of open source software release these high value pieces of technology with good intentions, knowing full well that they will have to earn their living from another source of income. There is a disconnect between the ease of using such software, and how to fund it. Imagine if there was an ecosystem where everyone was rewarded monetarily for participating in creating/funding.
+The difference between open assets and mugs sold at an online shop is that people cannot receive payment as compensation for the service of open assets. Creators of open source software release these high value pieces of technology with good intentions, knowing full well that they will have to earn their living from another source of income. There is a disconnect between the ease of using such software, and how to fund it. Imagine if there was an ecosystem where everyone was rewarded monetarily for participating in creating/funding.
 
 Conventionally, the biggest chance for monetization that people can rely on with open assets was donation. Donation itself is one of the greatest protocols. However, we thought it inappropriate that open assets rely on a single protocol. That’s why we developed Dev Protocol.
 
@@ -83,8 +83,8 @@ That means, in case we’re all run over by a bus, Dev Protocol continues to ope
 
 If you have an idea for an open source project but lack funds or funding to accomplish your goals, Dev Protocol may be the tool for you.
 
-You can also create monetizing service on the web for users such as Authors and Patrons. There is no need to pay commission for the protocol, and no restriction like API limit. You can work as a Maintainer to develop a protocol itself. There aren’t so many codes required.
+You can also create monetizing services on the web for users such as Authors and Patrons. There is no need to pay commission for the protocol, and no restriction like API limit. You can work as a Maintainer to develop a protocol itself. There aren’t so many codes required.
 
-We have a more consise overview of Dev Protocol in our documentation here: [https://docs.devprotocol.xyz/dev-protocol/](https://docs.devprotocol.xyz/dev-protocol/)
+We have a more concise overview of Dev Protocol in our documentation here: [https://docs.devprotocol.xyz/dev-protocol/](https://docs.devprotocol.xyz/dev-protocol/)
 
 For those who want to know more about Dev Protocol, I’m preparing an article about decentralized protocols for my next entry.
