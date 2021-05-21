@@ -34,4 +34,24 @@
         display: block;
         margin-bottom: 15px;
     }
+    &__meta {
+        .info {
+            a {
+                color: #737171;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .date {
+                color: rgba(0, 0, 0, .54);
+                fill: rgba(0, 0, 0, .54);
+                font-size: 15px;
+            }
+            .divider:after {
+                content: '\00B7';
+            }
+            .reading-time:after {
+                content: attr(title);
+            }
+        }
+    }
 }
