@@ -12,7 +12,7 @@ pagination:
     - tagList
     - postFeed
   addAllPagesToCollections: true
-permalink: /tags/{{ tag }}/
+permalink: /en/tags/{{ tag }}/
 ---
 
 {% extends 'layouts/base.njk' %}
@@ -24,7 +24,7 @@ permalink: /tags/{{ tag }}/
 {# Post list content #}
 {% set postListHeadingLevel = '2' %}
 {% set postListHeading = 'Posts' %}
-{% set postListItems = collections[tag] | enItemFilter %}
+{% set postListItems = collections[tag] | localeItemFilter(locale) %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
