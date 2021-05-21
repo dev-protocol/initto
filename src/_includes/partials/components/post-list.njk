@@ -4,42 +4,44 @@
       <h2 class="[ post-list__heading ] [ text-700 md:text-800 ]">{{ postListHeading }}</h2>
       <ol class="[ post-list__items ] [ pad-top-300 ]" reversed>
         {% for item in postListItems %}
-          {% if item.date.getTime() <= global.now %}
-            <li class="[ post-list__item ] [ pad-xy-300 ]">
-              <a href="#" class="post-list__cover" style="background-image: url({{ item.data.socialImage }}); background-position: 50% 50% !important;">
+          {% if skipFirstPost != true or loop.first == false %}
+            {% if item.date.getTime() <= global.now %}
+              <li class="[ post-list__item ] [ pad-xy-300 ]">
+                <a href="{{ item.url | url }}" class="post-list__cover" style="background-image: url({{ item.data.socialImage }}); background-position: 50% 50% !important;">
 
-              </a>
+                </a>
 
-              <h3 class="font-base leading-tight text-600 weight-mid">
-                <a href="{{ item.url | url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
-              </h3>
+                <h3 class="font-base leading-tight text-600 weight-mid">
+                  <a href="{{ item.url | url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
+                </h3>
 
-              <div class="post-list__meta">
-                <!--div class="avatar">
-                  <a href="https://medium.com/@scott_27716" data-action="show-user-card" data-action-value="b845adec49f0" data-action-type="hover" data-user-id="b845adec49f0" dir="auto">
-                  <img src="https://cdn-images-1.medium.com/fit/c/72/72/1*IVqvR0zJRmT5J3tKjElrUg.jpeg" class="avatar-image u-size36x36 u-xs-size32x32" alt="Go to the profile of Scott | Dev Protocol"></a>
-                </div-->
-                <div class="info">
-                  <!--a class="" href="https://medium.com/@scott_27716">{{ item.data.author }}</a-->
-                  <span class="author">{{ item.data.author }}</span>
-                  <div class="date">
-                    {% set displayDate = item.date | dateFilterJa if locale == 'ja' else item.date | dateFilter %}
-                    <time datetime="{{ item.date | w3DateFilter }}">{{ displayDate }}</time>
-                    <span class="divider"></span>
-                    {% set introWatchTime = helpers.getReadingTime(item.data.content | safe) %}
-                    {% if locale == 'ja' %}
-                      <span class="reading-time" title="{{ introWatchTime }}分"></span>
-                    {% else %}
-                      <span class="reading-time" title="{{ introWatchTime }} min read"></span>
-                    {% endif %}
+                <div class="post-meta">
+                  <!--div class="avatar">
+                    <a href="https://medium.com/@scott_27716" data-action="show-user-card" data-action-value="b845adec49f0" data-action-type="hover" data-user-id="b845adec49f0" dir="auto">
+                    <img src="https://cdn-images-1.medium.com/fit/c/72/72/1*IVqvR0zJRmT5J3tKjElrUg.jpeg" class="avatar-image u-size36x36 u-xs-size32x32" alt="Go to the profile of Scott | Dev Protocol"></a>
+                  </div-->
+                  <div class="info">
+                    <!--a class="" href="https://medium.com/@scott_27716">{{ item.data.author }}</a-->
+                    <span class="author">{{ item.data.author }}</span>
+                    <div class="date">
+                      {% set displayDate = item.date | dateFilterJa if locale == 'ja' else item.date | dateFilter %}
+                      <time datetime="{{ item.date | w3DateFilter }}">{{ displayDate }}</time>
+                      <span class="divider"></span>
+                      {% set introWatchTime = helpers.getReadingTime(item.data.content | safe) %}
+                      {% if locale == 'ja' %}
+                        <span class="reading-time" title="{{ introWatchTime }}分"></span>
+                      {% else %}
+                        <span class="reading-time" title="{{ introWatchTime }} min read"></span>
+                      {% endif %}
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {% if item.data.level %}
-                <div class='level'>{{ item.data.level }}</div>
-              {% endif %}
-            </li>
+                {% if item.data.level %}
+                  <div class='level'>{{ item.data.level }}</div>
+                {% endif %}
+              </li>
+            {% endif %}
           {% endif %}
         {% endfor %}
       </ol>

@@ -10,6 +10,8 @@
 {% set postListHeading = postsHeading %}
 {% set postListItemsKey = 'postFeed_ja' if locale == 'ja' else 'postFeed' %}
 {% set postListItems = collections[postListItemsKey] %}
+{% set skipFirstPost = true %}
+
 
 {# Archive link #}
 {% set allPostItemsKey = 'posts_ja' if locale == 'ja' else 'posts' %}
@@ -22,6 +24,7 @@
 {% block content %}
   <main id="main-content" tabindex="-1">
     {% include "partials/components/intro.njk" %}
+    {% include "partials/components/latest-post.njk" %}
     {% include "partials/components/post-list.njk" %}
     {% include "partials/components/pagination.njk" %}
   </main>
