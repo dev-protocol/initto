@@ -14,7 +14,6 @@
         padding-left: 12px;
         padding-right: 15px;
         margin-bottom: 15px;
-        display: block;
         a {
             background-origin: border-box;
             background-size: cover;
@@ -44,6 +43,22 @@
         &__excerpt {
             color: rgba(0, 0, 0, .54);
             fill: rgba(0, 0, 0, .54);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .latest-post {
+        max-width: 26rem;
+        margin: 0 auto;
+        &__cover {
+            width: 100%;
+            a {
+                height: 175px;
+            }
+        }
+        &__data {
+            width: 100%;
         }
     }
 }
