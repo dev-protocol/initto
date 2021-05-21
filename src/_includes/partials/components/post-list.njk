@@ -6,6 +6,7 @@
         {% for item in postListItems %}
           {% if item.date.getTime() <= global.now %}
             <li class="[ post-list__item ] [ pad-xy-300 ]">
+              <a href="#" class="post-list__cover" style="background-image: url({{ item.data.socialImage }}); background-position: 50% 50% !important;"></a>
 
               <h3 class="font-base leading-tight text-600 weight-mid">
                 <a href="{{ item.url | url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
