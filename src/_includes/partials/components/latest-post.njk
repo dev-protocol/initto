@@ -1,0 +1,45 @@
+{% set item = postListItems[0] %}
+{% if item %}
+  <div class="[ inner-wrapper ] [ sf-flow ]">
+    <div class="[ latest-post ] [ pad-top-900 ]">
+      <div class="latest-post__cover">
+        <a href="{{ item.url | url }}" class="latest-post__cover" style="background-image: url({{ item.data.socialImage }});"></a>
+      </div>
+      <div class="latest-post__data">
+        <a href="{{ item.url | url }}" class="latest-post__data__link" rel="bookmark">
+          <h3 class="font-base leading-tight text-800 weight-mid">
+            <div>{{ item.data.title }}</div>
+          </h3>
+
+          <div class="latest-post__data__excerpt">{{ item.templateContent | extractExcerptFilter }}</div>
+        </a>
+
+        <div class="post-meta">
+          <!--div class="avatar">
+            <a href="https://medium.com/@scott_27716" data-action="show-user-card" data-action-value="b845adec49f0" data-action-type="hover" data-user-id="b845adec49f0" dir="auto">
+            <img src="https://cdn-images-1.medium.com/fit/c/72/72/1*IVqvR0zJRmT5J3tKjElrUg.jpeg" class="avatar-image u-size36x36 u-xs-size32x32" alt="Go to the profile of Scott | Dev Protocol"></a>
+          </div-->
+          <div class="info">
+            <!--a class="" href="https://medium.com/@scott_27716">{{ item.data.author }}</a-->
+            <span class="author">{{ item.data.author }}</span>
+            <div class="date">
+              {% set displayDate = item.date | dateFilterJa if locale == 'ja' else item.date | dateFilter %}
+              <time datetime="{{ item.date | w3DateFilter }}">{{ displayDate }}</time>
+              <span class="divider"></span>
+              {% set introWatchTime = helpers.getReadingTime(item.data.content | safe) %}
+              {% if locale == 'ja' %}
+                <span class="reading-time" title="{{ introWatchTime }}分"></span>
+              {% else %}
+                <span class="reading-time" title="{{ introWatchTime }} min read"></span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% if item.data.level %}
+          <div class='level'>{{ item.data.level }}</div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+{% endif %}

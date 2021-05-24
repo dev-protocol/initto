@@ -1,50 +1,48 @@
 @import 'config';
-
 // Pull in the stalfos lib
 @import '../../node_modules/stalfos/stalfos.scss';
-
 // Local mixins
 @import 'mixins/dark-mode';
-
 @import 'theme';
-
 // Local dependencies
 @import 'typography';
 
 /**
  * GLOBAL STYLES
  */
+
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;
-  &:focus {
-    outline: none;
-  }
+    flex: 1 0 auto;
+    &:focus {
+        outline: none;
+    }
 }
 
 hr {
-  display: block;
-  height: 1px;
-  max-width: 500px;
-  background: var(--color-stroke);
-  border: none;
-  margin: get-size(900) auto;
+    display: block;
+    height: 1px;
+    max-width: 500px;
+    background: var(--color-stroke);
+    border: none;
+    margin: get-size(900) auto;
 }
 
 // For when metric attributes are added to img elements
 img {
-  height: auto;
+    height: auto;
 }
+
 
 /**
  * PROJECT IMPORTS
@@ -54,7 +52,6 @@ img {
 @import 'utilities/inner-wrapper';
 @import 'utilities/visually-hidden';
 @import 'utilities/wrapper';
-
 // Components
 @import 'components/button';
 @import 'components/form';
@@ -63,8 +60,10 @@ img {
 @import 'components/nav';
 @import 'components/tag';
 @import 'components/pagination';
+@import 'components/latest-post';
 @import 'components/post';
 @import 'components/post-list';
+@import 'components/post-meta';
 @import 'components/select';
 @import 'components/site-head';
 @import 'components/site-foot';
@@ -73,72 +72,61 @@ img {
 @import 'components/video-player';
 @import "components/label";
 @import "components/watch";
-
 ::selection {
-  background-color: rgba(200,200,200,.8);
+    background-color: rgba(200, 200, 200, .8);
 }
 
 .intro__heading--initto {
-  max-width: none;
+    max-width: none;
 }
 
 .site-head__site-name {
-  font-family: Whytelnktrap;
+    font-family: Whytelnktrap;
 }
 
 .post__body pre>code {
-  font-size: get-size(300);
+    font-size: get-size(300);
 }
 
 .notification {
-  background-color: #fdf7ea;
-  line-height: 180%;
+    background-color: #fdf7ea;
+    line-height: 180%;
 }
 
-@media screen and (max-width: map-get($metrics, 'md-breakpoint')){
-  .post-list__items {
-    grid-template-columns: 100%;
-  }
-
-  .tags {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-    .nav__list {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-
-      .tag__item {
-        margin: 0;
-      }
+@media screen and (max-width: map-get($metrics, 'md-breakpoint')) {
+    .post-list__items {
+        grid-template-columns: 100%;
     }
-  }
-
-  .site-head__site-name {
-    display: block;
-  }
-
-  .site-foot__inner {
-    flex-direction: column;
-
-    .site-foot__inner__item {
-      display: initial;
-
-      a {
-        display: block;
-      }
-
-      .site-foot__inner__link-item {
-        padding: 0;
-        padding-bottom: 1rem;
-
-        &:last-child {
-          padding-bottom: 0;
+    .tags {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        .nav__list {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            .tag__item {
+                margin: 0;
+            }
         }
-      }
     }
-  }
+    .site-head__site-name {
+        display: block;
+    }
+    .site-foot__inner {
+        flex-direction: column;
+        .site-foot__inner__item {
+            display: initial;
+            a {
+                display: block;
+            }
+            .site-foot__inner__link-item {
+                padding: 0;
+                padding-bottom: 1rem;
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
 }
-
