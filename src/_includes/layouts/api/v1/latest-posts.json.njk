@@ -1,0 +1,9 @@
+[{% for item in postListItems %}{% set data = item.data %}{% if loop.index <= 5 %}
+  {
+    "title": "{{ data.title }}",
+    "thumbnail": "{{ data.socialImage }}",
+    "author": "{{ data.author }}",
+    "updated-at": "{{ data.date | w3DateFilter }}",
+    "url": "{{ site.url }}{{ item.url }}"
+  }{{ '' if (loop.last or loop.index == 5) else ',' }}
+{% endif %}{% endfor %}]

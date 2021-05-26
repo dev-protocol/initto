@@ -1,0 +1,4 @@
+---
+permalink: /api/v1/en/latest-posts.json
+---
+{% set postListItemsKey = 'postFeed_ja' if locale == 'ja' else 'postFeed' %}{% set postListItems = collections[postListItemsKey] %}{% extends 'layouts/api/v1/latest-posts.json.njk' %}
