@@ -8,15 +8,17 @@
 
 {# Post list content #}
 {% set postListHeading = postsHeading %}
-{% set postListItems = collections["postFeed_" + locale] %}
+{% set postListItemsKey = 'postFeed_ja' if locale == 'ja' else 'postFeed' %}
+{% set postListItems = collections[postListItemsKey] %}
 {% set skipFirstPost = true %}
 
 
 {# Archive link #}
-{% set allPostItems = collections["posts_" + locale] %}
+{% set allPostItemsKey = 'posts_ja' if locale == 'ja' else 'posts' %}
+{% set allPostItems = collections[allPostItemsKey] %}
 {% if postListItems.length < allPostItems.length %}
   {% set paginationNextText = archiveButtonText %}
-  {% set paginationNextUrl = 'archive' %}
+  {% set paginationNextUrl = '/ja/archive' if locale == 'ja' else '/archive' %}
 {% endif %}
 
 {% block content %}

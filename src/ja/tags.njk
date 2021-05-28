@@ -24,7 +24,7 @@ permalink: /ja/tags/{{ tag }}/
 {# Post list content #}
 {% set postListHeadingLevel = '2' %}
 {% set postListHeading = '記事一覧' %}
-{% set postListItems = collections[tag] | localeItemFilter(locale) %}
+{% set postListItems = collections[tag] | jaItemFilter %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
