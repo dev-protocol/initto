@@ -1,5 +1,13 @@
 [
   {
+    "title": "Blockchain Study#1を開催しました",
+    "thumbnail": "https://initto.devprotocol.xyz/images/posts/blockchain-study-01/ogp.png",
+    "author": "Kawakami",
+    "updated-at": "2021-06-28T00:00:00.000Z",
+    "url": "https://initto.devprotocol.xyz/ja/posts/blockchain-study-01/"
+  },
+
+  {
     "title": "Dev Protocol AMA",
     "thumbnail": "https://initto.devprotocol.xyz/images/posts/information-ama-02/ogp.png",
     "author": "Kawakami",
@@ -29,13 +37,5 @@
     "author": "AITG侍",
     "updated-at": "2021-04-06T00:00:00.000Z",
     "url": "https://initto.devprotocol.xyz/ja/posts/issuing-creator-token-at-stakes-social/"
-  },
-
-  {
-    "title": "Data Viewerを使ってOSS一覧を取得する方法",
-    "thumbnail": "https://initto.devprotocol.xyz/images/posts/How-to-acquire-an-OSS-list-with-Data-Viewer/ogp.png",
-    "author": "Kawakami",
-    "updated-at": "2021-03-26T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/posts/How-to-acquire-an-OSS-list-with-Data-Viewer/"
   }
 ]
