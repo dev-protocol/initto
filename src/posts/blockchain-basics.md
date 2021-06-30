@@ -56,10 +56,16 @@ Differently from CEX, DEXs are exchanges that connect users directly, there is n
 
 https://www.youtube.com/watch?v=LpjMgS4OVzs
 
-### NFT   
+### NFT (Non-fungible Tokens)   
 Non-fungible Tokens are tokens that have unique characteristics or properties. Things like visual art, music, collectible items, games, are rapidly being tokenized into NFT since it is a way to represent and verify the ownership of those items.
 
 https://www.youtube.com/watch?v=Xdkkux6OxfM&t=1s
+
+### Fungible Tokens
+
+Fungibility is an economic term that describes a good or a commodity that are mutually interchangeable with an identical item. So, Fungible Tokens are tokens that don't hold any uniqueness intrinsic to them, individually, and can't be distinguished from another one of it's kind. Some examples of Fungible currencies or tokens are: bank notes from a specific country with the same denomination; an ERC-20 token, they have the exact the same type and have the same value.
+
+https://www.youtube.com/watch?v=wViZBS9wM9o
 
 **Keep Asking Questions!**
 Discord👾 https://discord.gg/VwJp4KM
