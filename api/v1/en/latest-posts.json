@@ -1,5 +1,13 @@
 [
   {
+    "title": "Dev Protocol Incentives explained with Game Theory",
+    "thumbnail": "/images/posts/20210709/1.png",
+    "author": "Pdot",
+    "updated-at": "2021-07-09T00:00:00.000Z",
+    "url": "https://initto.devprotocol.xyz/posts/20210709/"
+  },
+
+  {
     "title": "Blockchain Basics - for Creators",
     "thumbnail": "https://initto.devprotocol.xyz/images/posts/blockchain-basics/ogp.png",
     "author": "Pdot",
@@ -29,13 +37,5 @@
     "author": "Kawakami",
     "updated-at": "2021-04-09T00:00:00.000Z",
     "url": "https://initto.devprotocol.xyz/posts/How-to-use-dev-kit-js-01/"
-  },
-
-  {
-    "title": "Issuing creator token at Stakes.social by AITG Samurai",
-    "thumbnail": "https://initto.devprotocol.xyz/images/posts/20210406/ogp.png",
-    "author": "AITG Samurai",
-    "updated-at": "2021-04-06T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/posts/issuing-creator-token-at-stakes-social/"
   }
 ]

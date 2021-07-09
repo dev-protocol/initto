@@ -15,6 +15,38 @@
 	
   
   <entry>
+    <title>Dev Protocol Incentives explained with Game Theory</title>
+    <link href="https://initto.devprotocol.xyz/posts/20210709/"/>
+    <updated>2021-07-09T00:00:00+00:00</updated>
+    <id>https://initto.devprotocol.xyz/posts/20210709/</id>
+    <content type="html"><![CDATA[
+      <p><img src="/images/posts/20210709/1.png" alt="Dev Protocol Incentives explained with Game Theory"></p>
+<p>We often get asked why you should use <a href="https://devprotocol.xyz/" target="_blank" rel="noopener">Dev Protocol</a> as a form of funding Open Source Software - OSS - Projects instead of just making a simple donation. I'll try to explain, through a simple Game Theory example, the incentives that Dev Protocol creates that makes it, for some people, a superior option to sustainably fund those projects.</p>
+<p>To show each particular incentive and differentiate them in this model, this will be a static game, prices are constant and the players can only choose to either use Dev Protocol or Donate. Just to be clear, in real life, when you join Dev Protocol, you're not required to give up donations, in fact you can and should accumulate both benefits.</p>
+<h2>The Game</h2>
+<p>Suppose there are 2 players, one is the Creator and the other is the Philanthropist. The latter dedicates $100 of his monthly income to donate to his favorite Open Source Software Creator. Financially the amount he donates gives him a - <strong>$100</strong> payoff, but, let's say that the satisfaction of donating to his favorite project is equivalent to him to a <strong>+$100</strong> payoff. The net payoff for him would be <strong>$0</strong>.</p>
+<p><img src="/images/posts/20210709/2.png" alt="Dev Protocol Incentives explained with Game Theory"></p>
+<p>Now consider that a Creator has his project pool on <a href="https://stakes.social/" target="_blank" rel="noopener">stakes.social</a> and only accepts DEVs. In this case potential Philanthropists who either did not afford to be altruistic or did not get the sufficient satisfaction from being altruistic to justify a donation might get the incentive to finance that project.</p>
+<p>Let's say that the Philanthropists stakes the sufficient amount of <a href="https://docs.devprotocol.xyz/stakes-social/token-guide/" target="_blank" rel="noopener">DEV tokens</a> that the Monthly Percentage Yield equals <strong>$100</strong>. In this case he gets both the <strong>+$100</strong> from the staking rewards AND the +$100 from the satisfaction of donating for his favorite project.</p>
+<p><img src="/images/posts/20210709/3.png" alt="Dev Protocol Incentives explained with Game Theory"></p>
+<p>So in this game, both strategies Dev Protocol:Dev Protocol and Donation:Donation are Nash Equilibria. But, when the Philanthropist deviates his strategy to Dev Protocol he has a better payoff, making it the <strong>dominant, optimal, strategy.</strong></p>
+<h3>Reality</h3>
+<p>In reality, like I've said in the beginning, the Creator can accept both Dev Protocol and the Donations as way to finance his projects, and they both have a place in the Creator Economy. That is, they are not and should not be Mutually Exclusive.</p>
+<p>The person that chooses to use <strong>Dev Protocol</strong> as a way to support an OSS project will have to:</p>
+<p>Learn how to use<br>
+To get a present $100 monthly donation, the individual will have to have the intertemporal vision that they have to currently stake 344 DEV, which costs $3440 today.<br>
+The good this is:</p>
+<p>Dev Protocol is still fairly new and unknown, it is sitting at a $10 Million Market Cap, which is extremely undervaluedfor all the problems it already solves.<br>
+Since the token price isn't constant, that initial purchase to sustainably finance their favorite project might even 10-100x in the future, as the Protocol grows, so getting in early might let you fund that project with $1000 or even $10000 monthly rewards, which couldn't be possible with regular donations.<br>
+Since you will also get paid, you might treat this not only as Philanthropy but as an investment, which might change the way you see how projects are funded and incentivize you to help them even more.<br>
+Individuals might prefer each method and both have their own benefits and places.</p>
+<p>I choose to use Dev Protocol.</p>
+
+    ]]></content>
+  </entry>
+	
+  
+  <entry>
     <title>Blockchain Basics - for Creators</title>
     <link href="https://initto.devprotocol.xyz/posts/blockchain-basics/"/>
     <updated>2021-06-29T00:00:00+00:00</updated>
