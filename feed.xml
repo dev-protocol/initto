@@ -20,7 +20,7 @@
     <updated>2021-07-09T00:00:00+00:00</updated>
     <id>https://initto.devprotocol.xyz/posts/20210709/</id>
     <content type="html"><![CDATA[
-      <p><img src="/images/posts/20210709/1.png" alt="Dev Protocol Incentives explained with Game Theory"></p>
+      <p><img src="/images/posts/20210709/ogp.png" alt="Dev Protocol Incentives explained with Game Theory"></p>
 <p>We often get asked why you should use <a href="https://devprotocol.xyz/" target="_blank" rel="noopener">Dev Protocol</a> as a form of funding Open Source Software - OSS - Projects instead of just making a simple donation. I'll try to explain, through a simple Game Theory example, the incentives that Dev Protocol creates that makes it, for some people, a superior option to sustainably fund those projects.</p>
 <p>To show each particular incentive and differentiate them in this model, this will be a static game, prices are constant and the players can only choose to either use Dev Protocol or Donate. Just to be clear, in real life, when you join Dev Protocol, you're not required to give up donations, in fact you can and should accumulate both benefits.</p>
 <h2>The Game</h2>
