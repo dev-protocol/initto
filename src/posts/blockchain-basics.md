@@ -67,5 +67,15 @@ Fungibility is an economic term that describes a good or a commodity that are mu
 
 https://www.youtube.com/watch?v=wViZBS9wM9o
 
+
+### Governance Tokens
+Governance Token holders can vote directly on proposals that decides the future of the Protocol or platform. Through governance tokens, every holder had their say and the right to vote on changes, proposals and decisions of that DAO.
+https://coinmarketcap.com/alexandria/glossary/governance-token
+
+### DAO
+Decentralized Autonomous Organization - DAO - is an organization or internet-based business run by rules created by their members through consensus, everything coded into smart contracts. Access to the treasury, proposals and decisions are all voted, usually by the governance token holders.
+https://ethereum.org/en/dao/
+
+
 **Keep Asking Questions!**
 Discord👾 https://discord.gg/VwJp4KM
