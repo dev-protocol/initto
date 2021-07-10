@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/posts/blockchain-basics/ogp.
 level: BEGINNER
 tags:
 - Glossary
+- fundamentals
 ---
 
 ## Iterative Glossary for Creators
