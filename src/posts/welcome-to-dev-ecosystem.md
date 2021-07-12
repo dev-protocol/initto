@@ -9,7 +9,7 @@ tags:
 ---
 ![Welcome to DEV's ecosystem!](/images/posts/welcome-to-dev-ecosystem/1.jpeg)
 
-DEV token is a crypto asset designed to support new kind of assets, such as OSS (Open Source Software).
+DEV token is a crypto asset designed to support the next generation of creators, such as OSS developers. (OSS - Open Source Software).
 
 Dev Protocol was created with the use of blockchain technology as a system to realize continuous support for all creators. DEV token is a crypto asset issued by Dev Protocol.
 Staking is like depositing your money to banks. As you may know, you’ll get interest for your deposited money. For DEV, if you deposit DEV token (money) to OSS (banks), you’ll get interest. The interest will be shared with developers, that means, interest for developers (reward) will be a donation for developers.
