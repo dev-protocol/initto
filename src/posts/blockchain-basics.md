@@ -5,8 +5,8 @@ date: 2021-06-29
 socialImage: 'https://initto.devprotocol.xyz/images/posts/blockchain-basics/ogp.png'
 level: BEGINNER
 tags:
-- Glossary
-- fundamentals
+  - StartGuide
+  - Glossary
 ---
 
 ## Iterative Glossary for Creators
