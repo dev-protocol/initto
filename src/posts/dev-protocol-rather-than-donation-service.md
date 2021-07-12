@@ -5,6 +5,7 @@ date: 2021-03-11
 socialImage: 'https://initto.devprotocol.xyz/images/posts/why-we-are-building-dev-protocol-not-a-donation-service/ogp-en.png'
 tags:
   - fundamentals
+  - StartGuide
 ---
 
 Hi, this is Dev Protocol Team.
