@@ -5,6 +5,7 @@ const fs = require('fs');
 // Import filters
 const dateFilter = require('./src/filters/date-filter.js');
 const dateFilterJa = require('./src/filters/date-filter-ja.js');
+const dateFilterPt = require('./src/filters/date-filter-pt.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 const localeItemFilter = require('./src/filters/lang-item-filter.js');
@@ -26,6 +27,7 @@ module.exports = function(config) {
   // Filters
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('dateFilterJa', dateFilterJa);
+  config.addFilter('dateFilterPt', dateFilterPt);
   config.addFilter('markdownFilter', markdownFilter);
   config.addFilter('w3DateFilter', w3DateFilter);
   config.addFilter('localeItemFilter', localeItemFilter);
@@ -61,6 +63,11 @@ module.exports = function(config) {
       ...collection.getFilteredByGlob('./src/ja/posts/*.md').filter(livePosts)
     ].reverse();
   });
+  config.addCollection('posts_pt', collection => {
+    return [
+      ...collection.getFilteredByGlob('./src/pt/posts/*.md').filter(livePosts)
+    ].reverse();
+  });
 
   config.addCollection('postFeed_en', collection => {
     return [...collection.getFilteredByGlob('./src/en/posts/*.md').filter(livePosts)]
@@ -69,6 +76,11 @@ module.exports = function(config) {
   });
   config.addCollection('postFeed_ja', collection => {
     return [...collection.getFilteredByGlob('./src/ja/posts/*.md').filter(livePosts)]
+      .reverse()
+      .slice(0, site.maxPostsPerPage);
+  });
+  config.addCollection('postFeed_pt', collection => {
+    return [...collection.getFilteredByGlob('./src/pt/posts/*.md').filter(livePosts)]
       .reverse()
       .slice(0, site.maxPostsPerPage);
   });

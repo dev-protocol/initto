@@ -33,6 +33,7 @@ class LangSwitch extends HTMLElement {
         <select class="[ select ] [ font-base text-base ] [ js-lang-select ]">
           <option value="en">English (en)</option>
           <option value="ja">Japanese (ja)</option>
+          <option value="pt">Português (pt)</option>
         </select>
       </div>
     `;
