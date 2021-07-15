@@ -2,8 +2,7 @@
 <header role="banner" class="[ site-head ] [ pad-top-700 pad-bottom-700 ">
   <div class="wrapper">
     <div class="[ site-head__inner ] [ md:box-flex space-between align-center ]">
-      {% set topWithLocale = '/ja' if locale == 'ja' else '/' %}
-      <a href="{{ topWithLocale | url }}" class="[ site-head__site-name ] [ leading-tight md:box-flex align-center ]">
+      <a href="/{{ locale }}" class="[ site-head__site-name ] [ leading-tight md:box-flex align-center ]">
         <span class="visually-hidden">{{ site.name }} - Home</span>
         <span class="[ site-head__site-name ] [ text-600 ]" aria-hidden="true">{{ site.name }}</span>
       </a>

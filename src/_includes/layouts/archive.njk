@@ -6,8 +6,7 @@
 
 {# Post list content #}
 {% set postListHeading = 'All posts' %}
-{% set postListItemsKey = 'posts_ja' if locale == 'ja' else 'posts' %}
-{% set postListItems = collections[postListItemsKey] %}
+{% set postListItems = collections["posts_" + locale] %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
