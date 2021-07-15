@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/post.njk",
+    "permalink": "/{{ locale }}/{{ page.fileSlug }}/index.html"
+}
