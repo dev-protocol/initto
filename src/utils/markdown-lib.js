@@ -11,4 +11,4 @@ module.exports = markdownIt.use(mila, {
     target: '_blank',
     rel: 'noopener'
   }
-})
+});

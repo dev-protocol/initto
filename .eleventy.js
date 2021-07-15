@@ -22,7 +22,7 @@ const site = require('./src/_data/site.json');
 const markdownLib = require('./src/utils/markdown-lib');
 
 module.exports = function(config) {
-  config.setLibrary("md", markdownLib)
+  config.setLibrary('md', markdownLib);
 
   // Filters
   config.addFilter('dateFilter', dateFilter);
@@ -74,7 +74,6 @@ module.exports = function(config) {
       .reverse()
       .slice(0, site.maxPostsPerPage);
   });
-
 
   // Plugins
   config.addPlugin(rssPlugin);
