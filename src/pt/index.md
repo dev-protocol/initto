@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Começe aqui
+title: Comece aqui
 postsHeading: Últimos artigos
 archiveButtonText: Ver todos os artigos
 metaDesc: 'Site de publicação oficial do Dev Protocol | INITTO'
