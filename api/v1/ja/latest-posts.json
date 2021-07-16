@@ -4,7 +4,7 @@
     "thumbnail": "https://initto.devprotocol.xyz/images/posts/welcome-to-dev-ecosystem/ogp.png",
     "author": "Kawakami",
     "updated-at": "2021-07-12T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/posts/welcome-to-dev-ecosystem/"
+    "url": "https://initto.devprotocol.xyz/ja/welcome-to-dev-ecosystem/"
   },
 
   {
@@ -12,7 +12,7 @@
     "thumbnail": "https://initto.devprotocol.xyz/images/posts/blockchain-study-01/ogp.png",
     "author": "Kawakami",
     "updated-at": "2021-06-28T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/posts/blockchain-study-01/"
+    "url": "https://initto.devprotocol.xyz/ja/blockchain-study-01/"
   },
 
   {
@@ -20,7 +20,7 @@
     "thumbnail": "https://initto.devprotocol.xyz/images/posts/information-ama-02/ogp.png",
     "author": "Kawakami",
     "updated-at": "2021-05-10T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/posts/information-ama-02/"
+    "url": "https://initto.devprotocol.xyz/ja/information-ama-02/"
   },
 
   {
@@ -28,7 +28,7 @@
     "thumbnail": "https://initto.devprotocol.xyz/images/posts/init_fm_01/ogp.png",
     "author": "Kawakami",
     "updated-at": "2021-04-21T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/posts/initto_fm_01/"
+    "url": "https://initto.devprotocol.xyz/ja/initto_fm_01/"
   },
 
   {
@@ -36,6 +36,6 @@
     "thumbnail": "https://initto.devprotocol.xyz/images/posts/How-to-use-dev-kit-js-01/ogp.png",
     "author": "Kawakami",
     "updated-at": "2021-04-09T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/posts/How-to-use-dev-kit-js-01/"
+    "url": "https://initto.devprotocol.xyz/ja/How-to-use-dev-kit-js-01/"
   }
 ]
