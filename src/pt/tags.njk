@@ -1,5 +1,5 @@
 ---
-title: Tag Archive
+title: Etiquetas
 pagination:
   data: collections
   size: 1
@@ -12,19 +12,19 @@ pagination:
     - tagList
     - postFeed
   addAllPagesToCollections: true
-permalink: /tags/{{ tag }}/
+permalink: /pt/tags/{{ tag }}/
 ---
 
 {% extends 'layouts/base.njk' %}
 
 {# Intro content #}
-{% set introHeading %}Posts filed under “{{ tag }}”{% endset %}
+{% set introHeading %}Artigos da etiqueta “{{ tag }}”{% endset %}
 {% set introHeadingLevel = '2' %}
 
 {# Post list content #}
 {% set postListHeadingLevel = '2' %}
-{% set postListHeading = 'Posts' %}
-{% set postListItems = collections[tag] | enItemFilter %}
+{% set postListHeading = 'Artigos' %}
+{% set postListItems = collections[tag] | localeItemFilter(locale) %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">

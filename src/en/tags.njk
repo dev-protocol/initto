@@ -12,18 +12,18 @@ pagination:
     - tagList
     - postFeed
   addAllPagesToCollections: true
-permalink: /ja/tags/{{ tag }}/
+permalink: /en/tags/{{ tag }}/
 ---
 
 {% extends 'layouts/base.njk' %}
 
 {# Intro content #}
-{% set introHeading %}“{{ tag }}”タグの記事一覧{% endset %}
+{% set introHeading %}Posts filed under “{{ tag }}”{% endset %}
 {% set introHeadingLevel = '2' %}
 
 {# Post list content #}
 {% set postListHeadingLevel = '2' %}
-{% set postListHeading = '記事一覧' %}
+{% set postListHeading = 'Posts' %}
 {% set postListItems = collections[tag] | localeItemFilter(locale) %}
 
 {% block content %}

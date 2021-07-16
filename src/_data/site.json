@@ -1,17 +1,18 @@
 {
-  "name": "INITTO",
-  "shortDesc": "",
-  "logoHeader": "/images/dev-protocol-logo-head03.svg",
-  "logoFooter": "/images/dev-protocol-logo-footer01.svg",
-  "url": "https://initto.devprotocol.xyz",
-  "authorHandle": "@devprtcl",
-  "authorName": "devprotocol team",
-  "enableThirdPartyComments": false,
-  "maxPostsPerPage": 10,
-  "faviconPath": "https://devprotocol.xyz/favicon.png",
-  "locales": [
-    "en",
-    "ja"
-  ],
-  "defaultLocale": "en"
+    "name": "INITTO",
+    "shortDesc": "",
+    "logoHeader": "/images/dev-protocol-logo-head03.svg",
+    "logoFooter": "/images/dev-protocol-logo-footer01.svg",
+    "url": "https://initto.devprotocol.xyz",
+    "authorHandle": "@devprtcl",
+    "authorName": "devprotocol team",
+    "enableThirdPartyComments": false,
+    "maxPostsPerPage": 10,
+    "faviconPath": "https://devprotocol.xyz/favicon.png",
+    "locales": [
+        "en",
+        "ja",
+        "pt"
+    ],
+    "defaultLocale": "en"
 }

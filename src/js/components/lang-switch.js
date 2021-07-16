@@ -31,8 +31,9 @@ class LangSwitch extends HTMLElement {
     this.innerHTML = html`
       <div class="[ lang-switch ] [ md:ta-right gap-bottom-500 ]">
         <select class="[ select ] [ font-base text-base ] [ js-lang-select ]">
-          <option value="en">English(en)</option>
-          <option value="ja">Japanese(ja)</option>
+          <option value="en">English (en)</option>
+          <option value="ja">Japanese (ja)</option>
+          <option value="pt">Português (pt)</option>
         </select>
       </div>
     `;
@@ -47,8 +48,7 @@ class LangSwitch extends HTMLElement {
       const lang = evt.target.value;
       evt.preventDefault();
       this.applySetting(lang);
-      const urlPath = lang !== 'en' ? lang : '';
-      const url = location.protocol + '//' + location.host + '/' + urlPath;
+      const url = location.protocol + '//' + location.host + '/' + lang;
       location.href = url;
     });
 

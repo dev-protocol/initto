@@ -97,7 +97,7 @@
               <ul class="[ nav__list ] [ box-flex align-center pad-left-400 ] [ p-category ]">
                 {% for item in tags %}
                   <li class="tag__item">
-                    {% set tagLink = '/tags/' + item if locale !== 'ja' else '/ja/tags/' + item %}
+                    {% set tagLink = '/' + locale + '/tags/' + item %}
                     <a href="{{ tagLink | url }}">{{ item }}</a>
                   </li>
                 {% endfor %}
