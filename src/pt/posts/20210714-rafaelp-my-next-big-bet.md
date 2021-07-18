@@ -2,7 +2,7 @@
 title: DEV Protocol, minha próxima grande aposta depois do Ethereum
 author: Rafael Lima
 date: 2021-07-14
-socialImage: /images/posts/20210714-rafaelp-my-next-big-bet/ogp.jpg
+socialImage: https://initto.devprotocol.xyz/images/posts/20210714-rafaelp-my-next-big-bet/ogp.jpg
 tags:
   - Contribution
 ---
