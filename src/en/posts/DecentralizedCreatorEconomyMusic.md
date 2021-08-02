@@ -1,9 +1,9 @@
 ---
-title: The Gateway to a Decentralized Creator Economy: Music
+title: The Gateway to a Decentralized Creator Economy Music
 author: Pdot
-date: 2021/08/02
-socialImage: 'https://firebasestorage.googleapis.com/v0/b/hideaki-97c59.appspot.com/o/images%2FcKluFNhRYzb3hvjxg2eHwVlrB5e2%2F0BUcOtsw6.png'
-level: BEGINNER | EXPERIENCED | 初級 | 中級以上
+date: 2021-08-02
+socialImage: 'https://initto.devprotocol.xyz/images/posts/DecentralizedCreatorEconomyMusic/ogp.png'
+level: BEGINNER
 tags:
 - Music
 - Creator Economy
