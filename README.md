@@ -66,3 +66,14 @@ If you set the date value to the future, it will not be displayed until the set 
 If you want to change OGP, change the value of socialImage.
 Please write the body of the article from below the meta information.
 Write the article in markdown format
+
+### Image
+If you want to use images, create a directory in `src/images/posts/` and save the images there.
+It is recommended that the directory name be the same as the title of the article.
+
+From the article, you can add images as below
+
+```
+![Image alt text](/images/posts/article-title/img01.png)
+```
+
