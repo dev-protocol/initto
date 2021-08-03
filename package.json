@@ -15,7 +15,7 @@
     "sass": "^1.26.3",
     "semver": "^6.3.0",
     "slugify": "^1.4.0",
-    "stalfos": "github:andy-piccalilli/stalfos#c8971d22726326cfc04089b2da4d51eeb1ebb0eb",
+    "stalfos": "https://github.com/andy-piccalilli/stalfos#c8971d22726326cfc04089b2da4d51eeb1ebb0eb",
     "striptags": "^3.1.1"
   },
   "devDependencies": {
@@ -38,15 +38,7 @@
     "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
     "production": "npm run sass:process && npx eleventy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hankchizljaw/hylia.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hankchizljaw/hylia/issues"
-  },
-  "homepage": "https://github.com/hankchizljaw/hylia#readme"
+  "license": "MIT"
 }
