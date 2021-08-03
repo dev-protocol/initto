@@ -38,15 +38,7 @@
     "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
     "production": "npm run sass:process && npx eleventy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hankchizljaw/hylia.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hankchizljaw/hylia/issues"
-  },
-  "homepage": "https://github.com/hankchizljaw/hylia#readme"
+  "license": "MIT"
 }
