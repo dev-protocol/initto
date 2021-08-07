@@ -6,8 +6,8 @@ socialImage: 'https://initto.devprotocol.xyz/images/posts/Study-session-of-Dev-D
 level: BEGINNER
 tags:
   - Fundamentals
-  - Creator Issues
-  - Creator Society
+  - Blockchain
+  - Open Source
 ---
 
 ![ogp_en](/images/posts/Study-session-of-Dev-Dapp-Starter-Grants/ogp_en.png)
