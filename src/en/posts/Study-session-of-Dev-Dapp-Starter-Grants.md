@@ -14,7 +14,7 @@ tags:
 
 Hey everyone!
 
-We are inviting all of you to join our study session for the [Dev Dapp Starter Grants](https://devprotocol.notion.site/Welcome-to-DEV-DAPP-STARTER-GRANTS-5cb95252f18540258111581ea54d8808) program. We will be having 2 sessions that will introduce you to blockchain technology and will teach you how to create decentralized applications (Dapp).
+We are inviting all of you to join our study session for the [Dev Dapp Starter Grants](https://devprotocol.notion.site/Welcome-to-DEV-DAPP-STARTER-GRANTS-5cb95252f18540258111581ea54d8808) program. We will be having 2 sessions that will introduce you to blockchain technology and will teach you how to create decentralized applications (Dapp). We are inviting all of you to join our study session for the Dev Dapp Starter Grants program. We will be having 2 sessions that will introduce you to blockchain technology and will teach you how to create decentralized applications (Dapp). It is not necessary to join the study session, you can start working with your Dapp and submit it to the [event application](https://forms.gle/LBw7JtnsPUMD6beL9).
 
 ## Study Session 1
 
