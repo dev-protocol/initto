@@ -25,6 +25,8 @@ If you're new to all of it, we are launching a new beginner program that offers 
 - [How to create Dev Protocol Dapp (2/3)](https://initto.devprotocol.xyz/en/20210305/)
 - [How to create Dev Protocol Dapp (3/3)](https://initto.devprotocol.xyz/en/20210312/)
 
+Or learn our latest version: [https://docs.devprotocol.xyz/en/learning/learning/building-dapp-dev-integration/](Building Decentralized applications with DEV Integration)
+
 ## Dev Dapp Starter Grants
 
 Dev Protocol, Decentralized finance (DeFi) protocol from Japan, will be holding "Dev Dapp Starter Grants", a grant program aimed at aiding the development of blockchain applications (Dapps). The program will provide financial support (paid in [DEV token](https://docs.devprotocol.xyz/introduction/devtoken/)) to the people who are working on Dapp development using Dev Protocol technology, a blockchain technology that allows creators to monetize their creations and gain sustainable support. If you don't know the DEV token, it is a new cryptocurrency or digital money for developers, its rise up depends on the demand just like what happened to Bitcoin and to other cryptos.
