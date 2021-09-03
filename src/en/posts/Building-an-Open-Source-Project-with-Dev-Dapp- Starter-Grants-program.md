@@ -25,7 +25,7 @@ If you're new to all of it, we are launching a new beginner program that offers 
 - [How to create Dev Protocol Dapp (2/3)](https://initto.devprotocol.xyz/en/20210305/)
 - [How to create Dev Protocol Dapp (3/3)](https://initto.devprotocol.xyz/en/20210312/)
 
-Or learn our latest version: [Building Decentralized applications with DEV Integration](https://docs.devprotocol.xyz/en/learning/learning/building-dapp-dev-integration/)
+Or learn our latest version: [Building Decentralized applications with DEV Integration](https://docs.devprotocol.xyz/en/learning/)
 
 ## Dev Dapp Starter Grants
 
