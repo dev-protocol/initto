@@ -88,6 +88,13 @@ img {
     font-size: get-size(300);
 }
 
+.post__body code {
+    font-size: 85%;
+    background: rgba(135,131,120,0.15);
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+}
+
 .notification {
     background-color: #fdf7ea;
     line-height: 180%;
@@ -128,5 +135,34 @@ img {
                 }
             }
         }
+    }
+}
+
+/** table **/
+table {
+    border: 1px solid #ddd;
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    border-collapse: collapse;
+
+    td, th {
+        padding: 5px 5px;
+    }
+
+    thead tr {
+        background-color: #cccccc;
+    }
+
+    thead tr th {
+        text-align: center;
+    }
+
+    tfoot {
+        border-top: 1px solid #ddd;
+    }
+
+    tbody tr:nth-of-type(2n) {
+        background: #f5f5f5;
     }
 }
