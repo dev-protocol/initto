@@ -8,34 +8,34 @@
   },
 
   {
-    "title": "DEVのエコシステムへようこそ",
-    "thumbnail": "https://initto.devprotocol.xyz/images/posts/welcome-to-dev-ecosystem/ogp.png",
+    "title": "Dev Protocol HandsOn - 事前準備",
+    "thumbnail": "https://initto.devprotocol.xyz/images/posts/handson/ogp_handson-in-advance.png",
     "author": "Kawakami",
-    "updated-at": "2021-07-12T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/welcome-to-dev-ecosystem/"
+    "updated-at": "2021-09-06T00:00:00.000Z",
+    "url": "https://initto.devprotocol.xyz/ja/devprotocol-handson-in-advance/"
   },
 
   {
-    "title": "Blockchain Study#1を開催しました",
-    "thumbnail": "https://initto.devprotocol.xyz/images/posts/blockchain-study-01/ogp.png",
+    "title": "Dev Protocol HandsOn - ステーキング一覧と引き出し",
+    "thumbnail": "https://initto.devprotocol.xyz/images/posts/handson/ogp_handson-03.png",
     "author": "Kawakami",
-    "updated-at": "2021-06-28T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/blockchain-study-01/"
+    "updated-at": "2021-09-06T00:00:00.000Z",
+    "url": "https://initto.devprotocol.xyz/ja/devprotocol-handson-03/"
   },
 
   {
-    "title": "Dev Protocol AMA",
-    "thumbnail": "https://initto.devprotocol.xyz/images/posts/information-ama-02/ogp.png",
+    "title": "Dev Protocol HandsOn - プロパティ表示とステーキング",
+    "thumbnail": "https://initto.devprotocol.xyz/images/posts/handson/ogp_handson-02.png",
     "author": "Kawakami",
-    "updated-at": "2021-05-10T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/information-ama-02/"
+    "updated-at": "2021-09-06T00:00:00.000Z",
+    "url": "https://initto.devprotocol.xyz/ja/devprotocol-handson-02/"
   },
 
   {
-    "title": "INITTO FM#1",
-    "thumbnail": "https://initto.devprotocol.xyz/images/posts/init_fm_01/ogp.png",
+    "title": "Dev Protocol HandsOn - ログインと所持DEV表示",
+    "thumbnail": "https://initto.devprotocol.xyz/images/posts/handson/ogp_handson-01.png",
     "author": "Kawakami",
-    "updated-at": "2021-04-21T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/initto_fm_01/"
+    "updated-at": "2021-09-06T00:00:00.000Z",
+    "url": "https://initto.devprotocol.xyz/ja/devprotocol-handson-01/"
   }
 ]
