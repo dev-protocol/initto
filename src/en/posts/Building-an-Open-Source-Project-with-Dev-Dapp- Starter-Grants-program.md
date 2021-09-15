@@ -59,7 +59,7 @@ The best Dapps will receive up to 500 DEV tokens that come from the Dev Protocol
 
 ## Application period
 
-July 26, 2021 - September 30, 2021
+July 26, 2021 - December 31, 2021
 
 Read the full details and register: [Dev Dapp Starter Grants](https://devprotocol.notion.site/Welcome-to-DEV-DAPP-STARTER-GRANTS-5cb95252f18540258111581ea54d8808)
 
