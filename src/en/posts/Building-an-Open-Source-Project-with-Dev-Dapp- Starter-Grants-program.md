@@ -1,7 +1,7 @@
 ---
 title: Building an Open Source Project with Dev Dapp Starter Grants program
 author: vinzvinci
-date: 2021-07-26
+date: 2021-09-20
 socialImage: 'https://initto.devprotocol.xyz/images/posts/OSSwithDevDappStarterGrantsProgram/ogp_en.png'
 level: BEGINNER
 tags:
@@ -21,7 +21,7 @@ If you're new to all of it, we are launching a new beginner program that offers 
 
 ## Learning Guide 
 
-Learn how to build Dapp with Dev Protocol technology :point_down:
+Learn how to build Dapp with Dev Protocol technology 
 
 [Building Decentralized applications with DEV Integration](https://docs.devprotocol.xyz/en/learning/)
 
