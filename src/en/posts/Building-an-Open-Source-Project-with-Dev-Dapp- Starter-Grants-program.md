@@ -19,25 +19,17 @@ Dev Protocol's technology mission is to help every creator. Dev Protocol creates
 
 If you're new to all of it, we are launching a new beginner program that offers a big opportunity for you to learn how to develop decentralized applications (Dapps).
 
-## Steps to create Dev Protocol Dapp
+## Learning Guide 
 
-- [How to create Dev Protocol Dapp (1/3)](https://initto.devprotocol.xyz/en/20210226/)
-- [How to create Dev Protocol Dapp (2/3)](https://initto.devprotocol.xyz/en/20210305/)
-- [How to create Dev Protocol Dapp (3/3)](https://initto.devprotocol.xyz/en/20210312/)
+Learn how to build Dapp with Dev Protocol technology :point_down:
 
-Or learn our latest version: [Building Decentralized applications with DEV Integration](https://docs.devprotocol.xyz/en/learning/)
+[Building Decentralized applications with DEV Integration](https://docs.devprotocol.xyz/en/learning/)
+
+If you are new to this field, navigate to [blockchain-dev-path](https://github.com/web3community/blockchain-dev-path) repository, Dev Protocol [documentation](https://docs.devprotocol.xyz/en/introduction/) or join [Web 3 Community](https://discord.com/invite/3EN2UVE9mH)  to collaborate with minded people.
 
 ## Dev Dapp Starter Grants
 
 Dev Protocol, Decentralized finance (DeFi) protocol from Japan, will be holding "Dev Dapp Starter Grants", a grant program aimed at aiding the development of blockchain applications (Dapps). The program will provide financial support (paid in [DEV token](https://docs.devprotocol.xyz/introduction/devtoken/)) to the people who are working on Dapp development using Dev Protocol technology, a blockchain technology that allows creators to monetize their creations and gain sustainable support. If you don't know the DEV token, it is a new cryptocurrency or digital money for developers, its rise up depends on the demand just like what happened to Bitcoin and to other cryptos.
-
-## Themes to apply when you join
-
-- Tutorial to learn Dev Protocol Development of Dapps
-- Development of Dapps that provides a new user experience of "support"
-- Development of Dapps to provide a new user experience for OSS tokens
-
-This event is intended to introduce Dev Dapp Starter Grants, explain the three themes covered by Grants, and provide information so that participants can develop.
 
 ## Prerequisites
 
@@ -61,10 +53,10 @@ The best Dapps will receive up to 500 DEV tokens that come from the Dev Protocol
 
 July 26, 2021 - December 31, 2021
 
-Read the full details and register: [Dev Dapp Starter Grants](https://devprotocol.notion.site/Welcome-to-DEV-DAPP-STARTER-GRANTS-5cb95252f18540258111581ea54d8808)
+Read the full details and register [here](https://devprotocol.notion.site/Welcome-to-DEV-DAPP-STARTER-GRANTS-5cb95252f18540258111581ea54d8808)
 
 ## Join our growing community
 
-If you have developer friends or a tech community, you should invite them to the Dev Protocol community, and join the Dev Protocol community as early as possible because Dev Protocol provides many opportunities that you shouldn't miss. So what are you waiting for? Come join us and let's help each other to grow!
+If you have developer friends or a tech community, you should invite them to the Dev Protocol or Web 3 community, and join the Dev Protocol or Web 3 community as early as possible because these communities provide many opportunities that you shouldn't miss. So what are you waiting for? Come join us and let's help each other to grow!
 
-Join our [discord server](https://discord.gg/VwJp4KM) to keep you updated and don't be afraid to ask any questions you have!
+Join [Dev Protocol](https://discord.gg/VwJp4KM) or [Web 3 Community](https://discord.com/invite/3EN2UVE9mH) server to keep you updated and don't be afraid to ask any questions you have!
