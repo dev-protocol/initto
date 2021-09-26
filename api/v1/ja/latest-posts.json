@@ -1,5 +1,13 @@
 [
   {
+    "title": "教えてあなたのリモア環境",
+    "thumbnail": "https://initto.devprotocol.xyz/images/posts/campaign-twitter-01/ogp.png",
+    "author": "",
+    "updated-at": "2021-09-26T00:00:00.000Z",
+    "url": "https://initto.devprotocol.xyz/ja/campaign-twitter-01/"
+  },
+
+  {
     "title": "紹介したいOSSプロジェクト5選",
     "thumbnail": "https://initto.devprotocol.xyz/images/posts/introduce-5-oss/introduce_5_oss.png",
     "author": "Kawakami",
@@ -29,13 +37,5 @@
     "author": "Kawakami",
     "updated-at": "2021-09-06T00:00:00.000Z",
     "url": "https://initto.devprotocol.xyz/ja/devprotocol-handson-02/"
-  },
-
-  {
-    "title": "Dev Protocol HandsOn - ログインと所持DEV表示",
-    "thumbnail": "https://initto.devprotocol.xyz/images/posts/handson/ogp_handson-01.png",
-    "author": "Kawakami",
-    "updated-at": "2021-09-06T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/devprotocol-handson-01/"
   }
 ]
