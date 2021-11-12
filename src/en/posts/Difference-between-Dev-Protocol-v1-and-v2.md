@@ -2,7 +2,7 @@
 title: Difference between Dev Protocol v1 and v2
 author: Akira Taniguchi
 date: 2021-11-12
-socialImage: ''
+socialImage: 'https://initto.devprotocol.xyz/images/posts/20211112/ogp--1.png'
 level: 初級
 tags:
 - Solidity
