@@ -2,7 +2,7 @@
 title: Dev Protocol v1とv2の違い
 author: Akira Taniguchi
 date: 2021-11-12
-socialImage: ''https://initto.devprotocol.xyz/images/posts/20211112/ogp--2.png''
+socialImage: 'https://initto.devprotocol.xyz/images/posts/20211112/ogp--2.png'
 level: 初級
 tags:
 - Solidity
