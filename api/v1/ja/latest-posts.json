@@ -1,5 +1,13 @@
 [
   {
+    "title": "Composability と Dev Protocolの提供するインターフェース",
+    "thumbnail": "https://initto.devprotocol.xyz/images/posts/20211125/ogp--1.png",
+    "author": "Kenta Sato",
+    "updated-at": "2021-11-26T00:00:00.000Z",
+    "url": "https://initto.devprotocol.xyz/ja/what-is-composability/"
+  },
+
+  {
     "title": "Dev Protocol v1とv2の違い",
     "thumbnail": "https://initto.devprotocol.xyz/images/posts/20211112/ogp--2.png",
     "author": "Akira Taniguchi",
@@ -29,13 +37,5 @@
     "author": "Kawakami",
     "updated-at": "2021-09-06T00:00:00.000Z",
     "url": "https://initto.devprotocol.xyz/ja/devprotocol-handson-03/"
-  },
-
-  {
-    "title": "Dev Protocol HandsOn - プロパティ表示とステーキング",
-    "thumbnail": "https://initto.devprotocol.xyz/images/posts/handson/ogp_handson-02.png",
-    "author": "Kawakami",
-    "updated-at": "2021-09-06T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/devprotocol-handson-02/"
   }
 ]
