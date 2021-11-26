@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/posts/20211112/ogp--1.png'
 level: BEGINNER
 tags:
 - Solidity
+- Arbitrum
 ---
 
 # Dev Protocol V2 Released
