@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/posts/20211112/ogp--2.png'
 level: 初級
 tags:
 - Solidity
+- Arbitrum
 ---
 
 # Dev Protocol V2をリリースしました
