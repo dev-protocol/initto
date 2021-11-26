@@ -2,7 +2,7 @@
 title: Composability and Interface of Dev Protocol
 author: Kenta Sato
 date: 2021-11-26
-socialImage: 'https://initto.devprotocol.xyz/images/posts/20211125/ogp--2.png' 
+socialImage: 'https://initto.devprotocol.xyz/images/posts/20211125/ogp--1.png' 
 level: BEGINNER
 tags:
 - Smart Contracts
