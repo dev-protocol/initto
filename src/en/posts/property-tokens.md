@@ -13,7 +13,13 @@ In this article, I’d like to introduce property tokens, one of the major innov
 
 # What are Property tokens?
 
-Property tokens are used for receiving staking reward by OSS creators. The total amount to supply property tokens is fixed, and creators receive their staking reward in proportion to the property tokens that they hold.
+Property tokens are ERC20 tokens you can issue at DEV protocol. With property tokens, you can:
+- Prove the ownership of your project.
+- Earn your creator rewards.
+- Divide your creator rewards with your team members.
+
+All of these functions are automatically done on blockchain.
+In this article, I will focus on the third feature: the division of creator rewards, and explain how it works and its application.
 
 Let’s say that Alice, a creator, registered her project as Property A at DEV Protocol. When Property A is registered, certain amount of Property A tokens is issued (As an easy-to-follow example here, let’s say 1 million tokens is issued). Alice receives 95% of the issued tokens, and the rest of 5% is sent to Treasury, a fund of DEV Protocol.
 
