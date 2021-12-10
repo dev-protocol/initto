@@ -77,3 +77,9 @@ From the article, you can add images as below
 ![Image alt text](/images/posts/article-title/img01.png)
 ```
 
+---
+
+## Markdown Guide
+
+We are using [markdown](https://www.markdownguide.org/) for a simple and easy use font format.
+
