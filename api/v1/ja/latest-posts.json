@@ -1,5 +1,13 @@
 [
   {
+    "title": "Propertyトークンとはなんですか？それをどのように活用できますか？",
+    "thumbnail": "https://initto.devprotocol.xyz/images/posts/20211210/ogp--2.png",
+    "author": "Yusuke Ikeda",
+    "updated-at": "2021-12-09T00:00:00.000Z",
+    "url": "https://initto.devprotocol.xyz/ja/property-tokens/"
+  },
+
+  {
     "title": "Composability と Dev Protocolの提供するインターフェース",
     "thumbnail": "https://initto.devprotocol.xyz/images/posts/20211125/ogp--2.png",
     "author": "Kenta Sato",
@@ -29,13 +37,5 @@
     "author": "Kawakami",
     "updated-at": "2021-09-06T00:00:00.000Z",
     "url": "https://initto.devprotocol.xyz/ja/devprotocol-handson-in-advance/"
-  },
-
-  {
-    "title": "Dev Protocol HandsOn - ステーキング一覧と引き出し",
-    "thumbnail": "https://initto.devprotocol.xyz/images/posts/handson/ogp_handson-03.png",
-    "author": "Kawakami",
-    "updated-at": "2021-09-06T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/devprotocol-handson-03/"
   }
 ]
