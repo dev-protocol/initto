@@ -2,7 +2,7 @@
 title: What are property tokens? How can we make use of them?
 author: Yusuke Ikeda
 date: 2021-12-09
-socialImage: 
+socialImage: 'https://initto.devprotocol.xyz/images/posts/20211210/ogp--1.png'
 level: BEGINNER
 tags:
   - document
