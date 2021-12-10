@@ -2,7 +2,7 @@
 title: Propertyトークンとはなんですか？それをどのように活用できますか？
 author: Yusuke Ikeda
 date: 2021-12-09
-socialImage:
+socialImage: 'https://initto.devprotocol.xyz/images/posts/20211210/ogp--2.png'
 level: 初級
 tags:
   - document
