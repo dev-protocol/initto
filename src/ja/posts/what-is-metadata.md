@@ -105,19 +105,14 @@ Dev ProtocolのNFTは、ステーキングしたときにもらえるトーク�
 
 ## 参考資料
 
-https://eips.ethereum.org/EIPS/eip-721
-
-Merriam Webster,
-https://www.merriam-webster.com/dictionary/metadata
-
-IPFS Blog, How to Store and Maintain NFT MetaData,
-https://blog.ipfs.io/how-to-store-and-maintain-nft-metadata/
-
-OpenSea, Metadata Standardds,
-https://docs.opensea.io/docs/metadata-standards
-
-Openzeppelin forum, How to provide metadata for ERC721,
-https://forum.openzeppelin.com/t/how-to-provide-metadata-for-erc721/4057/3
-
-Yusuke Ikeda, Launching NFT art function of sToken,
-https://initto.devprotocol.xyz/ja/s-token-update/
+[EIP 721](https://eips.ethereum.org/EIPS/eip-721)
+ 
+[Merriam Webster](https://www.merriam-webster.com/dictionary/metadata)
+ 
+[IPFS Blog, How to Store and Maintain NFT MetaData](https://blog.ipfs.io/how-to-store-and-maintain-nft-metadata/)
+ 
+[OpenSea, Metadata Standardds](https://docs.opensea.io/docs/metadata-standards)
+ 
+[Openzeppelin forum, How to provide metadata for ERC721](https://forum.openzeppelin.com/t/how-to-provide-metadata-for-erc721/4057/3)
+ 
+[Yusuke Ikeda, Launching NFT art function of sToken](https://initto.devprotocol.xyz/ja/s-token-update/)
