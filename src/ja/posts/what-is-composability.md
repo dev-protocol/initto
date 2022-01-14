@@ -60,7 +60,7 @@ Ethereum and its apps are transparent and open source. You can fork code and re-
 # Dev Protocolが提供するインターフェースについて
 
 Dev Protocolにアクセスする方法は２つあります。一つ目はSolidityを使いDev Protocolのスマートコントラクトに直接アクセスする方法。これについては[Interfaces](https://docs.devprotocol.xyz/en/developers/tools/interfaces/)を参考にしてください。二つ目は、Dev Protocol開発チームが提供するDev Kitを使う方法です。Dev Kitはweb3 jsを通じてDev Protocolにアクセスしていて、JavaScript, TypeScriptで使用することが可能です。
-Dev Kitについては、[ここに](https://docs.devprotocol.xyz/en/developers/tools/dev-kit/)に詳しく書かれています。
+Dev Kitについては、[ここ](https://docs.devprotocol.xyz/en/developers/tools/dev-kit/)に詳しく書かれています。
 
 
 ## 最後に
