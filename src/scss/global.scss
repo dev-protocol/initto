@@ -72,8 +72,11 @@ img {
 @import 'components/video-player';
 @import "components/label";
 @import "components/watch";
+
+::-moz-selection,
 ::selection {
-    background-color: rgba(200, 200, 200, .8);
+    color: #fff;
+    background-color: #5b8bf5;
 }
 
 .intro__heading--initto {
