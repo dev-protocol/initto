@@ -1,5 +1,5 @@
 ---
-title: I thought it easy to deploy Polygon, but…
+title: I thought it was easy to deploy Polygon, but…
 author: Akira Taniguchi
 date: 2022-01-28
 socialImage: 'https://initto.devprotocol.xyz/images/ogp.png'
