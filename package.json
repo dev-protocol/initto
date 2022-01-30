@@ -15,7 +15,7 @@
     "sass": "^1.26.3",
     "semver": "^6.3.0",
     "slugify": "^1.4.0",
-    "stalfos": "https://github.com/andy-piccalilli/stalfos#c8971d22726326cfc04089b2da4d51eeb1ebb0eb",
+    "stalfos": "https://github.com/andy-piccalilli/stalfos#ad9e3e087c101367d2e2b2adc0708173cf88f840",
     "striptags": "^3.1.1"
   },
   "devDependencies": {
