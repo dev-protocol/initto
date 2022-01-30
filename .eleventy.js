@@ -21,6 +21,9 @@ const site = require('./src/_data/site.json');
 // Import markdown-lib
 const markdownLib = require('./src/utils/markdown-lib');
 
+// for youtube embed
+const embedYouTube = require("eleventy-plugin-youtube-embed");
+
 module.exports = function(config) {
   config.setLibrary("md", markdownLib)
 
@@ -89,6 +92,7 @@ module.exports = function(config) {
   // Plugins
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
+  config.addPlugin(embedYouTube);
 
   /* Forestry instant previews
   if( process.env.ELEVENTY_ENV == "staging" ) {
