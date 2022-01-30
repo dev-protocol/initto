@@ -23,7 +23,7 @@
     "bl": "5.0.0",
     "chokidar-cli": "^2.1.0",
     "cross-env": "^5.2.1",
-    "make-dir-cli": "^2.0.0",
+    "make-dir-cli": "3.0.0",
     "markdown-it-link-attributes": "^3.0.0",
     "prettier": "^1.19.1",
     "rollup": "2.55.1",
