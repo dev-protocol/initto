@@ -2107,12 +2107,12 @@ ieee754@^1.2.1:
   resolved "https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz"
   integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
 
-image-size@^0.8.3:
-  version "0.8.3"
-  resolved "https://registry.npmjs.org/image-size/-/image-size-0.8.3.tgz"
-  integrity sha512-SMtq1AJ+aqHB45c3FsB4ERK0UCiA2d3H1uq8s+8T0Pf8A3W4teyBQyaFaktH6xvZqh+npwlKU7i4fJo0r7TYTg==
+image-size@^0.9.0:
+  version "0.9.7"
+  resolved "https://registry.npmjs.org/image-size/-/image-size-0.9.7.tgz"
+  integrity sha512-KRVgLNZkr00YGN0qn9MlIrmlxbRhsCcEb1Byq3WKGnIV4M48iD185cprRtaoK4t5iC+ym2Q5qlArxZ/V1yzDgA==
   dependencies:
-    queue "6.0.1"
+    queue "6.0.2"
 
 immediate@~3.2.3:
   version "3.2.3"
@@ -3676,10 +3676,10 @@ qs@~6.5.2:
   resolved "https://registry.npmjs.org/qs/-/qs-6.5.2.tgz"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
-queue@6.0.1:
-  version "6.0.1"
-  resolved "https://registry.npmjs.org/queue/-/queue-6.0.1.tgz"
-  integrity sha512-AJBQabRCCNr9ANq8v77RJEv73DPbn55cdTb+Giq4X0AVnNVZvMHlYp7XlQiN+1npCZj1DuSmaA2hYVUUDgxFDg==
+queue@6.0.2:
+  version "6.0.2"
+  resolved "https://registry.npmjs.org/queue/-/queue-6.0.2.tgz"
+  integrity sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==
   dependencies:
     inherits "~2.0.3"
 
@@ -4312,6 +4312,7 @@ sshpk@^1.7.0:
 "stalfos@https://github.com/andy-piccalilli/stalfos#c8971d22726326cfc04089b2da4d51eeb1ebb0eb":
   version "2.0.0"
   resolved "git+https://git@github.com/andy-piccalilli/stalfos.git#c8971d22726326cfc04089b2da4d51eeb1ebb0eb"
+  integrity sha512-Oj+bDS5L3oYeH0U1ZBUt862P9D6S2VUoXtZjH3/cvi+L321f0C56Ozy4xPHLrxwQH/TNVGWldpfpMCnSVPmieQ==
   dependencies:
     sass "^1.19.0"
 
@@ -4448,9 +4449,9 @@ strip-indent@^2.0.0:
   resolved "https://registry.npmjs.org/strip-indent/-/strip-indent-2.0.0.tgz"
   integrity sha1-XvjbKV0B5u1sv3qrlpmNeCJSe2g=
 
-striptags@^3.2.0:
+striptags@^3.1.1:
   version "3.2.0"
-  resolved "https://registry.yarnpkg.com/striptags/-/striptags-3.2.0.tgz#cc74a137db2de8b0b9a370006334161f7dd67052"
+  resolved "https://registry.npmjs.org/striptags/-/striptags-3.2.0.tgz"
   integrity sha512-g45ZOGzHDMe2bdYMdIvdAfCQkCTDMGBazSw1ypMowwGIee7ZQ5dU0rBJ8Jqgl+jAKIv4dbeE1jscZq9wid1Tkw==
 
 supports-color@^2.0.0:
