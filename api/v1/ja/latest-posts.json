@@ -1,5 +1,13 @@
 [
   {
+    "title": "Dev Protocol 2022年ロードマップ 日本語版",
+    "thumbnail": "https://initto.devprotocol.xyz/images/posts/20220202/ogp.png",
+    "author": "Mayumi",
+    "updated-at": "2022-02-02T00:00:00.000Z",
+    "url": "https://initto.devprotocol.xyz/ja/2022-year-roadmap-maximize-the-creator-economy/"
+  },
+
+  {
     "title": "Polygonには簡単にデプロイできる。そんなふうに考えていた時期が私にもありました。",
     "thumbnail": "https://initto.devprotocol.xyz/images/ogp.png",
     "author": "Akira Taniguchi",
@@ -29,13 +37,5 @@
     "author": "Yusuke Ikeda",
     "updated-at": "2021-12-09T00:00:00.000Z",
     "url": "https://initto.devprotocol.xyz/ja/property-tokens/"
-  },
-
-  {
-    "title": "Composability と Dev Protocolの提供するインターフェース",
-    "thumbnail": "https://initto.devprotocol.xyz/images/posts/20211125/ogp--2.png",
-    "author": "Kenta Sato",
-    "updated-at": "2021-11-26T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/what-is-composability/"
   }
 ]
