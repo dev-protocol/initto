@@ -5,7 +5,8 @@ date: 2021-11-26
 socialImage: 'https://initto.devprotocol.xyz/images/posts/20211125/ogp--2.png' 
 level: 初級
 tags:
-- Smart Contracts
+- スマートコントラクト
+- 用語集
 ---
 
 ## はじめに

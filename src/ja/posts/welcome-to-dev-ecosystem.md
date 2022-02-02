@@ -6,6 +6,7 @@ socialImage: https://initto.devprotocol.xyz/images/posts/welcome-to-dev-ecosyste
 level: BEGINNER
 tags:
   - StartGuide
+  - Fundamentals
 ---
 ![Welcome to DEV's ecosystem!](/images/posts/welcome-to-dev-ecosystem/1.jpeg)
 

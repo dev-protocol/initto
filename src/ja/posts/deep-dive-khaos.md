@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/posts/deep-dive-khaos/ogp.pn
 level: 中級以上
 tags:
   - Khaos
+  - オラクル
 ---
 
 # Khaos

@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/posts/what-is-a-protocol/wha
 level: 初級
 tags:
   - fundamentals
+  - 用語集
 ---
 
 こんにちは。Aggre です。

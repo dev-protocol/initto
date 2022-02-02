@@ -7,6 +7,9 @@ level: 初級
 tags:
 - Solidity
 - Arbitrum
+- スマートコントラクト
+- L2
+- ネットワーク
 ---
 
 # Dev Protocol V2をリリースしました

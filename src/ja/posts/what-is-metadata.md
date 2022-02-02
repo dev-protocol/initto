@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/ogp.png'
 level: 初級
 tags:
 - NFT
+- 用語集
 ---
 
 # はじめに

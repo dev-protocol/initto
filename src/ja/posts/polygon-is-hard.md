@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/ogp.png'
 level: 初級 
 tags:
   - polygon
+  - ネットワーク
 ---
 # Polygonに対応しました
 すでに一昔前な感覚がありますが、[弊プロダクトがPolygonネットワークで利用できる](https://twitter.com/devprtcl/status/1480836156434837507?s=20)ようになりました。

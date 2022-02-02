@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/posts/20210406/ogp-jn.png'
 level: 初級
 tags:
   - Tutorial
+  - startguide
 ---
 
 みなさんはじめまして！転生美少女お侍クリエイター [Anti Internet Tough Guy侍](https://twitter.com/AITGSamurai) と申します！日頃はメタバース空間の制作や空間内でイベント運営を請負うxR Tech Nagoyaに参加し、制作業務をしています。

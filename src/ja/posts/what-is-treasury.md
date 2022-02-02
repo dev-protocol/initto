@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/posts/what-is-treasury/what-
 level: 中級
 tags:
   - 用語集
+  - ロードマップ
 ---
 ## Dev Protocol Treasuryとは
 

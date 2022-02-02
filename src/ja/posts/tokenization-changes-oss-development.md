@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/posts/20210317/ogp-JP.jpg'
 level: 初級
 tags:
   - fundamentals
+  - Startguide
 ---
 
 この記事は、Dev ProtocolのMedium記事[「The Tokenization of Open Source」](https://medium.com/devprtcl/the-tokenization-of-open-source-10ee0ea90607)を日本向けに作成したものです。

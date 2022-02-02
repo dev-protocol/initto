@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/posts/20211210/ogp--2.png'
 level: 初級
 tags:
   - document
+  - 用語集
 ---
 
 本記事では、DEV Protocolの重要な機能であるProperty Tokenとその将来的な応用についてご紹介します。
