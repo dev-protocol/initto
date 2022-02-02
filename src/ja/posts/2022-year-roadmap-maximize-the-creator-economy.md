@@ -6,6 +6,7 @@ socialImage: 'https://initto.devprotocol.xyz/images/posts/20220202/ogp.png'
 level: 初級
 tags:
 - ロードマップ
+- fundamentals
 ---
 ![Dev Protocol 2022年ロードマップ 日本語版](/images/posts/20220202/ogp.png)
 ソーシャルトークンローンチパッド、新しいトークノミクス、現実世界のPerks（サポーター特典）
