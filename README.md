@@ -2,6 +2,12 @@
 
 blog kit with [11ty(Eleventy)](https://11ty.io) based on [hylia-forestry](https://github.com/DirtyF/hylia-forestry).
 
+## Run it quickly
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dev-protocol/initto)
+
+or 
+
 ## Prepare your own environment
 
 ### installation
