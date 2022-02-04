@@ -49,7 +49,7 @@ Here, you can see the entire list of all the bounties that you have submitted so
 
 ## Where can I use the token?
 
-The token can be used in Stakes.social to support amazing projects by staking the tokens. This way, you receive returns on your tokens depending on the APY while the project gets a lot of support from your staked tokens and you could also get rewarded in the form of NFT and other perks from the creator. The tokens can be converted to other cryptocurrencies such as MATIC, ETH, etc. on exchanges like Uniswap and Quickswap. 
+The token can be used in [Stakes.social](https://stakes.social/) to support amazing projects by staking the tokens. This way, you receive returns on your tokens depending on the APY while the project gets a lot of support from your staked tokens and you could also get rewarded in the form of NFT and other perks from the creator. The tokens can be converted to other cryptocurrencies such as MATIC, ETH, etc. on exchanges like Uniswap and Quickswap. 
 
 ## Additional Resources
 
