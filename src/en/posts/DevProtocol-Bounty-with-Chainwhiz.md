@@ -19,7 +19,7 @@ With this kind of incentive, developers will be motivated and encouraged to solv
 
 ## What is Chainwhiz?
 
-Chainwhiz is an open-source bounty marketplace connecting Web3 projects with builders and communities. Chainwhiz opens up opportunities for every one willing to contribute to open source Web3 projects and helps scale projects faster. The mission is simple - to build a transparent and community-centric bounty platform for scaling dapps and forming communities.
+[Chainwhiz](https://app.chainwhiz.app/) is an open-source bounty marketplace connecting Web3 projects with builders and communities. Chainwhiz opens up opportunities for every one willing to contribute to open source Web3 projects and helps scale projects faster. The mission is simple - to build a transparent and community-centric bounty platform for scaling dapps and forming communities.
 
 ## How to get a bounty?
 
