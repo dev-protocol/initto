@@ -1,5 +1,13 @@
 [
   {
+    "title": "Discordマーケットがローンチされます",
+    "thumbnail": "https://initto.devprotocol.xyz/images/ogp.png",
+    "author": "Yusuke Ikeda",
+    "updated-at": "2022-02-25T00:00:00.000Z",
+    "url": "https://initto.devprotocol.xyz/ja/discord-market/"
+  },
+
+  {
     "title": "Dev Protocol 2022年ロードマップ 日本語版",
     "thumbnail": "https://initto.devprotocol.xyz/images/posts/20220202/ogp.png",
     "author": "Mayumi",
@@ -29,13 +37,5 @@
     "author": "Yusuke Ikeda",
     "updated-at": "2021-12-28T00:00:00.000Z",
     "url": "https://initto.devprotocol.xyz/ja/s-token-update/"
-  },
-
-  {
-    "title": "Propertyトークンとはなんですか？それをどのように活用できますか？",
-    "thumbnail": "https://initto.devprotocol.xyz/images/posts/20211210/ogp--2.png",
-    "author": "Yusuke Ikeda",
-    "updated-at": "2021-12-09T00:00:00.000Z",
-    "url": "https://initto.devprotocol.xyz/ja/property-tokens/"
   }
 ]
