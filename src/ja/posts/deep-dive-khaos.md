@@ -291,11 +291,10 @@ yarn deploy
 
 ソースコードによっては Rollup の設定を更新する必要があったり、追加のプラグインをインストールする必要がある場合があります。その場合、あなたは `rollup.config.js` を書き換えたり、追加のプラグインをインストールできます。また、Rollup 以外のバンドラーを利用することもできます。
 
-デプロイすると以下のような標準出力があるので、`IPFS_HASH_FOR_DIRECTORY` の値をメモしておいてください。
+デプロイすると以下のような標準出力があるので、`IPFS_HASH_FOR_FILE` の値をメモしておいてください。
 
 ```text
-> {"Name":"index.js","Hash":"IPFS_HASH_FOR_FILE","Size":"554"}
-> {"Name":"","Hash":"IPFS_HASH_FOR_DIRECTORY","Size":"609"}
+> {"Name":"index.js","Hash":"IPFS_HASH_FOR_FILE","Size":"871"}
 ```
 
 ## Khaos Registry
@@ -304,13 +303,13 @@ yarn deploy
 
 IPFS にデプロイされた関数のアドレスマップを管理しています。
 
-このリポジトリをフォークして、`map/functions.json` に先ほどメモした `IPFS_HASH_FOR_DIRECTORY` の値を追記してください。
+このリポジトリをフォークして、`map/functions.json` に先ほどメモした `IPFS_HASH_FOR_FILE` の値を追記してください。
 
 ```json
 [
   {
     "id": "foo-bar",
-    "ipfs": "<IPFS_HASH_FOR_DIRECTORY>"
+    "ipfs": "<IPFS_HASH_FOR_FILE>"
   }
 ]
 ```

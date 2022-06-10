@@ -289,11 +289,10 @@ yarn deploy
 
 For some source codes, you need to update Rollup's setting and install additional Rollup plugins. In such cases, you can rewrite `rollup.config.js`, and install additional Rollup plugins. You can also utilize bundlers except for Rollup.
 
-When you deploy, you can get the following standard output, so you should take a memo of the value of `IPFS_HASH_FOR_DIRECTORY`.
+When you deploy, you can get the following standard output, so you should take a memo of the value of `IPFS_HASH_FOR_FILE`.
 
 ```text
-> {"Name":"index.js","Hash":"IPFS_HASH_FOR_FILE","Size":"554"}
-> {"Name":"","Hash":"IPFS_HASH_FOR_DIRECTORY","Size":"609"}
+> {"Name":"index.js","Hash":"IPFS_HASH_FOR_FILE","Size":"871"}
 ```
 
 ## Khaos Registry
@@ -302,13 +301,13 @@ When you deploy, you can get the following standard output, so you should take a
 
 Address maps for deployed functions in IPFS are managed.
 
-Fork this repository, and additionally write the value of `IPFS_HASH_FOR_DIRECTORY`, which you've just taken a note of, for map/functions.json.
+Fork this repository, and additionally write the value of `IPFS_HASH_FOR_FILE`, which you've just taken a note of, for map/functions.json.
 
 ```json
 [
   {
     "id": "foo-bar",
-    "ipfs": "<IPFS_HASH_FOR_DIRECTORY>"
+    "ipfs": "<IPFS_HASH_FOR_FILE>"
   }
 ]
 ```
