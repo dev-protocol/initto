@@ -25,7 +25,7 @@
     "chokidar-cli": "3.0.0",
     "cross-env": "7.0.3",
     "make-dir-cli": "3.0.0",
-    "markdown-it-link-attributes": "4.0.0",
+    "markdown-it-link-attributes": "4.0.1",
     "prettier": "2.5.1",
     "rollup": "2.66.1",
     "rollup-plugin-commonjs": "^10.1.0",
