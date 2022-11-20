@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
-    "bl": "5.0.0",
+    "bl": "5.1.0",
     "chokidar-cli": "3.0.0",
     "cross-env": "7.0.3",
     "make-dir-cli": "3.0.0",
