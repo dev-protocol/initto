@@ -13,45 +13,51 @@ tags:
 
 Hi, I'm aggre.
 
-In this article, you'll get an idea about Khaos, which is developed as a side project for Dev Protocol.
+In this article, I'll introduce Khaos, a side project developed for Dev Protocol.
 
-Khaos brings information, which doesn't exist on blockchain, into blockchain from the outside of blockchain, and has a function of an "oracle". It is sometimes called Khaos Oracle.
+Khaos acts as an "oracle," bridging off-chain information to the blockchain. It is sometimes referred to as the Khaos Oracle.
 
-# Necessity of Oracle
+# Why Oracles are Necessary
 
-We see various types of oracles as well as Khaos on Ethereum. Ethereum is a huge state holding a chain of state transitions based on defined protocols by smart contracts. That means if certain data doesn’t have any input transactions, it can’t exist on Ethereum. If you want to gain data source to be input from HTTP, you have to input HTTP response manually or let reliable bots automatically input it. Oracles are used for the latter case. Let’s say you’ve made a "blockchain game in which winners are those who could accurately predict tomorrow's temperature in Tokyo." In this case, you need "temperature data in Tokyo." Which do you think is more reliable: A) Alice, a temperature-freak girl, who inputs the data manually, or B) A smart contract that is programmed to let a bot input data obtained from the database of the Japan Meteorological Agency? Oracles are a must-have technology if you want to choose B.
+There are various types of oracles on Ethereum, including Khaos. Ethereum is a massive state machine that maintains a chain of state transitions based on protocols defined by smart contracts. This means that data cannot exist on Ethereum unless it is introduced via an input transaction. If you want to use data from an HTTP source, you must either input the HTTP response manually or use a reliable bot to input it automatically. Oracles are used for the latter.
 
-# Necessity of Khaos
+Let’s say you’ve created a blockchain game where winners are those who accurately predict tomorrow's temperature in Tokyo. In this case, you need "temperature data in Tokyo." Which do you consider more reliable:
+A) Alice, a weather enthusiast who inputs the data manually.
+B) A smart contract programmed to have a bot input data fetched from the Japan Meteorological Agency's database.
 
-For a general implementation of oracles, you start by emitting events from smart contracts. Subsequently, a server/node composing oracle protocols detects the events, and finally, the oracle calls up callback functions. By adding information that smart contracts require (such as "temperature" in "Tokyo") into payloads of events to emit, oracle protocols get to know what the smart contract needs.
+Oracles are essential if you choose option B.
 
-Khaos is an oracle that enables you to conceal payloads for oracle requests. If you need to obtain the information to oraclize based on a secret token, you need to detoxify such a token by turning its format into a public one.
+# Why Khaos is Necessary
 
-With Khaos, you can oraclize your requests depending on your secret token on the public blockchain while concealing your secret token.
+Generally, implementing an oracle starts with emitting events from a smart contract. Subsequently, a server or node running the oracle protocol detects these events, and finally, the oracle executes a callback function. By including the required information (such as "temperature" in "Tokyo") in the event payload, the oracle protocol understands what the smart contract needs.
 
-# Use Khaos
+Khaos is an oracle that allows you to conceal the payloads of oracle requests. If you need to obtain information based on a secret token, you typically need to expose that token by converting it into a public format.
 
-You can use Khaos for your Dapps. If you use SDK for frontends and Starter Kit to implement oracle functions, you can start its development.
+With Khaos, you can make oracle requests based on a secret token on a public blockchain while keeping that token hidden.
 
-_Currently, smart contracts, which can be used for Khaos, are limited to smart contracts composing the core of Dev Protocol or to Market, Policy contracts. In the future, Khaos can be used for all smart contracts._
+# Using Khaos
 
-## Oracle flow of Khaos
+You can integrate Khaos into your Dapps. By using the frontend SDK and the Starter Kit to implement oracle functions, you can quickly start development.
 
-Learning about Khaos' oracle flow is a great start for developing Khaos. It comprises several components such as Khaos Core, Khaos Functions, Khaos Registry, etc. The most important thing for developers is the following flow:
+_Currently, Khaos is limited to smart contracts that form the core of the Dev Protocol, specifically Market and Policy contracts. In the future, Khaos will be available for all smart contracts._
 
-1. Call Sign API (RESTful API) of Khaos, and obtain Public Signature after converting data subject to concealment into public.
-2. Emit events from smart contracts. At this point, by including Public Signature in event payloads, you can deal with your concealed information for the oracle functions that you defined.
-3. Khaos calls callback functions that you defined and closes its flow.
+## Khaos Oracle Flow
 
-Khaos provides oracles with high flexibility as it entrusts a number of interfaces to users. In order to achieve this, users need to implement various interfaces by themselves. However, you can quickly start your development by using Khaos Starter Kit.
+Understanding the Khaos oracle flow is a great place to start development. It consists of several components, such as Khaos Core, Khaos Functions, and Khaos Registry. The most important flow for developers is as follows:
+
+1. Call the Khaos Sign API (RESTful API) to obtain a Public Signature, which converts the concealed data into a public format.
+2. Emit events from smart contracts. By including the Public Signature in the event payload, you can handle your concealed information within the oracle functions you defined.
+3. Khaos calls the defined callback functions and completes the flow.
+
+Khaos offers highly flexible oracles by entrusting many interfaces to the users. To achieve this, users must implement various interfaces themselves. However, you can jumpstart your development using the Khaos Starter Kit.
 
 ## Public Signature
 
-One of the most significant keywords to handle Khaos is Public Signature.
+A key concept in Khaos is the Public Signature.
 
-Public Signature is a string encrypted by Json Web Tokens. Information used for encryption is open, so all of us can generate and decrypt it. In other words, secret information is not included in Public Signature at all, and it can be open to public. With Khaos, you can save your secret information with Public Signature as a key, and make use of it only inside Khaos instance.
+A Public Signature is a string encrypted using JSON Web Tokens (JWT). The information used for encryption is public, so anyone can generate and decrypt it. In other words, the Public Signature contains no secret information and can be safely exposed to the public. With Khaos, you can store your secret information using the Public Signature as a key, and access it only within the Khaos instance.
 
-Public Signature is the same as encrypted "the following JSON string" by "sender's Ethereum account address."
+The Public Signature is essentially the following JSON string encrypted by the sender's Ethereum account address.
 
 ```json
 {
@@ -66,9 +72,9 @@ You can check the implementation and the tests of it at Khaos Core. [khaos-core/
 
 [dev-protocol/khaos-starter-kit: 🌌Start developing Khaos Functions now (github.com)](https://github.com/dev-protocol/khaos-starter-kit)
 
-We provide templates for users' interfaces to define.
+We provide templates for the interfaces users need to define.
 
-After you fork and clone this repository, you can start development at your local environment. The package management of Khaos Starter Kit is done by yarn, so you have to [install yarn](https://classic.yarnpkg.com/en/docs/install/) in advance.
+After forking and cloning this repository, you can start development in your local environment. Package management in the Khaos Starter Kit is handled by Yarn, so you must install Yarn beforehand.
 
 ```text
 $ git clone git@github.com:YOUR/khaos-starter-kit.git
@@ -76,15 +82,15 @@ $ cd khaos-starter-kit
 $ yarn
 ```
 
-In src directory, templates for interfaces and tests that you need to define are written in TypeScript.
+In the `src` directory, the templates for the interfaces and tests you need to define are written in TypeScript.
 
-For Khaos Starter Kit, we recommend [eslint-plugin-functional](https://www.npmjs.com/package/eslint-plugin-functional), an ESLint plugin for your security. Though you can change its setting freely, we suggest that you should use it without changing its setting.
+For the Khaos Starter Kit, we recommend `eslint-plugin-functional`, an ESLint plugin for enhanced security. Although you can freely change its settings, we suggest using the defaults.
 
 ### abi.ts
 
-You can define and export `abi` as the ABI of your smart contract as array written in [Human-Readable ABI Format](https://docs.ethers.io/v5/api/utils/abi/formats/#abi-formats--human-readable-abi) on this file.
+In this file, you can define and export `abi` as your smart contract's ABI, using an array in Human-Readable ABI Format.
 
-In the case of an event like `Query` and of smart contracts possessing callback functions that `callback`, you can write as stated below. Only event and callback functions are used for Khaos. Therefore there is no need to define everything if although other interfaces are present in the smart contract.
+For example, if you have an event like `Query` and a smart contract with a callback function named `callback`, you can write it as follows. Only events and callback functions are used by Khaos. Therefore, you do not need to define other interfaces present in the smart contract.
 
 ```typescript
 import {Abi} from '@devprotocol/khaos-core'
@@ -97,9 +103,9 @@ export const abi: Abi = [
 
 ### addresses.ts
 
-You can define and export `addresses` as the addresses of your smart contracts where emit oracle requests as the function that returns `Promise<string | undefined>`. The return value of this function is also used for addresses of callback functions.
+In this file, you can define and export `addresses` as a function that returns the addresses of your smart contracts that emit oracle requests. The return type is `Promise<string | undefined>`. The return value of this function is also used for the addresses of callback functions.
 
-The function receives the following object as the argument.
+The function receives the following object as an argument:
 
 ```typescript
 type Options = {
@@ -107,7 +113,7 @@ type Options = {
 }
 ```
 
-You can switch the addresses by the mainnet of Ethereum, or by Ropsten testnet.
+You can switch addresses based on whether you are using the Ethereum mainnet or the Ropsten testnet.
 
 ```typescript
 import {FunctionAddresses} from '@devprotocol/khaos-core'
@@ -120,11 +126,11 @@ export const addresses: FunctionAddresses = async ({network}) =>
 
 ### authorize.ts
 
-You can define and export `authorize` as your authentication method to be called when Sign API of Khaos is called, on this file. The function should returns `Promise<boolean | undefined>`.
+In this file, you can define and export `authorize` as your authentication method, which is invoked when the Khaos Sign API is called. The function should return `Promise<boolean | undefined>`.
 
-Only in the case where the result of authorize is `true`, Public Signature is generated and secret information encrypted in Khaos server is saved.
+A Public Signature is generated and the secret information is encrypted and saved on the Khaos server only if the result of `authorize` is `true`.
 
-Functions receive the following object as the argument. `message` is a string subject to verify. Twitter ID and GitHub repository names are examples that correspond to it. `secret` is information for secret. Since `request` is HttpRequest Type of @azure/functions, various contexts can be used when Sign API is called.
+The function receives the following object as an argument. `message` is the string to be verified; examples include a Twitter ID or a GitHub repository name. `secret` is the confidential information. Since `request` is of the `HttpRequest` type from `@azure/functions`, various contexts can be used when the Sign API is called.
 
 ```typescript
 type Options = {
@@ -134,7 +140,7 @@ type Options = {
 }
 ```
 
-Because bent is installed as HTTP library for Khaos Starter Kit, you can validate whether the `message` is justifiable or not by calling an external API. In addition, ramda is also installed as a functional programing library, so you can use it case by case.
+Since `bent` is installed as the HTTP library for the Khaos Starter Kit, you can validate whether the `message` is valid by calling an external API. Additionally, `ramda` is installed as a functional programming library, so you can use it as needed.
 
 ```typescript
 import bent from 'bent'
@@ -166,9 +172,9 @@ export const authorize: FunctionAuthorizer = async ({
 
 ### event.ts
 
-You can define and export `event` as the function, which returns the event name of your smart contract on this file. The function returns `Promise<string | undefined>`.
+In this file, you can define and export `event` as a function that returns the event name of your smart contract. The function returns `Promise<string | undefined>`.
 
-The function receives the following object as the argument.
+The function receives the following object as an argument:
 
 ```typescript
 type Options = {
@@ -176,7 +182,7 @@ type Options = {
 }
 ```
 
-You can switch event names by the mainnet of Ethereum or by Ropsten testnet, though we think you would continue to use the same event names in many cases.
+You can switch event names based on the Ethereum mainnet or Ropsten testnet, although in many cases you will likely use the same event names.
 
 ```typescript
 import {FunctionEvent} from '@devprotocol/khaos-core'
@@ -187,9 +193,13 @@ export const event: FunctionEvent = always(Promise.resolve('Query'))
 
 ### oraclize.ts
 
-You can define and export `oraclize` as the function called by oracle request from smart contracts, on this file. This function plays a vital role. After the return value of this function is formatted by `pack` function as stated below, it is transferred to blockchain through callbacks for smart contracts. The time when oraclize function is called is after events are detected and secret information is obtained through Public Signature as a key.
+In this file, you can define and export `oraclize` as the function called by oracle requests from smart contracts. This function plays a vital role. The return value of this function is formatted by the `pack` function (described below) and then transferred to the blockchain via callbacks to smart contracts. The `oraclize` function is called after events are detected and secret information is retrieved using the Public Signature as a key.
 
-The function receives the following object as the argument, as stated below. `signatureOptions` is decrypted data of Public Signature. Only in the case where generated Public Signature is included in event payloads when the result of the `authorize` function returns `true`, `signatureOptions` is defined. In other words, if unauthorized Public Signature is included, `undefined` is given back. `query.publicSignature` includes event payloads with Public Signature. `query.transactionhash` includes transaction-hash that emitted the event. `query.allData` includes all event payloads.
+The function receives the following object as an argument:
+`signatureOptions` contains the decrypted data of the Public Signature. `signatureOptions` is defined only if the event payload includes a Public Signature generated when the `authorize` function returned `true`. If an unauthorized Public Signature is included, it will be `undefined`.
+`query.publicSignature` contains the Public Signature from the event payload.
+`query.transactionhash` contains the hash of the transaction that emitted the event.
+`query.allData` contains all event payloads.
 
 ```typescript
 type Options = {
@@ -207,7 +217,7 @@ type Options = {
 }
 ```
 
-The return value of the function is Promise that is solved by the following object.
+The return value of the function is a Promise that resolves to the following object:
 
 ```typescript
 type Options = {
@@ -217,7 +227,7 @@ type Options = {
 }
 ```
 
-The function verifies that the signer of Public Signature and the oracle request sender is the same account in the next example.
+The following example verifies that the signer of the Public Signature and the sender of the oracle request are the same account.
 
 ```typescript
 import {FunctionOraclizer} from '@devprotocol/khaos-core'
@@ -242,9 +252,10 @@ export const oraclize: FunctionOraclizer = async ({signatureOptions, query}) => 
 
 ### pack.ts
 
-You can define and export `pack` as the function that returns the callback function name and your smart contract's arguments on this file.
+In this file, you can define and export `pack` as a function that returns the callback function name and the arguments for your smart contract.
 
-The function receives the following object as the argument, as stated below. `results` have the same data as the value gained when Promise, which is returned by oraclize, resolves.
+The function receives the following object as an argument:
+`results` contains the same data as the value resolved by the Promise returned from `oraclize`.
 
 ```typescript
 type Options = {
@@ -256,7 +267,7 @@ type Options = {
 }
 ```
 
-In the next example, function named `callback` are designated to callback by arguments of `[results.message, results.status, results.statusMessage]`.
+In the following example, a function named `callback` is designated as the callback, with arguments `[results.message, results.status, results.statusMessage]`.
 
 ```typescript
 import {FunctionPack} from '@devprotocol/khaos-core'
@@ -271,25 +282,25 @@ export const pack: FunctionPack = async ({results}) => {
 
 ## Test
 
-Khaos Starter Kit writing tests by ava as default. You can freely change your testing framework depending on your projects.
+The Khaos Starter Kit uses `ava` for testing by default. You are free to change the testing framework to suit your project.
 
-Use of Khaos is not essential for the test, however, we strongly suggest that you should prepare as much accurate test case as possible for guaranteeing the specifications and maintainability.
+While using Khaos is not strictly necessary for testing, we strongly recommend preparing as many accurate test cases as possible to guarantee specifications and maintainability.
 
 ## Deploy
 
-After all of your interfaces and tests are ready, you move on to deploy codes.
+Once all your interfaces and tests are ready, you can proceed to deploy your code.
 
-In Khaos, you need to bundle the functions defined by you into one file of `index.js`, and deploy to IPFS. With Khaos Starter Kit, you can bundle codes using Rollup as the default bundler and deploy to IPFS nodes on Infura.
+In Khaos, you need to bundle the functions you've defined into a single `index.js` file and deploy it to IPFS. The Khaos Starter Kit allows you to bundle your code using Rollup (the default bundler) and deploy it to IPFS nodes on Infura.
 
-This is the only command that you should execute.
+You only need to execute the following command:
 
 ```text
 yarn deploy
 ```
 
-For some source codes, you need to update Rollup's setting and install additional Rollup plugins. In such cases, you can rewrite `rollup.config.js`, and install additional Rollup plugins. You can also utilize bundlers except for Rollup.
+Depending on your source code, you may need to update Rollup's settings and install additional Rollup plugins. In such cases, you can modify `rollup.config.js` and install the necessary plugins. You can also use bundlers other than Rollup.
 
-When you deploy, you can get the following standard output, so you should take a memo of the value of `IPFS_HASH_FOR_FILE`.
+Upon deployment, you will see the following standard output. Make sure to note the value of `IPFS_HASH_FOR_FILE`.
 
 ```text
 > {"Name":"index.js","Hash":"IPFS_HASH_FOR_FILE","Size":"871"}
@@ -299,9 +310,9 @@ When you deploy, you can get the following standard output, so you should take a
 
 [dev-protocol/khaos-registry: 🌌Khaos Registry for functions ipfs hash (github.com)](https://github.com/dev-protocol/khaos-registry)
 
-Address maps for deployed functions in IPFS are managed.
+This registry manages address maps for functions deployed to IPFS.
 
-Fork this repository, and additionally write the value of `IPFS_HASH_FOR_FILE`, which you've just taken a note of, for map/functions.json.
+Fork this repository and add the `IPFS_HASH_FOR_FILE` value you noted earlier to `map/functions.json`.
 
 ```json
 [
@@ -312,23 +323,23 @@ Fork this repository, and additionally write the value of `IPFS_HASH_FOR_FILE`, 
 ]
 ```
 
-After you've pushed the changes for the forked repository, create Pull Request for the source repository.
+After pushing the changes to your forked repository, create a Pull Request to the source repository.
 
-The usage application of Khaos is limited to Dev Protocol related contracts currently. Hence, the team verifies whether `addresses` of deployed functions in IPFS are contracts on Dev Protocol or not.
+Currently, Khaos usage is limited to Dev Protocol-related contracts. Therefore, the team verifies whether the `addresses` of deployed functions in IPFS correspond to contracts on the Dev Protocol.
 
-_In the future, Khaos Registry would be re-composited and decentralized as smart contracts._
+_In the future, the Khaos Registry will be re-architected and decentralized as smart contracts._
 
 ## Khaos Kit
 
 [dev-protocol/khaos-kit-js: 🌌Khaos Kit for JavaScript (github.com)](https://github.com/dev-protocol/khaos-kit-js)
 
-Khaos Kit provides API to interact with Khaos from JavaScript(TypeScript).
+The Khaos Kit provides an API to interact with Khaos from JavaScript (TypeScript).
 
 ### sign
 
-`sign` API is a shorthand for HTTP requests that call Sign API of Khaos.
+The `sign` API is a shorthand for HTTP requests that call the Khaos Sign API.
 
-This function takes two arguments. The first argument is Khaos authorization ID, which is the same string designated at `id` property in Khaos Registry. The second one takes `'mainet'` or `'ropsten'` as a network name.
+This function takes two arguments. The first argument is the Khaos authorization ID, which matches the string designated in the `id` property in the Khaos Registry. The second argument is the network name, either `'mainnet'` or `'ropsten'`.
 
 ```typescript
 // createPublicSignature.ts
@@ -337,9 +348,9 @@ import {sign} from '@devprotocol/khaos-kit'
 export const createPublicSignature = sign('foo-bar', 'mainnet')
 ```
 
-`sign` returns a function to take `KhaosSignOptions` as the argument. `message` of `KhaosSignOptions` is the message used for the signature. `signature` is the signature created in the user's Ethereum wallet. `secret` is information that your Dapps want to conceal.
+`sign` returns a function that takes `KhaosSignOptions` as an argument. In `KhaosSignOptions`, `message` is the message used for the signature, `signature` is the signature created in the user's Ethereum wallet, and `secret` is the information your Dapp wants to conceal.
 
-To write a signature with the user's Ethereum wallet, you have to use API for Web3 or Ethers, etc.
+To generate a signature with the user's Ethereum wallet, you must use an API such as Web3 or Ethers.
 
 - Web3: [web3.eth.personal — web3.js 1.0.0 documentation (web3js.readthedocs.io)](https://web3js.readthedocs.io/en/v1.2.0/web3-eth-personal.html#sign)
 - Ethers: [Signers (ethers.io)](https://docs.ethers.io/v5/api/signer/#Signer-signMessage)
@@ -361,9 +372,9 @@ const getPublicSignature = async ({message, signature, secret}: KhaosSignOptions
 
 ### emulate
 
-`emulate` API emulates the result of emitted events for oracle requests with off-chain.
+The `emulate` API emulates the result of emitted events for oracle requests off-chain.
 
-This function takes two arguments. The first argument is Khaos authorization ID, which is the same string designated at `id` property in Khaos Registry. The second one takes `'mainet'` or `'ropsten'` as a network name.
+This function takes two arguments. The first argument is the Khaos authorization ID, which matches the string designated in the `id` property in the Khaos Registry. The second argument is the network name, either `'mainnet'` or `'ropsten'`.
 
 ```typescript
 // emulator.ts
@@ -372,9 +383,9 @@ import {emulate} from '@devprotocol/khaos-kit'
 export const emulator = emulate('foo-bar', 'mainnet')
 ```
 
-`emulate` returns a function to take `KhaosEmulateOptions` as the argument. `KhaosEmulateOptions` takes `event` object that changed the all same information as [`Event` of @ethersproject/contracts](https://github.com/ethers-io/ethers.js/blob/6c43e20e7a68f3f5a141c74527ec63d9fe8458be/packages/contracts/src.ts/index.ts#L60) into optional. `Event.arg` is extend type of `Array` by `{readonly [key: string]: any}`, but `KhaosEmulateOptions.args` is simplified by overridden at `Record<string, string | number | undefined | null>`.
+`emulate` returns a function that takes `KhaosEmulateOptions` as an argument. `KhaosEmulateOptions` accepts an `event` object where all properties are optional versions of those in [`Event` of @ethersproject/contracts](https://github.com/ethers-io/ethers.js/blob/6c43e20e7a68f3f5a141c74527ec63d9fe8458be/packages/contracts/src.ts/index.ts#L60). While `Event.args` extends `Array` with `{readonly [key: string]: any}`, `KhaosEmulateOptions.args` is simplified and overridden as `Record<string, string | number | undefined | null>`.
 
-This function's return value is based on additional data called `expectedTransaction` and the return value of `pack`, which you created with Khaos Starter Kit.
+The return value of this function is based on the return value of `pack` (which you created with the Khaos Starter Kit) and includes additional data called `expectedTransaction`.
 
 ```typescript
 import {KhaosEmulateOptions} from '@devprotocol/khaos-kit'
