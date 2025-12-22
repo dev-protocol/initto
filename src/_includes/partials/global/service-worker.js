@@ -10,7 +10,7 @@ const EXCLUDED_URLS = [];
 const PRE_CACHE_URLS = ['/', '/fonts/Whyte/Whyte-Bold.otf'];
 
 // You might want to bypass a certain host
-const IGNORED_HOSTS = ['localhost', 'unpkg.com', ];
+const IGNORED_HOSTS = ['localhost', 'unpkg.com'];
 
 /**
  * Takes an array of strings and puts them in a named cache store

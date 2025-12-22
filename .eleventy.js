@@ -25,7 +25,7 @@ const markdownLib = require('./src/utils/markdown-lib');
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 
 module.exports = function(config) {
-  config.setLibrary("md", markdownLib)
+  config.setLibrary('md', markdownLib);
 
   // Filters
   config.addFilter('dateFilter', dateFilter);
@@ -87,7 +87,6 @@ module.exports = function(config) {
       .reverse()
       .slice(0, site.maxPostsPerPage);
   });
-
 
   // Plugins
   config.addPlugin(rssPlugin);
