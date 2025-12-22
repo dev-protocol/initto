@@ -39,8 +39,6 @@ With Khaos, you can make oracle requests based on a secret token on a public blo
 
 You can integrate Khaos into your Dapps. By using the frontend SDK and the Starter Kit to implement oracle functions, you can quickly start development.
 
-_Currently, Khaos is limited to smart contracts that form the core of the Dev Protocol, specifically Market and Policy contracts. In the future, Khaos will be available for all smart contracts._
-
 ## Khaos Oracle Flow
 
 Understanding the Khaos oracle flow is a great place to start development. It consists of several components, such as Khaos Core, Khaos Functions, and Khaos Registry. The most important flow for developers is as follows:
@@ -324,8 +322,6 @@ Fork this repository and add the `IPFS_HASH_FOR_FILE` value you noted earlier to
 ```
 
 After pushing the changes to your forked repository, create a Pull Request to the source repository.
-
-Currently, Khaos usage is limited to Dev Protocol-related contracts. Therefore, the team verifies whether the `addresses` of deployed functions in IPFS correspond to contracts on the Dev Protocol.
 
 _In the future, the Khaos Registry will be re-architected and decentralized as smart contracts._
 
